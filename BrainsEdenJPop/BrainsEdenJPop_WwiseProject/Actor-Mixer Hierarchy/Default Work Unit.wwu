@@ -1,6 +1,300 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}" SchemaVersion="75">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}" PersistMode="Standalone">
+			<ChildrenList>
+				<RandomSequenceContainer Name="PickupGroan" ID="{33FCFB7D-4D6C-42B8-927F-03B0FC554A9A}" ShortID="75962578">
+					<PropertyList>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="GROAN Male Hurt Long (mono)_01" ID="{C6091366-97E8-48E8-8124-EF3BECE20257}" ShortID="732906741" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0185AC07-B0D4-4FEE-86F4-F01F41AD6778}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="150"/>
+													<Property Name="Min" Type="Real64" Value="-150"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GROAN Male Hurt Long (mono)" ID="{B6FBA673-DB09-428D-8CAD-3F3BA1B1B18A}" ShortID="889453829">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.070566842808552"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.222650555758017"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.407584350704568"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.747035198007775"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>GROAN Male Hurt Long (mono).wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="538897242"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GROAN Male Hurt Long (mono)" ID="{B6FBA673-DB09-428D-8CAD-3F3BA1B1B18A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<SwitchContainer Name="Ambience" ID="{A51CD936-3AB6-4AA5-BBA3-EEDBDDA5A9D8}" ShortID="995934993">
+					<PropertyList>
+						<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="spawn" ID="{E1F1E761-E850-4B2F-91D0-63EF0A78EB11}" ShortID="337652975" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="darkness" ID="{B1A21ACA-EE3A-4138-8075-832B393EBEAF}" ShortID="920158699">
+									<Language>SFX</Language>
+									<AudioFile>darkness.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="darkness" ID="{B1A21ACA-EE3A-4138-8075-832B393EBEAF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="altar1" ID="{972175BE-4BD1-4D50-8B3D-1845F3046B1E}" ShortID="979016209" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="dark_cave" ID="{AB31455A-8108-416F-A4F5-78DC0AD01645}" ShortID="182127850">
+									<Language>SFX</Language>
+									<AudioFile>dark_cave.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="dark_cave" ID="{AB31455A-8108-416F-A4F5-78DC0AD01645}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="altar2" ID="{4F2CCD71-70CC-4E01-B5D7-65FAA76682D7}" ShortID="410224542" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="hell2" ID="{B82098B0-8CC0-45EC-9429-087B08F03E34}" ShortID="72105851">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.337334112560295"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.136766097027248"/>
+										<Property Name="TrimBegin" Type="Real64" Value="2.34553856401746"/>
+										<Property Name="TrimEnd" Type="Real64" Value="129.603493581957"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>hell2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="hell2" ID="{B82098B0-8CC0-45EC-9429-087B08F03E34}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="altar3" ID="{50A254A2-FB0E-4AFC-8D67-7D0DDC678B99}" ShortID="1069866127" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="hell3" ID="{6F55577F-BC55-4666-A067-D5937B4C7118}" ShortID="1061845231">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.497380699303531"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.49738069930352"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.49214209791059"/>
+										<Property Name="TrimEnd" Type="Real64" Value="128.572910769962"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>hell3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="hell3" ID="{6F55577F-BC55-4666-A067-D5937B4C7118}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupRef Name="Ambience" ID="{3FB8E003-6A3A-4215-A22F-F76F0B2D4B77}"/>
+						<DefaultSwitchRef Name="Spawn" ID="{D4C2F66E-5127-44FD-843F-57887A3ED685}"/>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="spawn" ID="{E1F1E761-E850-4B2F-91D0-63EF0A78EB11}"/>
+								<PropertyList>
+									<Property Name="FadeInTime" Type="Real64">
+										<ValueList>
+											<Value>15</Value>
+										</ValueList>
+									</Property>
+									<Property Name="FadeOutTime" Type="Real64">
+										<ValueList>
+											<Value>15</Value>
+										</ValueList>
+									</Property>
+								</PropertyList>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="altar2" ID="{4F2CCD71-70CC-4E01-B5D7-65FAA76682D7}"/>
+								<PropertyList>
+									<Property Name="FadeInTime" Type="Real64">
+										<ValueList>
+											<Value>15</Value>
+										</ValueList>
+									</Property>
+									<Property Name="FadeOutTime" Type="Real64">
+										<ValueList>
+											<Value>15</Value>
+										</ValueList>
+									</Property>
+								</PropertyList>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="altar3" ID="{50A254A2-FB0E-4AFC-8D67-7D0DDC678B99}"/>
+								<PropertyList>
+									<Property Name="FadeInTime" Type="Real64">
+										<ValueList>
+											<Value>15</Value>
+										</ValueList>
+									</Property>
+									<Property Name="FadeOutTime" Type="Real64">
+										<ValueList>
+											<Value>15</Value>
+										</ValueList>
+									</Property>
+								</PropertyList>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="altar1" ID="{972175BE-4BD1-4D50-8B3D-1845F3046B1E}"/>
+								<PropertyList>
+									<Property Name="FadeInTime" Type="Real64">
+										<ValueList>
+											<Value>15</Value>
+										</ValueList>
+									</Property>
+									<Property Name="FadeOutTime" Type="Real64">
+										<ValueList>
+											<Value>15</Value>
+										</ValueList>
+									</Property>
+								</PropertyList>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Altar2" ID="{A4EAA303-8E76-48EA-92E3-87CBE52A6716}"/>
+								<ItemList>
+									<ItemRef Name="altar2" ID="{4F2CCD71-70CC-4E01-B5D7-65FAA76682D7}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Altar3" ID="{F585D06E-B681-4C17-B9E5-F857807AE31F}"/>
+								<ItemList>
+									<ItemRef Name="altar3" ID="{50A254A2-FB0E-4AFC-8D67-7D0DDC678B99}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Spawn" ID="{D4C2F66E-5127-44FD-843F-57887A3ED685}"/>
+								<ItemList>
+									<ItemRef Name="spawn" ID="{E1F1E761-E850-4B2F-91D0-63EF0A78EB11}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Altar1" ID="{ECBAAE9D-2597-482E-A035-C380BC54E489}"/>
+								<ItemList>
+									<ItemRef Name="altar1" ID="{972175BE-4BD1-4D50-8B3D-1845F3046B1E}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<Sound Name="magicAir" ID="{049CD3F7-61AA-4F8B-84D5-517441C55799}" ShortID="745359213" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="magicAir" ID="{F88A6304-9BDB-408E-A250-13BABA28FCAD}" ShortID="842989869">
+							<Language>SFX</Language>
+							<AudioFile>magicAir.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="magicAir" ID="{F88A6304-9BDB-408E-A250-13BABA28FCAD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

@@ -1,0 +1,22 @@
+Event	ID	Name			Wwise Object Path	Notes
+	85412153	Ambience			\Default Work Unit\Ambience	
+	128372033	AmbienceStop			\Default Work Unit\AmbienceStop	
+	865029174	PickupRelic			\Default Work Unit\PickupRelic	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	85412153	Ambience			\Default Work Unit\Ambience	
+
+Switch	ID	Name	Switch Group			Notes
+	26822469	Exit	Ambience			
+	71202558	Spawn	Ambience			
+	2844735168	Altar1	Ambience			
+	2844735170	Altar3	Ambience			
+	2844735171	Altar2	Ambience			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	72105851	altar2	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\hell2_BF8D1261.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\altar2		1821645
+	182127850	altar1	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\dark_cave_105A094A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\altar1		1058228
+	538897242	GROAN Male Hurt Long (mono)_01	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\GROAN Male Hurt Long (mono)_65323491.wem		\Actor-Mixer Hierarchy\Default Work Unit\PickupGroan\GROAN Male Hurt Long (mono)_01		3408
+	920158699	spawn	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\darkness_0CDD8189.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\spawn		560718
+	1061845231	altar3	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\hell3_45FB108B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\altar3		1728936
+

@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C4A7680C-349E-4F67-A3C1-8151F75B2BD7}" SchemaVersion="75">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{C4A7680C-349E-4F67-A3C1-8151F75B2BD7}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C4A7680C-349E-4F67-A3C1-8151F75B2BD7}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSwitchContainer Name="BackgroundMusic" ID="{E00045BB-62FE-43A9-87E3-9583732D5FD3}" ShortID="899518138">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+						</Reference>
+					</ReferenceList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{D5051371-BDA3-47EF-BA1B-2B5975FA29A8}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{5B5668D0-C27E-43F9-BCA9-DC59BFF6453A}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+				</MusicSwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>

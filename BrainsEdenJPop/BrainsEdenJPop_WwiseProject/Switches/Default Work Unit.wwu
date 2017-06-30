@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8171BD08-1B48-4883-BDA9-5A92826AB052}" SchemaVersion="75">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{8171BD08-1B48-4883-BDA9-5A92826AB052}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8171BD08-1B48-4883-BDA9-5A92826AB052}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Ambience" ID="{3FB8E003-6A3A-4215-A22F-F76F0B2D4B77}">
+					<ChildrenList>
+						<Switch Name="Spawn" ID="{D4C2F66E-5127-44FD-843F-57887A3ED685}"/>
+						<Switch Name="Altar1" ID="{ECBAAE9D-2597-482E-A035-C380BC54E489}"/>
+						<Switch Name="Altar2" ID="{A4EAA303-8E76-48EA-92E3-87CBE52A6716}"/>
+						<Switch Name="Altar3" ID="{F585D06E-B681-4C17-B9E5-F857807AE31F}"/>
+						<Switch Name="Exit" ID="{E0C87C5A-AEEA-46FA-AFB4-B955296CBE03}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

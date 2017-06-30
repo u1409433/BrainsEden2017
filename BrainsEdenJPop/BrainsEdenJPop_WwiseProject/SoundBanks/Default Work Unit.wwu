@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D7FF8C30-DA72-4C14-BB80-CDAF477F8EE6}" SchemaVersion="75">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{D7FF8C30-DA72-4C14-BB80-CDAF477F8EE6}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D7FF8C30-DA72-4C14-BB80-CDAF477F8EE6}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{B5DD99DC-96AE-4542-8612-ABB83AA9F5AA}">
+					<ObjectInclusionList>
+						<ObjectRef Name="PickupRelic" ID="{C177FEB4-9897-4045-9268-6F75D950BF16}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Ambience" ID="{B77C8B99-2DEC-4483-8063-215350A0EA35}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="AmbienceStop" ID="{CA63F7AE-869A-4BE4-9C5A-F99CFE4A4589}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>
