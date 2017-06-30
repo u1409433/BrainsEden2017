@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class JL_LevelManager : MonoBehaviour
@@ -26,5 +27,10 @@ public class JL_LevelManager : MonoBehaviour
         {
             LS_GO_Interactables.Add(interactable);
         }
+    }
+
+    public void WinState()
+    {
+        SceneManager.LoadScene(2, LoadSceneMode.Single);
     }
 }

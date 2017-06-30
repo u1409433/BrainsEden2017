@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.AI;
 using UnityEngine;
 
 public class JL_Interactable : MonoBehaviour
@@ -31,9 +32,18 @@ public class JL_Interactable : MonoBehaviour
                 Debug.Log("I am a relic");
                 if (!BL_Carried)
                 {
+                    //If i'm on a shrine, deactivate that shrine
+                    if (transform.parent != null)
+                    {
+                        if (transform.parent.name == "Shrine")
+                        {
+                            transform.parent.GetComponent<JL_Shrine>().SwitchRelic();
+                        }
+                    }
+                    
+
                     gameObject.transform.SetParent(GO_PC.transform);
-                    transform.localPosition = Vector3.zero;
-                    transform.Translate(new Vector3(0, 2, 0));
+                    transform.localPosition = GameObject.Find("Target").transform.localPosition;
                     BL_Carried = true;
                     SC_PCScript.BL_Carrying = true;
                 }
@@ -45,6 +55,7 @@ public class JL_Interactable : MonoBehaviour
                     transform.Find("Relic").localPosition = Vector3.zero + new Vector3 (0,1,0);
                     transform.Find("Relic").GetComponent<JL_Interactable>().BL_Carried = false;
                     SC_PCScript.BL_Carrying = false;
+                    gameObject.GetComponent<JL_Shrine>().SwitchRelic();
                 }
                 else Debug.Log("You are not carrying a relic");
                 break;
