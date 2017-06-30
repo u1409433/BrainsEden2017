@@ -1,0 +1,10 @@
+Static Assets - Walls, Floors , shrines, relics, chests, bridge
+
+Textures - stone, wood, gems, relic/gold, water, dirt, chests/containers
+
+Sounds - picking up relic, putting down relic, touched by ghost, respawning, death scream, ambient creepy music, exit door, footsteps, 
+
+Scripts - player control, enemy movement, object interaction, environment control, shrine control, level manager
+
+Dynamic Assets - PC, Ghosts
+

@@ -78,13 +78,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_FSM.cs" />
+=======
+    <Compile Include="Assets\Joey\Scripts\JL_Camfollow.cs" />
+    <Compile Include="Assets\Joey\Scripts\JL_Interactable.cs" />
+    <Compile Include="Assets\Joey\Scripts\JL_LevelManager.cs" />
+    <Compile Include="Assets\Joey\Scripts\JL_PCMovement.cs" />
+    <Compile Include="Assets\Joey\Scripts\JL_Shrine.cs" />
+    <Compile Include="Assets\Joey\Scripts\JL_TestScript.cs" />
+>>>>>>> 833cce7abbb4d2f1baf27d302a44969a87644b73
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\James\PlaceHolder.txt" />
     <None Include="Assets\Jasmine\PlaceHolder.txt" />
     <None Include="Assets\Joey\PlaceHolder.txt" />
     <None Include="Assets\Johannes\PlaceHolder.txt" />
+<<<<<<< HEAD
+=======
+    <None Include="Assets\Josh\AssetList.txt" />
+>>>>>>> 833cce7abbb4d2f1baf27d302a44969a87644b73
     <None Include="Assets\Josh\PlaceHolder.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
