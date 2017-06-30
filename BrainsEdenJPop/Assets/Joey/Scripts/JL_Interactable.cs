@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.AI;
 using UnityEngine;
 
 public class JL_Interactable : MonoBehaviour
@@ -20,7 +21,8 @@ public class JL_Interactable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (BL_Carried) gameObject.GetComponent<MeshCollider>().enabled = false;
+        else gameObject.GetComponent<MeshCollider>().enabled = true;
     }
 
     public void Interact()
@@ -42,8 +44,7 @@ public class JL_Interactable : MonoBehaviour
                     
 
                     gameObject.transform.SetParent(GO_PC.transform);
-                    transform.localPosition = Vector3.zero;
-                    transform.Translate(new Vector3(0, 0, 1));
+                    transform.localPosition = GameObject.Find("Target").transform.localPosition;
                     BL_Carried = true;
                     SC_PCScript.BL_Carrying = true;
                 }
