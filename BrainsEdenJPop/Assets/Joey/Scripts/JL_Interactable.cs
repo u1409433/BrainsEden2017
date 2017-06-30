@@ -21,8 +21,7 @@ public class JL_Interactable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (BL_Carried) gameObject.GetComponent<MeshCollider>().enabled = false;
-        else gameObject.GetComponent<MeshCollider>().enabled = true;
+
     }
 
     public void Interact()
