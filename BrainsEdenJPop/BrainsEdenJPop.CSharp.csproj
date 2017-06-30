@@ -78,47 +78,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_FSM.cs" />
-=======
-=======
->>>>>>> d98da5b6d0a8e45e1c62cb08fba5efa8a7491be8
-=======
->>>>>>> d98da5b6d0a8e45e1c62cb08fba5efa8a7491be8
+    <Compile Include="Assets\Jasmine\JC_Scripts\JC_Spawner.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_Camfollow.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_Interactable.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_LevelManager.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_PCMovement.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_Shrine.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_TestScript.cs" />
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 833cce7abbb4d2f1baf27d302a44969a87644b73
-=======
->>>>>>> d98da5b6d0a8e45e1c62cb08fba5efa8a7491be8
-=======
->>>>>>> d98da5b6d0a8e45e1c62cb08fba5efa8a7491be8
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\James\PlaceHolder.txt" />
     <None Include="Assets\Jasmine\PlaceHolder.txt" />
     <None Include="Assets\Joey\PlaceHolder.txt" />
     <None Include="Assets\Johannes\PlaceHolder.txt" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     <None Include="Assets\Josh\AssetList.txt" />
->>>>>>> 833cce7abbb4d2f1baf27d302a44969a87644b73
-=======
-    <None Include="Assets\Josh\AssetList.txt" />
->>>>>>> d98da5b6d0a8e45e1c62cb08fba5efa8a7491be8
-=======
-    <None Include="Assets\Josh\AssetList.txt" />
->>>>>>> d98da5b6d0a8e45e1c62cb08fba5efa8a7491be8
-    <None Include="Assets\Josh\PlaceHolder.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
