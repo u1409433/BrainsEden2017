@@ -191,8 +191,6 @@
     <Compile Include="Assets\Johannes\Audio\Wwise\Deployment\Components\AkTriggerMouseUp.cs" />
     <Compile Include="Assets\Johannes\Audio\Wwise\Deployment\Components\AkUnityEventHandler.cs" />
     <Compile Include="Assets\Johannes\Audio\Wwise\Deployment\Components\AkUtilities.cs" />
-<<<<<<< HEAD
-=======
     <Compile Include="Assets\Josh\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
     <Compile Include="Assets\Josh\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
     <Compile Include="Assets\Josh\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
@@ -238,7 +236,6 @@
     <Compile Include="Assets\Josh\Standard Assets\Utility\TimedObjectDestructor.cs" />
     <Compile Include="Assets\Josh\Standard Assets\Utility\WaypointCircuit.cs" />
     <Compile Include="Assets\Josh\Standard Assets\Utility\WaypointProgressTracker.cs" />
->>>>>>> f6df6d950e7d139dddafbaa34d21f927677dc773
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\James\PlaceHolder.txt" />
