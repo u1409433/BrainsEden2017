@@ -79,18 +79,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_FSM.cs" />
-<<<<<<< HEAD
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_Spawner.cs" />
-=======
->>>>>>> 6fae8c2d2adfa6641c256f9e22afa82fc8a12543
     <Compile Include="Assets\Joey\Scripts\JL_Camfollow.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_Interactable.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_LevelManager.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_PCMovement.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_Shrine.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_TestScript.cs" />
-<<<<<<< HEAD
-=======
     <Compile Include="Assets\Johannes\Audio\Wwise\Deployment\API\Generated\Common\AKRESULT.cs" />
     <Compile Include="Assets\Johannes\Audio\Wwise\Deployment\API\Generated\Common\AkActionOnEventType.cs" />
     <Compile Include="Assets\Johannes\Audio\Wwise\Deployment\API\Generated\Common\AkAudioFormat.cs" />
@@ -196,7 +191,6 @@
     <Compile Include="Assets\Johannes\Audio\Wwise\Deployment\Components\AkTriggerMouseUp.cs" />
     <Compile Include="Assets\Johannes\Audio\Wwise\Deployment\Components\AkUnityEventHandler.cs" />
     <Compile Include="Assets\Johannes\Audio\Wwise\Deployment\Components\AkUtilities.cs" />
->>>>>>> 6fae8c2d2adfa6641c256f9e22afa82fc8a12543
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\James\PlaceHolder.txt" />
@@ -209,10 +203,7 @@
     <None Include="Assets\Johannes\Audio\Wwise\Version.txt" />
     <None Include="Assets\Johannes\PlaceHolder.txt" />
     <None Include="Assets\Josh\AssetList.txt" />
-<<<<<<< HEAD
-=======
     <None Include="Assets\WwiseSettings.xml" />
->>>>>>> 6fae8c2d2adfa6641c256f9e22afa82fc8a12543
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
