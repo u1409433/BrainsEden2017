@@ -9,8 +9,8 @@ public class JC_FSM : MonoBehaviour
     {
         Idle,
         Roam,
-        Chase,
-        Attack
+        Chase//,
+        //Attack
     }
 
     // Getters, Setters variable for FSM:
@@ -30,10 +30,11 @@ public class JC_FSM : MonoBehaviour
     protected Vector3 mV3_TargetPos;
     protected Vector3 mV3_StartPos;
 
-    // Random Roam variables:
+    // Random Destination:
     public float mFL_MaxRandomMove;
     public float mFL_MinRandomMove;
 
+    // Roam:
     protected bool mBL_RoamReachedDest = false;
     protected bool mBL_IsRoaming = false;
     protected bool mBL_RoamTimerSet = false;
@@ -44,14 +45,24 @@ public class JC_FSM : MonoBehaviour
     [HideInInspector]
     public float mFL_ChasingStoppingDistance;
     public float mFL_ChaseRange;
+    public float mFL_ChaseDistance;
 
     // Attack:
+    protected bool mBL_IsAttacking;
+    protected bool mBL_AttackTimerSet = false;
+    protected float mFL_AttackTimer;
+    public double mDB_AttackPause;
+
+    public float mFL_AttackRange;
+    public float mFL_AttackDistance;
 
     // Use this for initialization
     void Start()
     {
         mNMA_NavMeshAgent = GetComponent<NavMeshAgent>();
         mGO_PC = GameObject.FindGameObjectWithTag("Player");
+
+        SetState(State.Roam);
     }
 
     // Update is called once per frame
@@ -59,18 +70,51 @@ public class JC_FSM : MonoBehaviour
     {
         ApplyFSM();
 
-        SetState(State.Roam);
+        AILogic();
     }
 
-    void ApplyFSM()
+    protected void ApplyFSM()
     {
         switch (GetState())
         {
             case State.Idle: /*Do nothing*/; break;
             case State.Roam: Roam(); break;
             case State.Chase: Chase(); break;
-            case State.Attack: Attack(); break;
+                //case State.Attack:  /*MeleeAttack()*/; break;
         }
+    }
+
+    private void AILogic()
+    {
+        // Chase Distance.
+        if (Vector3.Distance(gameObject.transform.position, mGO_PC.transform.position) <= mFL_ChaseDistance)
+        {
+            SetState(State.Chase);
+        }
+
+        else
+        {
+            SetState(State.Roam);
+        }
+
+        // Attack Distance:
+        //if (Vector3.Distance(gameObject.transform.position, mGO_PC.transform.position) <= mFL_AttackDistance)
+        //{
+        //    SetState(State.Attack);
+        //}
+
+        //else
+        //{
+        //    if (Vector3.Distance(gameObject.transform.position, mGO_PC.transform.position) <= mFL_ChaseDistance)
+        //    {
+        //        SetState(State.Chase);
+        //    }
+
+        //    else
+        //    {
+        //        SetState(State.Roam);
+        //    }
+        //}
     }
 
     protected void Roam()
@@ -87,6 +131,8 @@ public class JC_FSM : MonoBehaviour
 
                 if (Physics.Raycast(tRY_Ray, out tRY_Hit, 150))
                 {
+                    //NavMeshHit tNM_Hit;
+
                     if (tRY_Hit.transform.tag == "Terrain")
                     {
                         mV3_TargetPos = new Vector3(tRY_Hit.point.x, tRY_Hit.point.y + 1, tRY_Hit.point.z);
@@ -147,9 +193,39 @@ public class JC_FSM : MonoBehaviour
         }
     }
 
-    protected void Attack()
+    protected void MeleeAttack()
     {
+        if (mBL_IsAttacking)
+        {
+            // Melee Attack Within Range
+            if (Vector3.Distance(gameObject.transform.position, mGO_PC.transform.position) > 0.5)
+            {
+                //Attack:
+                print("Attack within range");
+                mBL_IsAttacking = false;
+            }
 
+            else
+            {
+                // Just play Animation:
+                print("Attack within range");
+                mBL_IsAttacking = false;
+            }
+        }
+
+        else
+        {
+            if (!mBL_AttackTimerSet)
+            {
+                mFL_AttackTimer = Time.time + (float)mDB_AttackPause;
+                mBL_AttackTimerSet = true;
+            }
+
+            if (Time.time > mFL_AttackTimer)
+            {
+                mBL_AttackTimerSet = false;
+            }
+        }
     }
 
     // Random Movement:
@@ -174,5 +250,13 @@ public class JC_FSM : MonoBehaviour
     public State GetState()
     {
         return mCurrentState;
-    }  
+    }
+
+    void OnCollisionEnter(Collision vColl)
+    {
+        if (vColl.transform.tag == "Player")
+        {
+            // Do the Spawning.
+        }
+    }
 }
