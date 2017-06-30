@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Jasmine/JC_Scenes/JC_Test.unity
+- path: Assets/Joey/test.unity
   isLoaded: 1
   isActive: 1
