@@ -2,7 +2,10 @@ Base path: C:/Program Files/Unity/Editor/Data
 Cmd: initializeCompiler
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> d98da5b6d0a8e45e1c62cb08fba5efa8a7491be8
 =======
 >>>>>>> d98da5b6d0a8e45e1c62cb08fba5efa8a7491be8
 Cmd: compileSnippet
@@ -62,6 +65,9 @@ Cmd: compileSnippet
 Cmd: compileSnippet
   api=4 type=1 insize=986 outsize=3366 kw=DIRECTIONAL _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA ok=1
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 833cce7abbb4d2f1baf27d302a44969a87644b73
+=======
+>>>>>>> d98da5b6d0a8e45e1c62cb08fba5efa8a7491be8
 =======
 >>>>>>> d98da5b6d0a8e45e1c62cb08fba5efa8a7491be8
