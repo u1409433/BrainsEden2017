@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [0630/163717.387:INFO:rc_l10n_handler.cc(131)] Language not in the available languages list: en-US
 [0630/163717.388:INFO:rc_l10n_handler.cc(137)] Trying language from system preferred list: en-US
 [0630/163717.388:INFO:rc_l10n_handler.cc(180)] Retrying after adjustments: en-US
@@ -8,6 +9,8 @@
 [0630/163909.260:INFO:rc_l10n_handler.cc(180)] Retrying after adjustments: en-US
 [0630/163909.260:INFO:rc_l10n_handler.cc(137)] Trying language from system preferred list: en
 =======
+=======
+>>>>>>> d98da5b6d0a8e45e1c62cb08fba5efa8a7491be8
 [0630/163612.210:INFO:rc_l10n_handler.cc(131)] Language not in the available languages list: en-US
 [0630/163612.210:INFO:rc_l10n_handler.cc(137)] Trying language from system preferred list: en-US
 [0630/163612.211:INFO:rc_l10n_handler.cc(180)] Retrying after adjustments: en-US
@@ -16,4 +19,7 @@
 [0630/164733.865:INFO:rc_l10n_handler.cc(137)] Trying language from system preferred list: en-US
 [0630/164733.865:INFO:rc_l10n_handler.cc(180)] Retrying after adjustments: en-US
 [0630/164733.865:INFO:rc_l10n_handler.cc(137)] Trying language from system preferred list: en
+<<<<<<< HEAD
 >>>>>>> 833cce7abbb4d2f1baf27d302a44969a87644b73
+=======
+>>>>>>> d98da5b6d0a8e45e1c62cb08fba5efa8a7491be8
