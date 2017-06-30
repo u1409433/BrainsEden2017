@@ -46,7 +46,7 @@ public class JL_PCMovement : MonoBehaviour
 
             if (Physics.Raycast(Ray, out RayHit, 100f))
             {
-                if (RayHit.transform.tag == "Floor")
+                if (RayHit.transform.tag == "Terrain")
                 {
                     Agent_PC.SetDestination(RayHit.point);
                 }
@@ -64,7 +64,7 @@ public class JL_PCMovement : MonoBehaviour
                 {
                     RayHit.transform.SendMessage("Interact");
                 }
-                else if (RayHit.transform.tag == "Floor" && Vector3.Distance(RayHit.point, transform.position) < 3f)
+                else if (RayHit.transform.tag == "Terrain" && Vector3.Distance(RayHit.point, transform.position) < 3f)
                 {
                     transform.Find("Relic").GetComponent<JL_Interactable>().BL_Carried = false;
                     transform.Find("Relic").transform.position = RayHit.point;
