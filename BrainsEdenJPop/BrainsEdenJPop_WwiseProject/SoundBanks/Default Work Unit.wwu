@@ -14,6 +14,8 @@
 						<ObjectRef Name="RockDoor" ID="{05DD1EA4-77B5-463E-810D-548CE11DA88B}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="GhostSound" ID="{0DECAB66-B6F0-4683-8D22-C3627B8B86D2}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="StabDeath" ID="{4DEFCD4B-6E56-48BC-BC42-405FDE737BE3}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="FootstepsSlow" ID="{252DEA25-9928-49B5-9995-8387B3FCBFE8}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="FootstepsFast" ID="{442ADD3D-9A23-4B58-BE70-A47585FB3F80}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="MenuMusic3" ID="{25F83615-D834-4BDC-86A8-CD5EF147CDC4}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="AmbienceStop" ID="{CA63F7AE-869A-4BE4-9C5A-F99CFE4A4589}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Unsnickt" ID="{87640715-DC10-4C38-ABF4-33C43B126F80}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>

@@ -15,6 +15,8 @@ namespace AK
     {
         static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID AMBIENCESTOP = 128372033U;
+        static const AkUniqueID FOOTSTEPSFAST = 482262760U;
+        static const AkUniqueID FOOTSTEPSSLOW = 4212861297U;
         static const AkUniqueID GHOSTSOUND = 920368843U;
         static const AkUniqueID GHOSTSOUNDSTOP = 2739173995U;
         static const AkUniqueID MENUBUTTON = 2192397196U;
@@ -22,6 +24,7 @@ namespace AK
         static const AkUniqueID PAINHIGH = 3668682749U;
         static const AkUniqueID PAINLOW = 3695631561U;
         static const AkUniqueID PICKUPRELIC = 865029174U;
+        static const AkUniqueID PLACERELIC = 2025199039U;
         static const AkUniqueID ROCKDOOR = 1863577366U;
         static const AkUniqueID SHRINEAURA = 2740639977U;
         static const AkUniqueID SNICKT = 1781803135U;
