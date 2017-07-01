@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class JL_AudioManager : MonoBehaviour
 {
-
+    public float FL_GhostDistance;
     // Use this for initialization
     void Start()
     {

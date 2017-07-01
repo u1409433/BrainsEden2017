@@ -120,8 +120,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 73641130}
+  - component: {fileID: 73641131}
   m_Layer: 0
-  m_Name: Spikes (2)
+  m_Name: Spikes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -134,7 +135,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 73641129}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 84.01, y: 5.85, z: 36.64}
+  m_LocalPosition: {x: 84.01, y: 4.78, z: 36.64}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 151269513}
@@ -144,6 +145,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &73641131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 73641129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2a256d875c8f2b439fa056494ddc823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FL_SwitchTime: 0
+  FL_Cooldown: 2
+  BL_Up: 0
+  startY: 0
 --- !u!1001 &151269512
 Prefab:
   m_ObjectHideFlags: 0
@@ -345,8 +361,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 264704942}
+  - component: {fileID: 264704943}
   m_Layer: 0
-  m_Name: Spikes (1)
+  m_Name: Spikes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -359,7 +376,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 264704941}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 82.52, y: 5.85, z: 36.64}
+  m_LocalPosition: {x: 82.52, y: 4.78, z: 36.64}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 1352549047}
@@ -369,6 +386,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &264704943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 264704941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2a256d875c8f2b439fa056494ddc823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FL_SwitchTime: 0
+  FL_Cooldown: 2
+  BL_Up: 0
+  startY: 0
 --- !u!1 &308200013
 GameObject:
   m_ObjectHideFlags: 0
@@ -2021,8 +2053,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1336347714}
+  - component: {fileID: 1336347715}
   m_Layer: 0
-  m_Name: Spikes (3)
+  m_Name: Spikes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2035,7 +2068,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1336347713}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 85.51, y: 5.85, z: 36.64}
+  m_LocalPosition: {x: 85.51, y: 4.78, z: 36.64}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 648201884}
@@ -2045,6 +2078,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1336347715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1336347713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2a256d875c8f2b439fa056494ddc823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FL_SwitchTime: 0
+  FL_Cooldown: 2
+  BL_Up: 0
+  startY: 0
 --- !u!1001 &1352549046
 Prefab:
   m_ObjectHideFlags: 0
@@ -3159,6 +3207,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1838990420}
+  - component: {fileID: 1838990421}
   m_Layer: 0
   m_Name: Spikes
   m_TagString: Untagged
@@ -3173,7 +3222,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1838990419}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 81.15, y: 5.85, z: 36.64}
+  m_LocalPosition: {x: 81.15, y: 4.78, z: 36.64}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 1460053994}
@@ -3183,6 +3232,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1838990421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1838990419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2a256d875c8f2b439fa056494ddc823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FL_SwitchTime: 0
+  FL_Cooldown: 2
+  BL_Up: 0
+  startY: 0
 --- !u!1001 &1853896741
 Prefab:
   m_ObjectHideFlags: 0
