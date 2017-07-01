@@ -1,9 +1,11 @@
 Event	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Ambience	
+	99965646	Unsnickt			\Default Work Unit\Unsnickt	
 	128372033	AmbienceStop			\Default Work Unit\AmbienceStop	
 	643126656	MenuMusic3			\Default Work Unit\MenuMusic3	
 	865029174	PickupRelic			\Default Work Unit\PickupRelic	
 	920368843	GhostSound			\Default Work Unit\GhostSound	
+	1781803135	Snickt			\Default Work Unit\Snickt	
 	1863577366	RockDoor			\Default Work Unit\RockDoor	
 	2739173995	GhostSoundStop			\Default Work Unit\GhostSoundStop	
 	2740639977	ShrineAura			\Default Work Unit\ShrineAura	
@@ -35,6 +37,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	190985087	GRUNT Male Hurt 01 (mono)	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\GRUNT Male Hurt 01 (mono)_50DB02DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\PainLow\GRUNT Male Hurt 01 (mono)		4319
 	209676334	high pitched gost scream_01	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\high pitched gost scream_C357FBB1.wem		\Actor-Mixer Hierarchy\Default Work Unit\GhostSound\GhostWail\high pitched gost scream_01		44435
 	335672728	GRUNT Male Hurt 03 (mono)	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\GRUNT Male Hurt 03 (mono)_50DB02DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\PainHigh\GRUNT Male Hurt 03 (mono)		4433
+	367362755	Unsnickt	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\MACHINE Press Machine (loop mono)_D2B9BC41.wem		\Actor-Mixer Hierarchy\Default Work Unit\Unsnickt		12059
+	381109112	GORE Blade Chop (mono)	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\GORE Blade Chop (mono)_50DB02DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Snickt\GORE Blade Chop (mono)		11766
 	387886567	GROAN Male Hurt Long Pain (mono)	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\GROAN Male Hurt Long Pain (mono)_50DB02DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\PainHigh\GROAN Male Hurt Long Pain (mono)		9530
 	402077999	GRUNT Male Subtle Hurt (mono)	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\GRUNT Male Subtle Hurt (mono)_50DB02DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\PainLow\GRUNT Male Subtle Hurt (mono)		4330
 	523182354	distorted white noise	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\distorted white noise_096436B5.wem		\Actor-Mixer Hierarchy\Default Work Unit\GhostSound\distorted white noise		27982

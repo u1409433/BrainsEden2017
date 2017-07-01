@@ -13,18 +13,28 @@ public class JC_LevelManager : MonoBehaviour
     private Vector2 mV2_Area1_X;
     private Vector2 mV2_Area1_Z;
 
+    private Vector2 mV2_Area2_X;
+    private Vector2 mV2_Area2_Z;
+
     // Use this for initialization
     void Start()
     {
         mGO_ListOfNPCs = GameObject.FindGameObjectsWithTag("Ghost");
+
+        print("Amount of NPCs: " + mGO_ListOfNPCs.Length);
+
+        mV2_Area1_X = new Vector2(113, 80);
+        mV2_Area1_Z = new Vector2(30, -3);
+
+        mV2_Area2_X = new Vector2(91, 51);
+        mV2_Area2_Z = new Vector2(93, 69);
+
+        AssignNPCsToAreas();
     }
 
     // Update is called once per frame
     void Update()
     {
-        mV2_Area1_X = new Vector2(30, -3);
-        mV2_Area1_Z = new Vector2(113, 80);
-
         IN_ChasingGhosts = 0;
     }
 
@@ -33,7 +43,7 @@ public class JC_LevelManager : MonoBehaviour
         foreach (GameObject vNPC in mGO_ListOfNPCs)
         {
             JC_FSM mSCR_FSM;
-            mSCR_FSM = GetComponent<JC_FSM>();
+            mSCR_FSM = vNPC.GetComponent<JC_FSM>();
 
             // Area 1: 30 < x < -3 && 113 < z < 80
             if ((vNPC.transform.position.x > mV2_Area1_X.y && vNPC.transform.position.x < mV2_Area1_X.x
@@ -44,11 +54,14 @@ public class JC_LevelManager : MonoBehaviour
                 print("Is in Area 1");
             }
 
-            //else if ((vNPC.transform.position.x > -3 && vNPC.transform.position.x < 30)
-            //        && (vNPC.transform.position.z > 80 && vNPC.transform.position.z < 113))
-            //{
+            if ((vNPC.transform.position.x > mV2_Area2_X.y && vNPC.transform.position.x < mV2_Area2_X.x
+                && (vNPC.transform.position.z > mV2_Area2_Z.y && vNPC.transform.position.z < mV2_Area2_Z.x)))
+            {
+                mSCR_FSM.mIN_AreaNo = 2;
 
-            //}
+                print("Is in Area 2");
+
+            }
 
             //else if ((vNPC.transform.position.x > -3 && vNPC.transform.position.x < 30)
             //        && (vNPC.transform.position.z > 80 && vNPC.transform.position.z < 113))

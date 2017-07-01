@@ -31,6 +31,8 @@
 				<Event Id="865029174" Name="PickupRelic" ObjectPath="\Events\Default Work Unit\PickupRelic"/>
 				<Event Id="1863577366" Name="RockDoor" ObjectPath="\Events\Default Work Unit\RockDoor"/>
 				<Event Id="2740639977" Name="ShrineAura" ObjectPath="\Events\Default Work Unit\ShrineAura" MaxAttenuation="20.000000"/>
+				<Event Id="1781803135" Name="Snickt" ObjectPath="\Events\Default Work Unit\Snickt"/>
+				<Event Id="99965646" Name="Unsnickt" ObjectPath="\Events\Default Work Unit\Unsnickt" MaxAttenuation="10.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="64326317" Language="SFX">
@@ -60,6 +62,14 @@
 				<File Id="335672728" Language="SFX">
 					<ShortName>GRUNT Male Hurt 03 (mono).wav</ShortName>
 					<Path>SFX\GRUNT Male Hurt 03 (mono)_50DB02DB.wem</Path>
+				</File>
+				<File Id="367362755" Language="SFX">
+					<ShortName>MACHINE Press Machine (loop mono).wav</ShortName>
+					<Path>SFX\MACHINE Press Machine (loop mono)_D2B9BC41.wem</Path>
+				</File>
+				<File Id="381109112" Language="SFX">
+					<ShortName>GORE Blade Chop (mono).wav</ShortName>
+					<Path>SFX\GORE Blade Chop (mono)_50DB02DB.wem</Path>
 				</File>
 				<File Id="387886567" Language="SFX">
 					<ShortName>GROAN Male Hurt Long Pain (mono).wav</ShortName>
