@@ -15,7 +15,13 @@ namespace AK
     {
         static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID AMBIENCESTOP = 128372033U;
+        static const AkUniqueID GHOSTSOUND = 920368843U;
+        static const AkUniqueID GHOSTSOUNDSTOP = 2739173995U;
+        static const AkUniqueID MENUMUSIC3 = 643126656U;
+        static const AkUniqueID PAINHIGH = 3668682749U;
+        static const AkUniqueID PAINLOW = 3695631561U;
         static const AkUniqueID PICKUPRELIC = 865029174U;
+        static const AkUniqueID SHRINEAURA = 2740639977U;
     } // namespace EVENTS
 
     namespace SWITCHES
@@ -38,7 +44,8 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID RELICSPLACED = 2097710574U;
+        static const AkUniqueID GHOSTDISTANCE = 3307642075U;
+        static const AkUniqueID SHRINESACTIE = 1119684175U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
