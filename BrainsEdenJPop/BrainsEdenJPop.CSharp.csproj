@@ -87,10 +87,7 @@
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_FSM.cs" />
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_Interactions.cs" />
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_LevelManager.cs" />
-<<<<<<< HEAD
     <Compile Include="Assets\Joey\Scripts\JL_AudioManager.cs" />
-=======
->>>>>>> ae5ab9551e9fcf72292e6c1b5bb7599811b63afc
     <Compile Include="Assets\Joey\Scripts\JL_Camfollow.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_Interactable.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_LevelManager.cs" />
@@ -217,10 +214,6 @@
     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Main.txt" />
     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\PluginInfo.xml" />
     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\SoundbanksInfo.xml" />
-    <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Windows\Init.txt" />
-    <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Windows\Main.txt" />
-    <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Windows\PluginInfo.xml" />
-    <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Windows\SoundbanksInfo.xml" />
     <None Include="Assets\StreamingAssets\desc.txt" />
     <None Include="Assets\Wwise\Deployment\Plugins\Mac\Debug\AkSoundEngine.bundle\Contents\Resources\readme.txt" />
     <None Include="Assets\Wwise\Deployment\Plugins\Mac\Profile\AkSoundEngine.bundle\Contents\Resources\readme.txt" />

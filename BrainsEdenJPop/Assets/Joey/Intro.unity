@@ -117,8 +117,8 @@ GameObject:
   m_Component:
   - component: {fileID: 95400121}
   - component: {fileID: 95400124}
-  - component: {fileID: 95400122}
   - component: {fileID: 95400123}
+  - component: {fileID: 95400122}
   m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
@@ -147,25 +147,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 95400120}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3d4f9a063692c24ba70bfca633ca4bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  valueGuid: dc99ddb5ae9642458612abb83aa9f5aa
-  bankName: Main
-  loadAsynchronous: 0
-  decodeBank: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
---- !u!114 &95400123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 95400120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5c97b12e50514549ba56a449792806f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -182,7 +163,7 @@ MonoBehaviour:
   playingId: 0
   multiPositionTypeLabel: 0
   multiPositionArray: []
---- !u!114 &95400124
+--- !u!114 &95400123
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -200,6 +181,25 @@ MonoBehaviour:
   listenerMask: 1
   isStaticObject: 0
   m_posOffsetData: {fileID: 0}
+--- !u!114 &95400124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 95400120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3d4f9a063692c24ba70bfca633ca4bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  valueGuid: dc99ddb5ae9642458612abb83aa9f5aa
+  bankName: Main
+  loadAsynchronous: 0
+  decodeBank: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
 --- !u!1 &217670525
 GameObject:
   m_ObjectHideFlags: 0
