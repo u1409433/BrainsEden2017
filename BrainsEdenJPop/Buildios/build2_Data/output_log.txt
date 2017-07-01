@@ -1,0 +1,58 @@
+Initialize engine version: 5.6.2f1 (a2913c821e27)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 460 (ID=0xe22)
+    Vendor:   NVIDIA
+    VRAM:     979 MB
+    Driver:   10.18.13.5382
+Begin MonoManager ReloadAssembly
+Platform assembly: K:\Git\BrainsEden2017\BrainsEden2017\BrainsEdenJPop\Buildios\build2_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading K:\Git\BrainsEden2017\BrainsEden2017\BrainsEdenJPop\Buildios\build2_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: K:\Git\BrainsEden2017\BrainsEden2017\BrainsEdenJPop\Buildios\build2_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading K:\Git\BrainsEden2017\BrainsEden2017\BrainsEdenJPop\Buildios\build2_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: K:\Git\BrainsEden2017\BrainsEden2017\BrainsEdenJPop\Buildios\build2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading K:\Git\BrainsEden2017\BrainsEden2017\BrainsEdenJPop\Buildios\build2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: K:\Git\BrainsEden2017\BrainsEden2017\BrainsEdenJPop\Buildios\build2_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading K:\Git\BrainsEden2017\BrainsEden2017\BrainsEdenJPop\Buildios\build2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: K:\Git\BrainsEden2017\BrainsEden2017\BrainsEdenJPop\Buildios\build2_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading K:\Git\BrainsEden2017\BrainsEden2017\BrainsEdenJPop\Buildios\build2_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.022 seconds
+Platform assembly: K:\Git\BrainsEden2017\BrainsEden2017\BrainsEdenJPop\Buildios\build2_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: K:\Git\BrainsEden2017\BrainsEden2017\BrainsEdenJPop\Buildios\build2_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 3000x1920 at 0,-414
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.875890 ms
+WwiseUnity: Initialize sound engine ...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WwiseUnity: Sound engine initialized.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 38a8 -> priority: 1 
+  Thread -> id: 4244 -> priority: 1 
+  Thread -> id: 4b34 -> priority: 1 
+  Thread -> id: 4b44 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.564411 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 539.
+Total: 0.232241 ms (FindLiveObjects: 0.047210 ms CreateObjectMapping: 0.034015 ms MarkObjects: 0.141338 ms  DeleteObjects: 0.009383 ms)
+
+Wrong Height:  9.866673 , NPC Pos: 6.800005
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Wrong Height:  9.866673 , NPC Pos: 6.800005
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+I am a relic
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
