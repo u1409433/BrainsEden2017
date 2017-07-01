@@ -153,12 +153,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Footsteps" ID="{442ADD3D-9A23-4B58-BE70-A47585FB3F80}">
+				<Event Name="FootstepsFast" ID="{442ADD3D-9A23-4B58-BE70-A47585FB3F80}">
 					<ChildrenList>
 						<Action Name="Play" ID="{2BA8E3F8-2741-4157-BA4C-1EA14A2AFA1F}" ShortID="193927964" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{3E024A24-98F1-4A4D-A4EB-9BC4164172ED}" Global="false">
-									<ObjectRef Name="Footsteps" ID="{E2959F8B-7CD2-4CB4-BA0E-3018F2BE3083}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+									<ObjectRef Name="FootsepsFast" ID="{30E795A7-37DD-412C-BEAD-F6256793BB83}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -170,6 +170,17 @@
 							<ElementList>
 								<Element ID="{B6836321-4F17-49D1-BA88-5464D6DAE656}" Global="false">
 									<ObjectRef Name="MenuButton" ID="{EFA45912-B7BB-406A-BB18-348D50245686}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FootstepsSlow" ID="{252DEA25-9928-49B5-9995-8387B3FCBFE8}">
+					<ChildrenList>
+						<Action Name="Play" ID="{CFFC7C36-EA0F-4C66-A55C-17A6DF8E04F4}" ShortID="518331737" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{97936B94-0255-4143-B22D-C68AD80E0759}" Global="false">
+									<ObjectRef Name="FootstepSlow" ID="{5E0BC274-FAE7-4DF4-A247-C0F4808A2561}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
 								</Element>
 							</ElementList>
 						</Action>
