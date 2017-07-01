@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Ambience	
 	128372033	AmbienceStop			\Default Work Unit\AmbienceStop	
 	865029174	PickupRelic			\Default Work Unit\PickupRelic	
+	2740639977	ShrineAura			\Default Work Unit\ShrineAura	
 	3668682749	PainHigh			\Default Work Unit\PainHigh	
 	3695631561	PainLow			\Default Work Unit\PainLow	
 
@@ -26,8 +27,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	335672728	GRUNT Male Hurt 03 (mono)	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\GRUNT Male Hurt 03 (mono)_50DB02DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\PainHigh\GRUNT Male Hurt 03 (mono)		4433
 	387886567	GROAN Male Hurt Long Pain (mono)	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\GROAN Male Hurt Long Pain (mono)_50DB02DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\PainHigh\GROAN Male Hurt Long Pain (mono)		9530
 	402077999	GRUNT Male Subtle Hurt (mono)	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\GRUNT Male Subtle Hurt (mono)_50DB02DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\PainLow\GRUNT Male Subtle Hurt (mono)		4330
-	538897242	PickupGroan	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\GROAN Male Hurt Long (mono)_65323491.wem		\Actor-Mixer Hierarchy\Default Work Unit\PickupGroan		3408
+	538897242	PickupGroan	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\GROAN Male Hurt Long (mono)_A3336621.wem		\Actor-Mixer Hierarchy\Default Work Unit\PickupGroan		4963
 	544000178	GRUNT Male Hurt 02 (mono)	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\GRUNT Male Hurt 02 (mono)_50DB02DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\PainHigh\GRUNT Male Hurt 02 (mono)		4873
+	842989869	magicAir	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\magicAir_439E0D5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\ShrineAura\magicAir		48549
 	920158699	spawn	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\darkness_0CDD8189.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\spawn		560718
 	1061845231	altar3	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\hell3_5CC50E7B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\altar3		1728936
 

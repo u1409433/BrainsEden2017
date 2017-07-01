@@ -18,6 +18,7 @@ namespace AK
         static const AkUniqueID PAINHIGH = 3668682749U;
         static const AkUniqueID PAINLOW = 3695631561U;
         static const AkUniqueID PICKUPRELIC = 865029174U;
+        static const AkUniqueID SHRINEAURA = 2740639977U;
     } // namespace EVENTS
 
     namespace SWITCHES

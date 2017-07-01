@@ -58,6 +58,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="ShrineAura" ID="{0DF45EFE-3C96-41F2-9479-7C149071F204}">
+					<ChildrenList>
+						<Action Name="Play" ID="{C96B5B16-E857-411F-BD19-10C8743FE83E}" ShortID="528005390" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{5A3FC45C-9C0E-4135-9358-2810235A216F}" Global="false">
+									<ObjectRef Name="ShrineAura" ID="{0A01B064-95C2-4863-8BE4-335E3E2AD660}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
