@@ -13,6 +13,7 @@
 						<ObjectRef Name="Ambience" ID="{B77C8B99-2DEC-4483-8063-215350A0EA35}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="RockDoor" ID="{05DD1EA4-77B5-463E-810D-548CE11DA88B}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="GhostSound" ID="{0DECAB66-B6F0-4683-8D22-C3627B8B86D2}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="PlaceRelic" ID="{918E2E61-D6D3-47FE-B4E3-6F9691FEF0C7}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="StabDeath" ID="{4DEFCD4B-6E56-48BC-BC42-405FDE737BE3}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="FootstepsSlow" ID="{252DEA25-9928-49B5-9995-8387B3FCBFE8}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="FootstepsFast" ID="{442ADD3D-9A23-4B58-BE70-A47585FB3F80}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
