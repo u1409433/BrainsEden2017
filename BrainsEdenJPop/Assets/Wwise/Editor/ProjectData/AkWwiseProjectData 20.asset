@@ -16,8 +16,13 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -1717980450
     m_lastTimePart2: -1999322965
+=======
+    m_lastTimePsrt1: 1813416598
+    m_lastTimePart2: -1999322967
+>>>>>>> 05fc4ebb25bfb4d0e7eb7877c6280cb9e5976802
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -113,22 +118,37 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A1BE1F16-5A58-43CA-B653-D8BD0401B781}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -1716330285
     m_lastTimePart2: -1999322965
+=======
+    m_lastTimePsrt1: 1958753262
+    m_lastTimePart2: -1999323003
+>>>>>>> 05fc4ebb25bfb4d0e7eb7877c6280cb9e5976802
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{45CE0B3C-F78B-4ED5-BE21-A0213F1B7BFD}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -1694598112
     m_lastTimePart2: -1999322965
+=======
+    m_lastTimePsrt1: 1971333262
+    m_lastTimePart2: -1999323003
+>>>>>>> 05fc4ebb25bfb4d0e7eb7877c6280cb9e5976802
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8171BD08-1B48-4883-BDA9-5A92826AB052}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -1694598112
     m_lastTimePart2: -1999322965
+=======
+    m_lastTimePsrt1: 1971343262
+    m_lastTimePart2: -1999323003
+>>>>>>> 05fc4ebb25bfb4d0e7eb7877c6280cb9e5976802
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -167,8 +187,13 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D7FF8C30-DA72-4C14-BB80-CDAF477F8EE6}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -1694608113
     m_lastTimePart2: -1999322965
+=======
+    m_lastTimePsrt1: 1813996656
+    m_lastTimePart2: -1999322967
+>>>>>>> 05fc4ebb25bfb4d0e7eb7877c6280cb9e5976802
     List:
     - Name: Main
       Path: Default Work Unit\Main
@@ -179,7 +204,14 @@ MonoBehaviour:
         ObjectType: 7
       ID: -1133058374
       Guid: dc99ddb5ae9642458612abb83aa9f5aa
+<<<<<<< HEAD
   ExpandedItems: []
+=======
+  ExpandedItems:
+  - /BrainsEdenJPop_WwiseProject
+  - /BrainsEdenJPop_WwiseProject/Events
+  - /BrainsEdenJPop_WwiseProject/Events/Default Work Unit
+>>>>>>> 05fc4ebb25bfb4d0e7eb7877c6280cb9e5976802
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

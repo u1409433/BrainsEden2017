@@ -8,11 +8,14 @@
 						<ObjectRef Name="GhostSoundStop" ID="{0E21D90A-ED0C-400D-B231-9A794976AFAD}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PickupRelic" ID="{C177FEB4-9897-4045-9268-6F75D950BF16}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ShrineAura" ID="{0DF45EFE-3C96-41F2-9479-7C149071F204}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Snickt" ID="{6B838605-C352-4242-B978-53F15441B945}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PainLow" ID="{6A172C82-477F-43C3-AA47-676A97A85E46}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Ambience" ID="{B77C8B99-2DEC-4483-8063-215350A0EA35}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="RockDoor" ID="{05DD1EA4-77B5-463E-810D-548CE11DA88B}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="GhostSound" ID="{0DECAB66-B6F0-4683-8D22-C3627B8B86D2}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="MenuMusic3" ID="{25F83615-D834-4BDC-86A8-CD5EF147CDC4}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="AmbienceStop" ID="{CA63F7AE-869A-4BE4-9C5A-F99CFE4A4589}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Unsnickt" ID="{87640715-DC10-4C38-ABF4-33C43B126F80}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PainHigh" ID="{67AA0A5B-6F3F-4E4C-9174-430C9104D023}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
