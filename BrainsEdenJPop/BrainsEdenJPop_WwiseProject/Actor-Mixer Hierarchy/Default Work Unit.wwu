@@ -787,7 +787,7 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>20</XPos>
+														<XPos>5</XPos>
 														<YPos>-200</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -844,7 +844,7 @@
 														<SegmentShape>Exp2</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>20</XPos>
+														<XPos>5</XPos>
 														<YPos>-200</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -1064,7 +1064,7 @@
 																<SegmentShape>Exp2</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>20</XPos>
+																<XPos>5</XPos>
 																<YPos>-200</YPos>
 																<Flags>37</Flags>
 															</Point>
@@ -1119,7 +1119,7 @@
 																<SegmentShape>Exp2</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>20</XPos>
+																<XPos>5</XPos>
 																<YPos>-200</YPos>
 																<Flags>37</Flags>
 															</Point>
@@ -1181,12 +1181,18 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>17</YPos>
+														<YPos>24</YPos>
 														<Flags>5</Flags>
 														<SegmentShape>Log3</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>20</XPos>
+														<XPos>0.34555</XPos>
+														<YPos>2</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>5</XPos>
 														<YPos>0</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -1215,7 +1221,7 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>20</XPos>
+														<XPos>5</XPos>
 														<YPos>66</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -1263,6 +1269,11 @@
 						</Sound>
 						<Sound Name="distorted white noise bitcrushed" ID="{0E67DDE7-5059-4EF0-9FE2-0DE41FDF45FB}" ShortID="333285154" Type="SoundFX">
 							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>46</Value>
+									</ValueList>
+								</Property>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Lowpass" Type="int16">
 									<RTPCList>
@@ -1283,7 +1294,7 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>20</XPos>
+														<XPos>5</XPos>
 														<YPos>100</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -1293,6 +1304,9 @@
 									</RTPCList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{A66E6027-2AB7-4B00-AB3A-6EAAB94FD5A5}" ShortID="834986272">
 											<ReferenceList>
@@ -1307,17 +1321,18 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>0</YPos>
+														<YPos>1.02912</YPos>
 														<Flags>5</Flags>
 														<SegmentShape>Log1</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>19.999</XPos>
-														<YPos>-200</YPos>
+														<XPos>0.214659685863874</XPos>
+														<YPos>-0.569624778578205</YPos>
 														<Flags>0</Flags>
+														<SegmentShape>Exp1</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>20</XPos>
+														<XPos>5</XPos>
 														<YPos>-200</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -1347,6 +1362,57 @@
 						</Sound>
 					</ChildrenList>
 				</BlendContainer>
+				<RandomSequenceContainer Name="Snickt" ID="{5575EE70-BE0B-429F-A9E9-683E96BD1FCE}" ShortID="518421707">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{788089A9-AC69-46AC-AC9A-72E9B33903F2}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="200"/>
+											<Property Name="Min" Type="Real64" Value="-200"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SCRAPE Metal on Metal Cling Short (mono)" ID="{E9D88AAF-23E2-4213-9D01-20032372B65D}" ShortID="233490887" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SCRAPE Metal on Metal Cling Short (mono)" ID="{9396FA7C-EFC6-4367-B088-51F4DB4C1FFB}" ShortID="306071059">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="9.15229186912861E-03"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.029744948574668"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.115547684847749"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SCRAPE Metal on Metal Cling Short (mono).wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SCRAPE Metal on Metal Cling Short (mono)" ID="{9396FA7C-EFC6-4367-B088-51F4DB4C1FFB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

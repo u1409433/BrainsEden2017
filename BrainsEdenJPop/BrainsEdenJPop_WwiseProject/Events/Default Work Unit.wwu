@@ -120,6 +120,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Snickt" ID="{6B838605-C352-4242-B978-53F15441B945}">
+					<ChildrenList>
+						<Action Name="Play" ID="{C846D890-2CC7-448D-9192-E3AB63528059}" ShortID="793457387" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{5A24AA78-2822-4232-B8DD-80ED39D45B82}" Global="false">
+									<ObjectRef Name="Snickt" ID="{5575EE70-BE0B-429F-A9E9-683E96BD1FCE}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
