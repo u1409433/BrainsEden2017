@@ -142,6 +142,7 @@
     <Compile Include="Assets\Editor\ImageEffects\SunShaftsEditor.cs" />
     <Compile Include="Assets\Editor\ImageEffects\TonemappingEditor.cs" />
     <Compile Include="Assets\Editor\ImageEffects\VignetteAndChromaticAberrationEditor.cs" />
+    <Compile Include="Assets\Josh\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
     <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkAmbientInspector.cs" />
     <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkBankInspector.cs" />
     <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkBaseInspector.cs" />
@@ -184,6 +185,11 @@
     <None Include="Assets\Joey\PlaceHolder.txt" />
     <None Include="Assets\Johannes\PlaceHolder.txt" />
     <None Include="Assets\Josh\AssetList.txt" />
+    <None Include="Assets\Josh\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\Josh\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
+    <None Include="Assets\Josh\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
+    <None Include="Assets\Josh\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+    <None Include="Assets\Josh\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
     <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />

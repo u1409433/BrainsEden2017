@@ -1604,6 +1604,11 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="FootsepsFast" ID="{30E795A7-37DD-412C-BEAD-F6256793BB83}" ShortID="850866">
 					<PropertyList>
+						<Property Name="BypassEffect0" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Highpass" Type="int16">
 							<ValueList>
 								<Value>21</Value>
@@ -1619,11 +1624,6 @@
 						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
 						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5"/>
-						<Property Name="UseMaxSoundPerInstance" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1793,6 +1793,11 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="FootstepSlow" ID="{5E0BC274-FAE7-4DF4-A247-C0F4808A2561}" ShortID="814520178">
 					<PropertyList>
+						<Property Name="BypassEffect0" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Highpass" Type="int16">
 							<ValueList>
 								<Value>27</Value>
