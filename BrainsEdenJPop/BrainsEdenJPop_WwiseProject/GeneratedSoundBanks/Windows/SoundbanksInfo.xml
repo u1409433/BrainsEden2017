@@ -30,6 +30,10 @@
 					<ShortName>hell2.wav</ShortName>
 					<Path>SFX\hell2_BF8D1261.wem</Path>
 				</File>
+				<File Id="108457484" Language="SFX">
+					<ShortName>Darkness - Stem C .wav</ShortName>
+					<Path>SFX\Darkness - Stem C _0F3443A4.wem</Path>
+				</File>
 				<File Id="182127850" Language="SFX">
 					<ShortName>dark_cave.wav</ShortName>
 					<Path>SFX\dark_cave_8B01CD10.wem</Path>

@@ -3,70 +3,12 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}" PersistMode="Standalone">
 			<ChildrenList>
-				<RandomSequenceContainer Name="PickupGroan" ID="{33FCFB7D-4D6C-42B8-927F-03B0FC554A9A}" ShortID="75962578">
-					<PropertyList>
-						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="GROAN Male Hurt Long (mono)_01" ID="{C6091366-97E8-48E8-8124-EF3BECE20257}" ShortID="732906741" Type="SoundFX">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{0185AC07-B0D4-4FEE-86F4-F01F41AD6778}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="150"/>
-													<Property Name="Min" Type="Real64" Value="-150"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="GROAN Male Hurt Long (mono)" ID="{B6FBA673-DB09-428D-8CAD-3F3BA1B1B18A}" ShortID="889453829">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.070566842808552"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.222650555758017"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.407584350704568"/>
-										<Property Name="TrimEnd" Type="Real64" Value="0.747035198007775"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>GROAN Male Hurt Long (mono).wav</AudioFile>
-									<ConvertedFileIDList>
-										<File ID="538897242"/>
-									</ConvertedFileIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="GROAN Male Hurt Long (mono)" ID="{B6FBA673-DB09-428D-8CAD-3F3BA1B1B18A}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-				</RandomSequenceContainer>
 				<SwitchContainer Name="Ambience" ID="{A51CD936-3AB6-4AA5-BBA3-EEDBDDA5A9D8}" ShortID="995934993">
 					<PropertyList>
 						<Property Name="SwitchBehavior" Type="int16" Value="1"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-12</Value>
+								<Value>-2</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -82,6 +24,11 @@
 						<Sound Name="spawn" ID="{E1F1E761-E850-4B2F-91D0-63EF0A78EB11}" ShortID="337652975" Type="SoundFX">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -104,6 +51,11 @@
 						<Sound Name="altar1" ID="{972175BE-4BD1-4D50-8B3D-1845F3046B1E}" ShortID="979016209" Type="SoundFX">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -134,7 +86,7 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-11</Value>
+										<Value>-19</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -163,6 +115,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="altar3" ID="{50A254A2-FB0E-4AFC-8D67-7D0DDC678B99}" ShortID="1069866127" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
@@ -187,11 +146,75 @@
 								<ActiveSource Name="hell3" ID="{6F55577F-BC55-4666-A067-D5937B4C7118}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Exit" ID="{B5C84433-DC42-439F-B5E3-22689D33C4BE}" ShortID="134275756" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{574EEAA1-4F1B-4B54-AE4D-0D0C568AC65A}" ShortID="733329578">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="RelicsPlaced" ID="{4A5D8354-844B-4FED-A381-DE445B8C5B2C}" WorkUnitID="{A32FA20F-3D15-492C-B732-FCCCFBD435EA}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{219C62ED-A83C-43A3-8DA8-07695EE68D6D}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>3</XPos>
+														<YPos>60</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Darkness - Stem C" ID="{61A03255-9A98-4B7E-AC01-9B4DD721558F}" ShortID="108457484">
+									<PropertyList>
+										<Property Name="TrimEnd" Type="Real64" Value="19.5081839583421"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Darkness - Stem C .wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Darkness - Stem C" ID="{61A03255-9A98-4B7E-AC01-9B4DD721558F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<GroupingInfo>
 						<GroupRef Name="Ambience" ID="{3FB8E003-6A3A-4215-A22F-F76F0B2D4B77}"/>
 						<DefaultSwitchRef Name="Spawn" ID="{D4C2F66E-5127-44FD-843F-57887A3ED685}"/>
 						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Exit" ID="{B5C84433-DC42-439F-B5E3-22689D33C4BE}"/>
+								<PropertyList>
+									<Property Name="FadeOutTime" Type="Real64">
+										<ValueList>
+											<Value>5</Value>
+										</ValueList>
+									</Property>
+								</PropertyList>
+							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="spawn" ID="{E1F1E761-E850-4B2F-91D0-63EF0A78EB11}"/>
 								<PropertyList>
@@ -261,6 +284,12 @@
 								</ItemList>
 							</Grouping>
 							<Grouping>
+								<SwitchRef Name="Exit" ID="{E0C87C5A-AEEA-46FA-AFB4-B955296CBE03}"/>
+								<ItemList>
+									<ItemRef Name="Exit" ID="{B5C84433-DC42-439F-B5E3-22689D33C4BE}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
 								<SwitchRef Name="Altar3" ID="{F585D06E-B681-4C17-B9E5-F857807AE31F}"/>
 								<ItemList>
 									<ItemRef Name="altar3" ID="{50A254A2-FB0E-4AFC-8D67-7D0DDC678B99}"/>
@@ -282,6 +311,13 @@
 					</GroupingInfo>
 				</SwitchContainer>
 				<Sound Name="magicAir" ID="{049CD3F7-61AA-4F8B-84D5-517441C55799}" ShortID="745359213" Type="SoundFX">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-11</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
@@ -300,6 +336,90 @@
 						<ActiveSource Name="magicAir" ID="{F88A6304-9BDB-408E-A250-13BABA28FCAD}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="PickupGroan" ID="{C6091366-97E8-48E8-8124-EF3BECE20257}" ShortID="732906741" Type="SoundFX">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{0185AC07-B0D4-4FEE-86F4-F01F41AD6778}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="150"/>
+											<Property Name="Min" Type="Real64" Value="-150"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="GROAN Male Hurt Long (mono)" ID="{B6FBA673-DB09-428D-8CAD-3F3BA1B1B18A}" ShortID="889453829">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.070566842808552"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.222650555758017"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.407584350704568"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.747035198007775"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>GROAN Male Hurt Long (mono).wav</AudioFile>
+							<ConvertedFileIDList>
+								<File ID="538897242"/>
+							</ConvertedFileIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="GROAN Male Hurt Long (mono)" ID="{B6FBA673-DB09-428D-8CAD-3F3BA1B1B18A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="InPain" ID="{8551DB58-9E84-4BB5-B50D-DF3179AA9C36}" ShortID="494470566">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+						</Reference>
+					</ReferenceList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="MenuMusic" ID="{4DA8F112-E02F-406D-AF57-C9BAD7550E73}" ShortID="497705022">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Darkness - Stem B" ID="{24C4F196-3282-4F2E-9173-5BA1D356F3A4}" ShortID="1029120267" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Darkness - Stem B" ID="{8F8C7515-87E5-4E13-AEE6-B529F2C8B3C3}" ShortID="944216012">
+									<Language>SFX</Language>
+									<AudioFile>Darkness - Stem B.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Darkness - Stem B" ID="{8F8C7515-87E5-4E13-AEE6-B529F2C8B3C3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

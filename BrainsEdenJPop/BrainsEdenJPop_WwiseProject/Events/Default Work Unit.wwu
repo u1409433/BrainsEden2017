@@ -8,7 +8,7 @@
 						<Action Name="Play" ID="{3238E577-24BF-4B3A-A6E4-644A9946097C}" ShortID="652120180" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{82EC0290-E75D-493D-AD21-2C28E1EB4957}" Global="false">
-									<ObjectRef Name="PickupGroan" ID="{33FCFB7D-4D6C-42B8-927F-03B0FC554A9A}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+									<ObjectRef Name="PickupGroan" ID="{C6091366-97E8-48E8-8124-EF3BECE20257}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -36,6 +36,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="InPain" ID="{6A172C82-477F-43C3-AA47-676A97A85E46}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
