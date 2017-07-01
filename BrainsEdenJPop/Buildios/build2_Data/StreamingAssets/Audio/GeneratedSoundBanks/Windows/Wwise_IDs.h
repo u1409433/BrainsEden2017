@@ -15,6 +15,11 @@ namespace AK
     {
         static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID AMBIENCESTOP = 128372033U;
+        static const AkUniqueID MENUMUSIC = 679636833U;
+        static const AkUniqueID MENUMUSIC1 = 643126658U;
+        static const AkUniqueID MENUMUSIC2 = 643126657U;
+        static const AkUniqueID MENUMUSIC3 = 643126656U;
+        static const AkUniqueID MENUMUSIC4 = 643126663U;
         static const AkUniqueID PAINHIGH = 3668682749U;
         static const AkUniqueID PAINLOW = 3695631561U;
         static const AkUniqueID PICKUPRELIC = 865029174U;

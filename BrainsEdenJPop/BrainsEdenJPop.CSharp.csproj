@@ -87,6 +87,10 @@
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_FSM.cs" />
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_Interactions.cs" />
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_LevelManager.cs" />
+<<<<<<< HEAD
+    <Compile Include="Assets\Joey\Scripts\JL_AudioManager.cs" />
+=======
+>>>>>>> ae5ab9551e9fcf72292e6c1b5bb7599811b63afc
     <Compile Include="Assets\Joey\Scripts\JL_Camfollow.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_Interactable.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_LevelManager.cs" />

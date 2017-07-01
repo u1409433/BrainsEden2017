@@ -38,6 +38,7 @@ public class JL_Interactable : MonoBehaviour
                         if (transform.parent.name == "Shrine")
                         {
                             transform.parent.GetComponent<JL_Shrine>().SwitchRelic();
+                            
                         }
                     }
                     
@@ -46,6 +47,7 @@ public class JL_Interactable : MonoBehaviour
                     transform.localPosition = GameObject.Find("Target").transform.localPosition;
                     BL_Carried = true;
                     SC_PCScript.BL_Carrying = true;
+                    GameObject.Find("AudioManager").GetComponent<JL_AudioManager>().PlaySound("PickupRelic");
                 }
                 break;
             case "Shrine":

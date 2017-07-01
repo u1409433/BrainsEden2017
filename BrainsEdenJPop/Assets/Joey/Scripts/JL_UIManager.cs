@@ -20,6 +20,8 @@ public class JL_UIManager : MonoBehaviour
 
     public void StartButton()
     {
+        GameObject tAudio = GameObject.Find("Audio");
+        Destroy(tAudio);
         SceneManager.LoadScene(1, LoadSceneMode.Single);
     }
 }
