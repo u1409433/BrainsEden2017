@@ -171,6 +171,8 @@ public class JL_PCMovement : MonoBehaviour
     {
         transform.position = new Vector3(70, 7, 42);
         Debug.Log("I Died!");
+        //Play "Pop sounds" and start base ambience
+        //HERE
         SC_AudioManager.PlaySound("PainLow");
     }
 

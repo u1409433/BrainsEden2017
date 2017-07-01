@@ -16,8 +16,6 @@ public class JL_AudioManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
-        AkSoundEngine.SetSwitch("Footsteps", "Stop", gameObject);
     }
 
     // Update is called once per frame
@@ -28,7 +26,7 @@ public class JL_AudioManager : MonoBehaviour
         {
             if (FL_NextStep <= Time.time)
             {
-                AkSoundEngine.PostEvent("Footstep", gameObject);
+                AkSoundEngine.PostEvent("FootstepsFast", gameObject);
                 FL_NextStep = Time.time + FL_Cooldown;
             }
         }
@@ -93,11 +91,11 @@ public class JL_AudioManager : MonoBehaviour
         {
             case "Fast":
                 BL_Stepping = true;
-                AkSoundEngine.SetSwitch("Footsteps", "Fast", gameObject);
+                FL_Cooldown = 0.5f;
                 break;
             case "Slow":
                 BL_Stepping = true;
-                AkSoundEngine.SetSwitch("Footsteps", "Slow", gameObject);
+                FL_Cooldown = 0.75f;
                 break;
             case "Stop":
                 BL_Stepping = false;
