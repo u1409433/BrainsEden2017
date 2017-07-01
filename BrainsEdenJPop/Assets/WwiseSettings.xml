@@ -3,7 +3,7 @@
 	<CreateWwiseGlobal>true</CreateWwiseGlobal>
 	<CreateWwiseListener>true</CreateWwiseListener>
 	<SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
-	<WwiseProjectPath>../BrainsEdenJPop_WwiseProject/BrainsEdenJPop_WwiseProject.wproj</WwiseProjectPath>
+	<WwiseProjectPath>../../BrainsEdenJPop/BrainsEdenJPop_WwiseProject/BrainsEdenJPop_WwiseProject.wproj</WwiseProjectPath>
 	<WwiseInstallationPathWindows>C:\Program Files (x86)\Audiokinetic\Wwise 2016.2.4.6098</WwiseInstallationPathWindows>
 	<WwiseInstallationPathMac></WwiseInstallationPathMac>
 </WwiseSettings>

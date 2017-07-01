@@ -32,7 +32,7 @@
 				</File>
 				<File Id="182127850" Language="SFX">
 					<ShortName>dark_cave.wav</ShortName>
-					<Path>SFX\dark_cave_105A094A.wem</Path>
+					<Path>SFX\dark_cave_8B01CD10.wem</Path>
 				</File>
 				<File Id="538897242" Language="SFX">
 					<ShortName>GROAN Male Hurt Long (mono).wav</ShortName>
@@ -44,7 +44,7 @@
 				</File>
 				<File Id="1061845231" Language="SFX">
 					<ShortName>hell3.wav</ShortName>
-					<Path>SFX\hell3_45FB108B.wem</Path>
+					<Path>SFX\hell3_5CC50E7B.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

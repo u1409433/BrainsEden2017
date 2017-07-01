@@ -115,6 +115,12 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="dark_cave" ID="{AB31455A-8108-416F-A4F5-78DC0AD01645}" ShortID="182127850">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.15035091715258"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.958625764293814"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.72552637572886"/>
+										<Property Name="TrimEnd" Type="Real64" Value="77.8404120606575"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>dark_cave.wav</AudioFile>
 								</AudioFileSource>
