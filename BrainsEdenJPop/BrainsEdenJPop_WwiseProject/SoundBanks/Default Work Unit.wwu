@@ -10,6 +10,7 @@
 						<ObjectRef Name="ShrineAura" ID="{0DF45EFE-3C96-41F2-9479-7C149071F204}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PainLow" ID="{6A172C82-477F-43C3-AA47-676A97A85E46}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Ambience" ID="{B77C8B99-2DEC-4483-8063-215350A0EA35}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="RockDoor" ID="{05DD1EA4-77B5-463E-810D-548CE11DA88B}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="GhostSound" ID="{0DECAB66-B6F0-4683-8D22-C3627B8B86D2}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="MenuMusic3" ID="{25F83615-D834-4BDC-86A8-CD5EF147CDC4}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="AmbienceStop" ID="{CA63F7AE-869A-4BE4-9C5A-F99CFE4A4589}" WorkUnitID="{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}" Filter="7" Origin="Manual"/>

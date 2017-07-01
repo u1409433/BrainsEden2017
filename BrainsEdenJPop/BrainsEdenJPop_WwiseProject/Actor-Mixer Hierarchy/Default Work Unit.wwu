@@ -1210,6 +1210,143 @@
 						</Sound>
 					</ChildrenList>
 				</BlendContainer>
+				<BlendContainer Name="RockDoor" ID="{51597B90-6C1D-4899-9AF8-2E09D6188DB8}" ShortID="852576540">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SCRAPE Concrete Slab on Concrete Slab Long (mono)" ID="{F5E59026-15CC-467D-8422-28D8F61057BA}" ShortID="44431860" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-2070</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SCRAPE Concrete Slab on Concrete Slab Long (mono)" ID="{EC5877E5-63B7-4505-9F11-61E27B1366E7}" ShortID="652656743">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="1"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.229586724570781"/>
+										<Property Name="LoopEnd" Type="Real64" Value="1.64176167193068"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SCRAPE Concrete Slab on Concrete Slab Long (mono).wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SCRAPE Concrete Slab on Concrete Slab Long (mono)" ID="{EC5877E5-63B7-4505-9F11-61E27B1366E7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SCRAPE Concrete Slab on Concrete Slab Long (mono)_01" ID="{9D7863A4-EA10-4329-AF65-DF39CE9E7A66}" ShortID="324903704" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>71</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SCRAPE Concrete Slab on Concrete Slab Long (mono)" ID="{F885AF58-2109-4A91-95DA-E0E0C784A7CA}" ShortID="250617961">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="1"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.229586724570781"/>
+										<Property Name="LoopEnd" Type="Real64" Value="1.64176167193068"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SCRAPE Concrete Slab on Concrete Slab Long (mono).wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="652656743"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SCRAPE Concrete Slab on Concrete Slab Long (mono)" ID="{F885AF58-2109-4A91-95DA-E0E0C784A7CA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SCRAPE Concrete Slab on Concrete Slab Long (mono)_02" ID="{6A562EC9-FA1A-46AC-8AC8-0D1B63DE6A7E}" ShortID="983173537" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>37</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>29</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-580</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SCRAPE Concrete Slab on Concrete Slab Long (mono)" ID="{99753356-D921-4A08-AB48-ADC70919A44A}" ShortID="912653338">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="1"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.229586724570781"/>
+										<Property Name="LoopEnd" Type="Real64" Value="1.64176167193068"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SCRAPE Concrete Slab on Concrete Slab Long (mono).wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="652656743"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SCRAPE Concrete Slab on Concrete Slab Long (mono)" ID="{99753356-D921-4A08-AB48-ADC70919A44A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

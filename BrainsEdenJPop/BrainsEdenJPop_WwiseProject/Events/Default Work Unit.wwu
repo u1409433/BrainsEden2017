@@ -109,6 +109,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="RockDoor" ID="{05DD1EA4-77B5-463E-810D-548CE11DA88B}">
+					<ChildrenList>
+						<Action Name="Play" ID="{88E611DD-0FE0-4A42-B7DF-E728EA91E26C}" ShortID="117680529" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{1A9AAD90-A3CF-4831-AE43-DC2E5CDC1BAE}" Global="false">
+									<ObjectRef Name="RockDoor" ID="{51597B90-6C1D-4899-9AF8-2E09D6188DB8}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
