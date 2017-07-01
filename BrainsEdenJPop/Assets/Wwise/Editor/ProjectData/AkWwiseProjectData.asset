@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}'
-    m_lastTimePsrt1: 2066185975
-    m_lastTimePart2: -1999322948
+    m_lastTimePsrt1: 732214464
+    m_lastTimePart2: -1999322945
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -39,6 +39,16 @@ MonoBehaviour:
       ID: 128372033
       Guid: aef763ca9a86e44b9c5af99cfe4a4589
       maxAttenuation: 0
+    - Name: Footsteps
+      Path: Default Work Unit\Footsteps
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Footsteps
+        ObjectType: 3
+      ID: -1909339098
+      Guid: 3ddd2a44239a584bbe70a47585fb3f80
+      maxAttenuation: 0
     - Name: GhostSound
       Path: Default Work Unit\GhostSound
       PathAndIcons:
@@ -58,6 +68,16 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1555793301
       Guid: 0ad9210e0ced0d40b2319a794976afad
+      maxAttenuation: 0
+    - Name: MenuButton
+      Path: Default Work Unit\MenuButton
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MenuButton
+        ObjectType: 3
+      ID: -2102570100
+      Guid: 06198c0d7629474dab055acbea33afc7
       maxAttenuation: 0
     - Name: MenuMusic3
       Path: Default Work Unit\MenuMusic3
@@ -118,7 +138,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1554327319
       Guid: fe5ef40d963cf24194797c149071f204
-      maxAttenuation: 0
+      maxAttenuation: 20
     - Name: Snickt
       Path: Default Work Unit\Snickt
       PathAndIcons:
@@ -148,7 +168,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 99965646
       Guid: 1507648710dc384cabf433c43b126f80
-      maxAttenuation: 0
+      maxAttenuation: 10
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -167,8 +187,8 @@ MonoBehaviour:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8171BD08-1B48-4883-BDA9-5A92826AB052}'
-    m_lastTimePsrt1: 1971343262
-    m_lastTimePart2: -1999323003
+    m_lastTimePsrt1: 733284571
+    m_lastTimePart2: -1999322945
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -203,12 +223,37 @@ MonoBehaviour:
       - bytes: 6ed085f581b6174cb9e5f857807ae31f
       - bytes: 5a7cc8e0eaaefa46afb4b955296cbe03
       - bytes: 6ef6c2d42751fd44843f57887a3ed685
+    - Name: Footsteps
+      Path: Default Work Unit\Footsteps
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Footsteps
+        ObjectType: 11
+      ID: -1909339098
+      Guid: 4c0fe46f76a06c4a9155e01189deed1b
+      values:
+      - Fast
+      - Slow
+      - Stop
+      ValueIcons:
+      - ElementName: Fast
+        ObjectType: 10
+      - ElementName: Slow
+        ObjectType: 10
+      - ElementName: Stop
+        ObjectType: 10
+      valueIDs: 531cc0b002e4f12e5d6c052f
+      ValueGuids:
+      - bytes: 94bfdb2d6f934f4ca2cbb3271a94ae98
+      - bytes: 5111b96314e970438461bc7eeae20f09
+      - bytes: 73ef3aef76e24b4b9db03a35f99bc784
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D7FF8C30-DA72-4C14-BB80-CDAF477F8EE6}'
-    m_lastTimePsrt1: 2067166465
-    m_lastTimePart2: -1999322948
+    m_lastTimePsrt1: 733264569
+    m_lastTimePart2: -1999322945
     List:
     - Name: Main
       Path: Default Work Unit\Main
@@ -226,6 +271,8 @@ MonoBehaviour:
   - /BrainsEdenJPop_WwiseProject/SoundBanks
   - /BrainsEdenJPop_WwiseProject/SoundBanks/Default Work Unit
   - /BrainsEdenJPop_WwiseProject/Switches
+  - /BrainsEdenJPop_WwiseProject/Switches/Default Work Unit
+  - /BrainsEdenJPop_WwiseProject/Switches/Default Work Unit/Footsteps
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

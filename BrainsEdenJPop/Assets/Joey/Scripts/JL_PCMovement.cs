@@ -28,6 +28,7 @@ public class JL_PCMovement : MonoBehaviour
         SC_AudioManager = GameObject.Find("AudioManager").GetComponent<JL_AudioManager>();
 
         FL_Speed = Agent_PC.speed;
+
     }
 
     // Update is called once per frame
@@ -39,6 +40,23 @@ public class JL_PCMovement : MonoBehaviour
 
         if (BL_Carrying) Agent_PC.speed = FL_Speed / 2;
         else Agent_PC.speed = FL_Speed;
+
+        //If im walking 
+        if (Vector3.Distance(transform.position, Agent_PC.destination) > 1f)
+        {
+            if (BL_Carrying)
+            {
+                SC_AudioManager.SwitchFootsteps("Slow");
+            }
+            else
+            {
+                SC_AudioManager.SwitchFootsteps("Fast");
+            }
+        }
+        else
+        {
+            SC_AudioManager.SwitchFootsteps("Stop");
+        }
 
         //Debug.Log("Bob");
         //if (BL_BobRight)
@@ -58,9 +76,7 @@ public class JL_PCMovement : MonoBehaviour
         //    }
         //}
 
-        ///*if (Vector3.Distance(transform.position, Agent_PC.destination) > 1f)
-        //{
-            
+
         //}
         //else
         //{
