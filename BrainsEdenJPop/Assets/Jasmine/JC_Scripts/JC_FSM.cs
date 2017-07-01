@@ -161,7 +161,7 @@ public class JC_FSM : MonoBehaviour
 
             else 
             {
-                if (Vector2.Distance(new Vector2(gameObject.transform.position.x, gameObject.transform.position.z), new Vector2(mV3_TargetPos.x, mV3_TargetPos.z)) < 1.25f)
+                if (Vector2.Distance(new Vector2(gameObject.transform.position.x, gameObject.transform.position.z), new Vector2(mV3_TargetPos.x, mV3_TargetPos.z)) < 1f)
                 {
                     mBL_RoamReachedDest = true;
                     mBL_IsRoaming = false; 

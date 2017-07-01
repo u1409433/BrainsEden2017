@@ -8,6 +8,9 @@ public class JL_Shrine : MonoBehaviour
 
     public GameObject GO_SwitchObject;
 
+    public GameObject Ghost1;
+    public GameObject Ghost2;
+
     // Use this for initialization
     void Start()
     {
@@ -24,5 +27,7 @@ public class JL_Shrine : MonoBehaviour
     public void SwitchRelic()
     {
         BL_HasRelic = (BL_HasRelic) ? false : true;
+        Ghost1.SendMessage("Change");
+        Ghost2.SendMessage("Change");
     }
 }
