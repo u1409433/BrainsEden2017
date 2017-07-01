@@ -85,7 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_FSM.cs" />
-    <Compile Include="Assets\Jasmine\JC_Scripts\JC_OffMeshLinks.cs" />
+    <Compile Include="Assets\Jasmine\JC_Scripts\JC_Interactions.cs" />
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_Spawner.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_Camfollow.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_Interactable.cs" />
@@ -208,6 +208,10 @@
     <None Include="Assets\Joey\PlaceHolder.txt" />
     <None Include="Assets\Johannes\PlaceHolder.txt" />
     <None Include="Assets\Josh\AssetList.txt" />
+    <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Init.txt" />
+    <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Main.txt" />
+    <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\PluginInfo.xml" />
+    <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\SoundbanksInfo.xml" />
     <None Include="Assets\StreamingAssets\desc.txt" />
     <None Include="Assets\Wwise\Deployment\Plugins\Mac\Debug\AkSoundEngine.bundle\Contents\Resources\readme.txt" />
     <None Include="Assets\Wwise\Deployment\Plugins\Mac\Profile\AkSoundEngine.bundle\Contents\Resources\readme.txt" />
