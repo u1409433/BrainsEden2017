@@ -85,20 +85,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_FSM.cs" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <Compile Include="Assets\Jasmine\JC_Scripts\JC_OffMeshLinks.cs" />
-=======
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_Interactions.cs" />
-<<<<<<< HEAD
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_LevelManager.cs" />
-=======
->>>>>>> a8b02c3967c64d66f95a7bf369874a0748caf4b7
-=======
-    <Compile Include="Assets\Jasmine\JC_Scripts\JC_Interactions.cs" />
->>>>>>> a8b02c3967c64d66f95a7bf369874a0748caf4b7
-    <Compile Include="Assets\Jasmine\JC_Scripts\JC_Spawner.cs" />
->>>>>>> a2b201823e4e7ebd27db5cc2db25778d350488c1
     <Compile Include="Assets\Joey\Scripts\JL_Camfollow.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_Interactable.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_LevelManager.cs" />
