@@ -36,7 +36,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="InPain" ID="{6A172C82-477F-43C3-AA47-676A97A85E46}"/>
+				<Event Name="PainLow" ID="{6A172C82-477F-43C3-AA47-676A97A85E46}">
+					<ChildrenList>
+						<Action Name="Play" ID="{7EBE9051-8AC7-4B7B-B8D6-014D83085251}" ShortID="990823569" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{DBAAAF41-8552-4979-850F-13214B31FE9A}" Global="false">
+									<ObjectRef Name="PainLow" ID="{8551DB58-9E84-4BB5-B50D-DF3179AA9C36}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PainHigh" ID="{67AA0A5B-6F3F-4E4C-9174-430C9104D023}">
+					<ChildrenList>
+						<Action Name="Play" ID="{7A3D7A35-4AE1-4779-87D0-9EF6472EDA8F}" ShortID="259747727" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{C54EF67B-5C2F-45A6-9D24-AF4A0B9F8808}" Global="false">
+									<ObjectRef Name="PainHigh" ID="{1DB83FF2-48D6-4EAE-9E6C-5650480C3C69}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

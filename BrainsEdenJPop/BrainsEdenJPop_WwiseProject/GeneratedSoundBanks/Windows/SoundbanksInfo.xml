@@ -23,6 +23,8 @@
 			<IncludedEvents>
 				<Event Id="85412153" Name="Ambience" ObjectPath="\Events\Default Work Unit\Ambience"/>
 				<Event Id="128372033" Name="AmbienceStop" ObjectPath="\Events\Default Work Unit\AmbienceStop" MaxAttenuation="0.000000"/>
+				<Event Id="3668682749" Name="PainHigh" ObjectPath="\Events\Default Work Unit\PainHigh"/>
+				<Event Id="3695631561" Name="PainLow" ObjectPath="\Events\Default Work Unit\PainLow"/>
 				<Event Id="865029174" Name="PickupRelic" ObjectPath="\Events\Default Work Unit\PickupRelic"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -38,9 +40,29 @@
 					<ShortName>dark_cave.wav</ShortName>
 					<Path>SFX\dark_cave_8B01CD10.wem</Path>
 				</File>
+				<File Id="190985087" Language="SFX">
+					<ShortName>GRUNT Male Hurt 01 (mono).wav</ShortName>
+					<Path>SFX\GRUNT Male Hurt 01 (mono)_50DB02DB.wem</Path>
+				</File>
+				<File Id="335672728" Language="SFX">
+					<ShortName>GRUNT Male Hurt 03 (mono).wav</ShortName>
+					<Path>SFX\GRUNT Male Hurt 03 (mono)_50DB02DB.wem</Path>
+				</File>
+				<File Id="387886567" Language="SFX">
+					<ShortName>GROAN Male Hurt Long Pain (mono).wav</ShortName>
+					<Path>SFX\GROAN Male Hurt Long Pain (mono)_50DB02DB.wem</Path>
+				</File>
+				<File Id="402077999" Language="SFX">
+					<ShortName>GRUNT Male Subtle Hurt (mono).wav</ShortName>
+					<Path>SFX\GRUNT Male Subtle Hurt (mono)_50DB02DB.wem</Path>
+				</File>
 				<File Id="538897242" Language="SFX">
 					<ShortName>GROAN Male Hurt Long (mono).wav</ShortName>
 					<Path>SFX\GROAN Male Hurt Long (mono)_65323491.wem</Path>
+				</File>
+				<File Id="544000178" Language="SFX">
+					<ShortName>GRUNT Male Hurt 02 (mono).wav</ShortName>
+					<Path>SFX\GRUNT Male Hurt 02 (mono)_50DB02DB.wem</Path>
 				</File>
 				<File Id="920158699" Language="SFX">
 					<ShortName>darkness.wav</ShortName>

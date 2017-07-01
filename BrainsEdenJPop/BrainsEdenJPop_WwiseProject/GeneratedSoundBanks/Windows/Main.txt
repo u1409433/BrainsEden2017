@@ -2,6 +2,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Ambience	
 	128372033	AmbienceStop			\Default Work Unit\AmbienceStop	
 	865029174	PickupRelic			\Default Work Unit\PickupRelic	
+	3668682749	PainHigh			\Default Work Unit\PainHigh	
+	3695631561	PainLow			\Default Work Unit\PainLow	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Ambience	
@@ -14,13 +16,18 @@ Switch	ID	Name	Switch Group			Notes
 	2844735171	Altar2	Ambience			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
-	2097710574	RelicsPlaced			\Default Work Unit\RelicsPlaced	
+	1119684175	ShrinesActie			\Default Work Unit\ShrinesActie	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	72105851	altar2	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\hell2_BF8D1261.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\altar2		1821645
 	108457484	Exit	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\Darkness - Stem C _0F3443A4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Exit		334030
 	182127850	altar1	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\dark_cave_8B01CD10.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\altar1		1058228
+	190985087	GRUNT Male Hurt 01 (mono)	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\GRUNT Male Hurt 01 (mono)_50DB02DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\PainLow\GRUNT Male Hurt 01 (mono)		4319
+	335672728	GRUNT Male Hurt 03 (mono)	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\GRUNT Male Hurt 03 (mono)_50DB02DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\PainHigh\GRUNT Male Hurt 03 (mono)		4433
+	387886567	GROAN Male Hurt Long Pain (mono)	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\GROAN Male Hurt Long Pain (mono)_50DB02DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\PainHigh\GROAN Male Hurt Long Pain (mono)		9530
+	402077999	GRUNT Male Subtle Hurt (mono)	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\GRUNT Male Subtle Hurt (mono)_50DB02DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\PainLow\GRUNT Male Subtle Hurt (mono)		4330
 	538897242	PickupGroan	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\GROAN Male Hurt Long (mono)_65323491.wem		\Actor-Mixer Hierarchy\Default Work Unit\PickupGroan		3408
+	544000178	GRUNT Male Hurt 02 (mono)	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\GRUNT Male Hurt 02 (mono)_50DB02DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\PainHigh\GRUNT Male Hurt 02 (mono)		4873
 	920158699	spawn	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\darkness_0CDD8189.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\spawn		560718
 	1061845231	altar3	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\hell3_5CC50E7B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\altar3		1728936
 

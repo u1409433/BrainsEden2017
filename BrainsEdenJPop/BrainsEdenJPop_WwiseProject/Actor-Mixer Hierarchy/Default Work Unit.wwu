@@ -154,7 +154,7 @@
 										<RTPC Name="" ID="{574EEAA1-4F1B-4B54-AE4D-0D0C568AC65A}" ShortID="733329578">
 											<ReferenceList>
 												<Reference Name="ControlInput">
-													<ObjectRef Name="RelicsPlaced" ID="{4A5D8354-844B-4FED-A381-DE445B8C5B2C}" WorkUnitID="{A32FA20F-3D15-492C-B732-FCCCFBD435EA}"/>
+													<ObjectRef Name="ShrinesActie" ID="{4A5D8354-844B-4FED-A381-DE445B8C5B2C}" WorkUnitID="{A32FA20F-3D15-492C-B732-FCCCFBD435EA}"/>
 												</Reference>
 											</ReferenceList>
 											<Curve Name="" ID="{219C62ED-A83C-43A3-8DA8-07695EE68D6D}">
@@ -314,7 +314,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-11</Value>
+								<Value>-19</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -328,6 +328,9 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="magicAir" ID="{F88A6304-9BDB-408E-A250-13BABA28FCAD}" ShortID="842989869">
+							<PropertyList>
+								<Property Name="TrimBegin" Type="Real64" Value="74.90217808552"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>magicAir.wav</AudioFile>
 						</AudioFileSource>
@@ -379,7 +382,10 @@
 						<ActiveSource Name="GROAN Male Hurt Long (mono)" ID="{B6FBA673-DB09-428D-8CAD-3F3BA1B1B18A}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<RandomSequenceContainer Name="InPain" ID="{8551DB58-9E84-4BB5-B50D-DF3179AA9C36}" ShortID="494470566">
+				<RandomSequenceContainer Name="PainLow" ID="{8551DB58-9E84-4BB5-B50D-DF3179AA9C36}" ShortID="494470566">
+					<PropertyList>
+						<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
@@ -388,6 +394,86 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="GRUNT Male Subtle Hurt (mono)" ID="{A5B3C5E6-97BE-48B6-9C15-A9A00E712640}" ShortID="645737016" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{ADB69C24-B753-44A1-923B-FC1E493F9AD1}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GRUNT Male Subtle Hurt (mono)" ID="{36991A5D-5D3A-4AA2-A8C2-65B88260E0A0}" ShortID="402077999">
+									<Language>SFX</Language>
+									<AudioFile>GRUNT Male Subtle Hurt (mono).wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GRUNT Male Subtle Hurt (mono)" ID="{36991A5D-5D3A-4AA2-A8C2-65B88260E0A0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="GRUNT Male Hurt 01 (mono)" ID="{1EF29A32-228F-4E51-8892-C7AC34025F87}" ShortID="275847542" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{1AC56AB5-5534-4CAD-9EA2-50E692AFB744}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GRUNT Male Hurt 01 (mono)" ID="{2E737BD9-C7EB-446F-B3E2-2D7B86B7E510}" ShortID="190985087">
+									<Language>SFX</Language>
+									<AudioFile>GRUNT Male Hurt 01 (mono).wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GRUNT Male Hurt 01 (mono)" ID="{2E737BD9-C7EB-446F-B3E2-2D7B86B7E510}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="MenuMusic" ID="{4DA8F112-E02F-406D-AF57-C9BAD7550E73}" ShortID="497705022">
 					<ReferenceList>
@@ -416,6 +502,135 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="Darkness - Stem B" ID="{8F8C7515-87E5-4E13-AEE6-B529F2C8B3C3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="PainHigh" ID="{1DB83FF2-48D6-4EAE-9E6C-5650480C3C69}" ShortID="98973054">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="GROAN Male Hurt Long Pain (mono)" ID="{94DC85AB-7AE6-46CD-AAC4-B881B57D26CD}" ShortID="168187098" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{49932E93-7AF2-467C-847C-1250582BDC77}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GROAN Male Hurt Long Pain (mono)" ID="{EC92482B-B244-4C90-A4C9-FEC08C90B628}" ShortID="387886567">
+									<Language>SFX</Language>
+									<AudioFile>GROAN Male Hurt Long Pain (mono).wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GROAN Male Hurt Long Pain (mono)" ID="{EC92482B-B244-4C90-A4C9-FEC08C90B628}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="GRUNT Male Hurt 03 (mono)" ID="{F08B77C4-FF64-4396-B254-5DA34678BD8A}" ShortID="202919127" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{D920A31B-3EE1-4B8D-A056-8CFC82238F96}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GRUNT Male Hurt 03 (mono)" ID="{179D68B0-3452-444C-9D0F-E58996156D52}" ShortID="335672728">
+									<Language>SFX</Language>
+									<AudioFile>GRUNT Male Hurt 03 (mono).wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GRUNT Male Hurt 03 (mono)" ID="{179D68B0-3452-444C-9D0F-E58996156D52}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="GRUNT Male Hurt 02 (mono)" ID="{1C7230F3-9E40-4829-8A34-7D43597C2E62}" ShortID="43906604" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{5C5B32A9-E991-426A-B652-EBF8D8FF2AA7}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GRUNT Male Hurt 02 (mono)" ID="{A2D4CBC5-6A0E-482A-B5D7-F8A8648665CD}" ShortID="544000178">
+									<Language>SFX</Language>
+									<AudioFile>GRUNT Male Hurt 02 (mono).wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GRUNT Male Hurt 02 (mono)" ID="{A2D4CBC5-6A0E-482A-B5D7-F8A8648665CD}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

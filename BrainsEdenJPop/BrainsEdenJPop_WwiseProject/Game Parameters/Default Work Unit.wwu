@@ -3,7 +3,7 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{A32FA20F-3D15-492C-B732-FCCCFBD435EA}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="RelicsPlaced" ID="{4A5D8354-844B-4FED-A381-DE445B8C5B2C}">
+				<GameParameter Name="ShrinesActie" ID="{4A5D8354-844B-4FED-A381-DE445B8C5B2C}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="3"/>
 						<Property Name="Max" Type="Real64" Value="3"/>

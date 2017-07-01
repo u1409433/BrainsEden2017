@@ -1,6 +1,5 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-<<<<<<< HEAD
 # Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainsEdenJPop.Plugins", "BrainsEdenJPop.Plugins.csproj", "{D4640B22-6020-2C57-0CBE-45BFCA89B6F6}"
 EndProject
@@ -9,16 +8,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainsEdenJPop.Editor.Plugins", "BrainsEdenJPop.Editor.Plugins.csproj", "{DA07F170-8D2B-8294-AC0A-EBC7B3B0AAED}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainsEdenJPop.Editor", "BrainsEdenJPop.Editor.csproj", "{A4618E02-8C36-C686-BE0A-0373AE98BF1B}"
-=======
-# Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainsEdenJPop.CSharp.Plugins", "BrainsEdenJPop.CSharp.Plugins.csproj", "{1CD3DC35-32A6-42CF-3D38-26EDCF3F24B2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainsEdenJPop.CSharp", "BrainsEdenJPop.CSharp.csproj", "{91C4C0B0-6187-64ED-E1E2-F7562C425B4D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainsEdenJPop.CSharp.Editor.Plugins", "BrainsEdenJPop.CSharp.Editor.Plugins.csproj", "{6E786C3D-2C10-EDCA-3F66-941676CB29FA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainsEdenJPop.CSharp.Editor", "BrainsEdenJPop.CSharp.Editor.csproj", "{FAA51C14-F310-8F2C-AD1E-02803CBAB28A}"
->>>>>>> a49f0d785e83eaf45272ff5a257cd8ce077bfa53
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,7 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-<<<<<<< HEAD
 		{D4640B22-6020-2C57-0CBE-45BFCA89B6F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D4640B22-6020-2C57-0CBE-45BFCA89B6F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4640B22-6020-2C57-0CBE-45BFCA89B6F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -43,24 +31,6 @@ Global
 		{A4618E02-8C36-C686-BE0A-0373AE98BF1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4618E02-8C36-C686-BE0A-0373AE98BF1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4618E02-8C36-C686-BE0A-0373AE98BF1B}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
-		{1CD3DC35-32A6-42CF-3D38-26EDCF3F24B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1CD3DC35-32A6-42CF-3D38-26EDCF3F24B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1CD3DC35-32A6-42CF-3D38-26EDCF3F24B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1CD3DC35-32A6-42CF-3D38-26EDCF3F24B2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{91C4C0B0-6187-64ED-E1E2-F7562C425B4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{91C4C0B0-6187-64ED-E1E2-F7562C425B4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{91C4C0B0-6187-64ED-E1E2-F7562C425B4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{91C4C0B0-6187-64ED-E1E2-F7562C425B4D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6E786C3D-2C10-EDCA-3F66-941676CB29FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6E786C3D-2C10-EDCA-3F66-941676CB29FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6E786C3D-2C10-EDCA-3F66-941676CB29FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6E786C3D-2C10-EDCA-3F66-941676CB29FA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FAA51C14-F310-8F2C-AD1E-02803CBAB28A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FAA51C14-F310-8F2C-AD1E-02803CBAB28A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FAA51C14-F310-8F2C-AD1E-02803CBAB28A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FAA51C14-F310-8F2C-AD1E-02803CBAB28A}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> a49f0d785e83eaf45272ff5a257cd8ce077bfa53
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
