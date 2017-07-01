@@ -4,6 +4,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	643126656	MenuMusic3			\Default Work Unit\MenuMusic3	
 	865029174	PickupRelic			\Default Work Unit\PickupRelic	
 	920368843	GhostSound			\Default Work Unit\GhostSound	
+	1863577366	RockDoor			\Default Work Unit\RockDoor	
 	2739173995	GhostSoundStop			\Default Work Unit\GhostSoundStop	
 	2740639977	ShrineAura			\Default Work Unit\ShrineAura	
 	3668682749	PainHigh			\Default Work Unit\PainHigh	
@@ -41,6 +42,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	544000178	GRUNT Male Hurt 02 (mono)	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\GRUNT Male Hurt 02 (mono)_50DB02DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\PainHigh\GRUNT Male Hurt 02 (mono)		4873
 	639164793	high pitched gost scream	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\high pitched gost scream_9A0D95CD.wem		\Actor-Mixer Hierarchy\Default Work Unit\GhostSound\GhostWail\high pitched gost scream		77113
 	644753406	Our Story Begins	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\Our Story Begins_50DB02DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\MenuMusic3\Our Story Begins		1179893
+	652656743	SCRAPE Concrete Slab on Concrete Slab Long (mono)	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\SCRAPE Concrete Slab on Concrete Slab Long (mono)_AC2123DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\RockDoor\SCRAPE Concrete Slab on Concrete Slab Long (mono)		26275
 	842989869	magicAir	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\magicAir_E3A3F32C.wem		\Actor-Mixer Hierarchy\Default Work Unit\ShrineAura\magicAir		48549
 	920158699	spawn	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\darkness_0CDD8189.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\spawn		560718
 	953444512	distorted white noise bitcrushed	C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\SFX\distorted white noise bitcrushed_0CDD8189.wem		\Actor-Mixer Hierarchy\Default Work Unit\GhostSound\distorted white noise bitcrushed		71024
