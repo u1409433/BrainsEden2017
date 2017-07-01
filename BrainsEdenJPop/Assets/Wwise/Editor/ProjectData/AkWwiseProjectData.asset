@@ -16,8 +16,13 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 94146722
     m_lastTimePart2: -1999322988
+=======
+    m_lastTimePsrt1: 1972329095
+    m_lastTimePart2: -1999322978
+>>>>>>> ae5ab9551e9fcf72292e6c1b5bb7599811b63afc
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -38,6 +43,26 @@ MonoBehaviour:
         ObjectType: 3
       ID: 128372033
       Guid: aef763ca9a86e44b9c5af99cfe4a4589
+      maxAttenuation: 0
+    - Name: GhostSound
+      Path: Default Work Unit\GhostSound
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GhostSound
+        ObjectType: 3
+      ID: 920368843
+      Guid: 66abec0df0b683468d22c3627b8b86d2
+      maxAttenuation: 0
+    - Name: GhostSoundStop
+      Path: Default Work Unit\GhostSoundStop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GhostSoundStop
+        ObjectType: 3
+      ID: -1555793301
+      Guid: 0ad9210e0ced0d40b2319a794976afad
       maxAttenuation: 0
     - Name: MenuMusic
       Path: Default Work Unit\MenuMusic
@@ -187,8 +212,13 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D7FF8C30-DA72-4C14-BB80-CDAF477F8EE6}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 104247732
     m_lastTimePart2: -1999322988
+=======
+    m_lastTimePsrt1: -1976331694
+    m_lastTimePart2: -1999322978
+>>>>>>> ae5ab9551e9fcf72292e6c1b5bb7599811b63afc
     List:
     - Name: Main
       Path: Default Work Unit\Main
@@ -203,9 +233,12 @@ MonoBehaviour:
   - /BrainsEdenJPop_WwiseProject
   - /BrainsEdenJPop_WwiseProject/Events
   - /BrainsEdenJPop_WwiseProject/Events/Default Work Unit
+<<<<<<< HEAD
   - /BrainsEdenJPop_WwiseProject/SoundBanks
   - /BrainsEdenJPop_WwiseProject/SoundBanks/Default Work Unit
   - /BrainsEdenJPop_WwiseProject/Switches
+=======
+>>>>>>> ae5ab9551e9fcf72292e6c1b5bb7599811b63afc
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

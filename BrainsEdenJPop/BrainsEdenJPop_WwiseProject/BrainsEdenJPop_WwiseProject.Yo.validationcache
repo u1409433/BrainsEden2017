@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="75">
-	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="2460065622" DateHigh="30601711"/>
+	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="112102125" DateHigh="30601865"/>
 	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1600576518" DateHigh="30601686"/>
 	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1600626556" DateHigh="30601686"/>
-	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\BrainsEdenJPop_WwiseProject.wproj" DateLow="3816641664" DateHigh="30601799"/>
-	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\BrainsEdenJPop_WwiseProject.Yo.wsettings" DateLow="1652756552" DateHigh="30601799"/>
+	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\BrainsEdenJPop_WwiseProject.wproj" DateLow="3662671231" DateHigh="30601835"/>
+	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\BrainsEdenJPop_WwiseProject.Yo.wsettings" DateLow="147057007" DateHigh="30601865"/>
 	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="556575704" DateHigh="30601703"/>
 	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="557136082" DateHigh="30601703"/>
 	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1600436410" DateHigh="30601686"/>
 	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1600456428" DateHigh="30601686"/>
 	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1600496477" DateHigh="30601686"/>
 	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\Effects\Factory Effects.wwu" DateLow="1600516471" DateHigh="30601686"/>
-	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\Events\Default Work Unit.wwu" DateLow="1793505083" DateHigh="30601707"/>
-	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1600606537" DateHigh="30601686"/>
+	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\Events\Default Work Unit.wwu" DateLow="1394104967" DateHigh="30601863"/>
+	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="537381392" DateHigh="30601856"/>
 	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="556795951" DateHigh="30601703"/>
 	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1600296319" DateHigh="30601686"/>
 	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1600646566" DateHigh="30601686"/>
@@ -20,7 +20,7 @@
 	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1600336339" DateHigh="30601686"/>
 	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1600686602" DateHigh="30601686"/>
 	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\Queries\Factory Queries.wwu" DateLow="1600706608" DateHigh="30601686"/>
-	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1980638207" DateHigh="30601707"/>
+	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1740411474" DateHigh="30601863"/>
 	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1600906755" DateHigh="30601686"/>
 	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\States\Default Work Unit.wwu" DateLow="1600866722" DateHigh="30601686"/>
 	<ValidationCacheItem File="C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\Switches\Default Work Unit.wwu" DateLow="556605761" DateHigh="30601703"/>
