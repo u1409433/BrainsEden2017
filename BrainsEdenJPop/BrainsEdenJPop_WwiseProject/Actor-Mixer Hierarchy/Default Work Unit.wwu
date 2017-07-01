@@ -310,35 +310,6 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
-				<Sound Name="magicAir" ID="{049CD3F7-61AA-4F8B-84D5-517441C55799}" ShortID="745359213" Type="SoundFX">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-19</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="magicAir" ID="{F88A6304-9BDB-408E-A250-13BABA28FCAD}" ShortID="842989869">
-							<PropertyList>
-								<Property Name="TrimBegin" Type="Real64" Value="74.90217808552"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>magicAir.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="magicAir" ID="{F88A6304-9BDB-408E-A250-13BABA28FCAD}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="PickupGroan" ID="{C6091366-97E8-48E8-8124-EF3BECE20257}" ShortID="732906741" Type="SoundFX">
 					<PropertyList>
 						<Property Name="Pitch" Type="int32">
@@ -366,10 +337,10 @@
 					<ChildrenList>
 						<AudioFileSource Name="GROAN Male Hurt Long (mono)" ID="{B6FBA673-DB09-428D-8CAD-3F3BA1B1B18A}" ShortID="889453829">
 							<PropertyList>
-								<Property Name="FadeInDuration" Type="Real64" Value="0.070566842808552"/>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.212917198129252"/>
 								<Property Name="FadeOutDuration" Type="Real64" Value="0.222650555758017"/>
-								<Property Name="TrimBegin" Type="Real64" Value="0.407584350704568"/>
-								<Property Name="TrimEnd" Type="Real64" Value="0.747035198007775"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.260367316569485"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.728785152453838"/>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>GROAN Male Hurt Long (mono).wav</AudioFile>
@@ -634,6 +605,97 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="ShrineAura" ID="{0A01B064-95C2-4863-8BE4-335E3E2AD660}" ShortID="126502648">
+					<PropertyList>
+						<Property Name="3DPositionSource" Type="int16" Value="0"/>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{7CC1FB34-FF35-4AEA-BC5D-C2515922076F}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="6"/>
+											<Property Name="Min" Type="Real64" Value="-2"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="magicAir" ID="{049CD3F7-61AA-4F8B-84D5-517441C55799}" ShortID="745359213" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>35</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B993EA64-BE00-4134-90D8-263C8653E739}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-1520"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-19</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="magicAir" ID="{F88A6304-9BDB-408E-A250-13BABA28FCAD}" ShortID="842989869">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.719486745380763"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.736218995273333"/>
+										<Property Name="TrimBegin" Type="Real64" Value="62.5137771298995"/>
+										<Property Name="TrimEnd" Type="Real64" Value="66.0382687049276"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>magicAir.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="magicAir" ID="{F88A6304-9BDB-408E-A250-13BABA28FCAD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{FF529439-0E96-48BE-A051-47DE325E5FCB}"/>
+					</PositioningInfo>
 				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
