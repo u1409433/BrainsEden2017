@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainsEdenJPop.CSharp.Plugins", "BrainsEdenJPop.CSharp.Plugins.csproj", "{1CD3DC35-32A6-42CF-3D38-26EDCF3F24B2}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainsEdenJPop.CSharp", "BrainsEdenJPop.CSharp.csproj", "{91C4C0B0-6187-64ED-E1E2-F7562C425B4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainsEdenJPop.CSharp.Editor.Plugins", "BrainsEdenJPop.CSharp.Editor.Plugins.csproj", "{6E786C3D-2C10-EDCA-3F66-941676CB29FA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainsEdenJPop.CSharp.Editor", "BrainsEdenJPop.CSharp.Editor.csproj", "{FAA51C14-F310-8F2C-AD1E-02803CBAB28A}"
 EndProject
@@ -11,10 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CD3DC35-32A6-42CF-3D38-26EDCF3F24B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CD3DC35-32A6-42CF-3D38-26EDCF3F24B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CD3DC35-32A6-42CF-3D38-26EDCF3F24B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CD3DC35-32A6-42CF-3D38-26EDCF3F24B2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{91C4C0B0-6187-64ED-E1E2-F7562C425B4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{91C4C0B0-6187-64ED-E1E2-F7562C425B4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91C4C0B0-6187-64ED-E1E2-F7562C425B4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91C4C0B0-6187-64ED-E1E2-F7562C425B4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E786C3D-2C10-EDCA-3F66-941676CB29FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E786C3D-2C10-EDCA-3F66-941676CB29FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E786C3D-2C10-EDCA-3F66-941676CB29FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E786C3D-2C10-EDCA-3F66-941676CB29FA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FAA51C14-F310-8F2C-AD1E-02803CBAB28A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FAA51C14-F310-8F2C-AD1E-02803CBAB28A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAA51C14-F310-8F2C-AD1E-02803CBAB28A}.Release|Any CPU.ActiveCfg = Release|Any CPU
