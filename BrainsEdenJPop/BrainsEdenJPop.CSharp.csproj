@@ -86,7 +86,11 @@
   <ItemGroup>
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_FSM.cs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_OffMeshLinks.cs" />
+=======
+    <Compile Include="Assets\Jasmine\JC_Scripts\JC_Interactions.cs" />
+>>>>>>> a8b02c3967c64d66f95a7bf369874a0748caf4b7
 =======
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_Interactions.cs" />
 >>>>>>> a8b02c3967c64d66f95a7bf369874a0748caf4b7
