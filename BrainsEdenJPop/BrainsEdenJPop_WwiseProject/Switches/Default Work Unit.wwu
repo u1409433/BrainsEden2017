@@ -12,6 +12,13 @@
 						<Switch Name="Exit" ID="{E0C87C5A-AEEA-46FA-AFB4-B955296CBE03}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Footsteps" ID="{6FE40F4C-A076-4A6C-9155-E01189DEED1B}">
+					<ChildrenList>
+						<Switch Name="Fast" ID="{2DDBBF94-936F-4C4F-A2CB-B3271A94AE98}"/>
+						<Switch Name="Slow" ID="{63B91151-E914-4370-8461-BC7EEAE20F09}"/>
+						<Switch Name="Stop" ID="{EF3AEF73-E276-4B4B-9DB0-3A35F99BC784}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

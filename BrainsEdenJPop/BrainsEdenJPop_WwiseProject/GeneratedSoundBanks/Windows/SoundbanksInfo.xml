@@ -25,6 +25,7 @@
 				<Event Id="128372033" Name="AmbienceStop" ObjectPath="\Events\Default Work Unit\AmbienceStop" MaxAttenuation="0.000000"/>
 				<Event Id="920368843" Name="GhostSound" ObjectPath="\Events\Default Work Unit\GhostSound"/>
 				<Event Id="2739173995" Name="GhostSoundStop" ObjectPath="\Events\Default Work Unit\GhostSoundStop"/>
+				<Event Id="2192397196" Name="MenuButton" ObjectPath="\Events\Default Work Unit\MenuButton"/>
 				<Event Id="643126656" Name="MenuMusic3" ObjectPath="\Events\Default Work Unit\MenuMusic3"/>
 				<Event Id="3668682749" Name="PainHigh" ObjectPath="\Events\Default Work Unit\PainHigh"/>
 				<Event Id="3695631561" Name="PainLow" ObjectPath="\Events\Default Work Unit\PainLow"/>
@@ -32,6 +33,7 @@
 				<Event Id="1863577366" Name="RockDoor" ObjectPath="\Events\Default Work Unit\RockDoor"/>
 				<Event Id="2740639977" Name="ShrineAura" ObjectPath="\Events\Default Work Unit\ShrineAura" MaxAttenuation="20.000000"/>
 				<Event Id="1781803135" Name="Snickt" ObjectPath="\Events\Default Work Unit\Snickt"/>
+				<Event Id="3712093981" Name="StabDeath" ObjectPath="\Events\Default Work Unit\StabDeath"/>
 				<Event Id="99965646" Name="Unsnickt" ObjectPath="\Events\Default Work Unit\Unsnickt" MaxAttenuation="10.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -59,6 +61,10 @@
 					<ShortName>high pitched gost scream.wav</ShortName>
 					<Path>SFX\high pitched gost scream_C357FBB1.wem</Path>
 				</File>
+				<File Id="261590033" Language="SFX">
+					<ShortName>GORE Death Move Sequence 01 Long Brutal (stereo).wav</ShortName>
+					<Path>SFX\GORE Death Move Sequence 01 Long Brutal (stereo)_0EFAE538.wem</Path>
+				</File>
 				<File Id="335672728" Language="SFX">
 					<ShortName>GRUNT Male Hurt 03 (mono).wav</ShortName>
 					<Path>SFX\GRUNT Male Hurt 03 (mono)_50DB02DB.wem</Path>
@@ -78,6 +84,10 @@
 				<File Id="402077999" Language="SFX">
 					<ShortName>GRUNT Male Subtle Hurt (mono).wav</ShortName>
 					<Path>SFX\GRUNT Male Subtle Hurt (mono)_50DB02DB.wem</Path>
+				</File>
+				<File Id="467197522" Language="SFX">
+					<ShortName>Our story begins sting.wav</ShortName>
+					<Path>SFX\Our story begins sting_50DB02DB.wem</Path>
 				</File>
 				<File Id="523182354" Language="SFX">
 					<ShortName>distorted white noise.wav</ShortName>
