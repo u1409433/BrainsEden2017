@@ -1,4 +1,16 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+sceneSetups: []
+=======
 sceneSetups:
+<<<<<<< HEAD
+- path: Assets/Joey/Intro.unity
+=======
 - path: Assets/Jasmine/JC_Scenes/JC_MayamiaTesting.unity
+>>>>>>> c9761a40458f9a831d3a1df40c31388e628c0108
   isLoaded: 1
   isActive: 1
+>>>>>>> a51220e8d7e3450393a3bbe48ce9cfeb03d9a19e
+=======
+sceneSetups: []
+>>>>>>> 6bac09ace09396b8d17f99130dd90578f86c3f14
