@@ -1,0 +1,7 @@
+To trigger an event:
+
+	AkSoundEngine.PostEvent("String name of event", gameObject);
+
+		e.g. To begin ambient music: 
+		
+		AkSoundEngine.PostEvent("Ambience", gameObject);
