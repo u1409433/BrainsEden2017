@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}'
-    m_lastTimePsrt1: 1480317898
-    m_lastTimePart2: -1999322941
+    m_lastTimePsrt1: 1106192647
+    m_lastTimePart2: -1999322940
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -128,6 +128,16 @@ MonoBehaviour:
         ObjectType: 3
       ID: 865029174
       Guid: b4fe77c19798454092686f75d950bf16
+      maxAttenuation: 0
+    - Name: PlaceRelic
+      Path: Default Work Unit\PlaceRelic
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PlaceRelic
+        ObjectType: 3
+      ID: 2025199039
+      Guid: 612e8e91d3d6fe47b4e36f9691fef0c7
       maxAttenuation: 0
     - Name: RockDoor
       Path: Default Work Unit\RockDoor
@@ -262,8 +272,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D7FF8C30-DA72-4C14-BB80-CDAF477F8EE6}'
-    m_lastTimePsrt1: 733264569
-    m_lastTimePart2: -1999322945
+    m_lastTimePsrt1: -1230098801
+    m_lastTimePart2: -1999322940
     List:
     - Name: Main
       Path: Default Work Unit\Main
@@ -278,6 +288,9 @@ MonoBehaviour:
   - /BrainsEdenJPop_WwiseProject
   - /BrainsEdenJPop_WwiseProject/Events
   - /BrainsEdenJPop_WwiseProject/Events/Default Work Unit
+  - /BrainsEdenJPop_WwiseProject/Switches
+  - /BrainsEdenJPop_WwiseProject/Switches/Default Work Unit
+  - /BrainsEdenJPop_WwiseProject/Switches/Default Work Unit/Ambience
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
