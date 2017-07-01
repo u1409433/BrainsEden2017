@@ -21,11 +21,26 @@ public class JL_AudioManager : MonoBehaviour
 
     void LateUpdate()
     {
-        if (GameObject.Find("LevelManager").GetComponent<JC_LevelManager>().IN_ChasingGhosts == 0)
+        //If there are no ghosts chasing
+        if (GameObject.Find("LevelManager").GetComponent<JC_LevelManager>().IN_ChasingGhosts == 0 || FL_GhostDistance > 5)
         {
-            AkSoundEngine.PostEvent("GhostSoundStop", gameObject);
+            if (BL_GhostPlaying)
+            {
+                AkSoundEngine.PostEvent("GhostSoundStop", gameObject);
+            }
+            BL_GhostPlaying = false;
         }
-        else BL_GhostPlaying = false;
+        //If there are ghosts chasing
+        else
+        {
+            if (!BL_GhostPlaying)
+            {
+                AkSoundEngine.PostEvent("GhostSound", gameObject);
+            }
+            BL_GhostPlaying = true;
+
+            AkSoundEngine.SetRTPCValue("GhostDistance", FL_GhostDistance);
+        }
     }
 
     public void PlaySound(string vSound)
@@ -54,9 +69,6 @@ public class JL_AudioManager : MonoBehaviour
             AkSoundEngine.PostEvent("GhostSound", gameObject);
         }
 
-        if (vDistance < FL_GhostDistance)
-        {
-            FL_GhostDistance = vDistance;
-        }
+        FL_GhostDistance = vDistance;
     }
 }

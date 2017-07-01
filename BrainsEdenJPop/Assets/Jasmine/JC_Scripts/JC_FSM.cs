@@ -87,6 +87,12 @@ public class JC_FSM : MonoBehaviour
         AILogic();
 
         print("Area No: " + mIN_AreaNo);
+
+        if (mCurrentState == State.Chase)
+        {
+            GameObject.Find("AudioManager").GetComponent<JL_AudioManager>().ReceiveGhostInfo(Vector3.Distance(transform.position, mV3_TargetPos));
+            GameObject.Find("LevelManager").GetComponent<JC_LevelManager>().IN_ChasingGhosts++;
+        }
     }
 
     protected void ApplyFSM()
