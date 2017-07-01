@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Terrain
   - Fire
+  - Interactable
+  - Ghost
   layers:
   - Default
   - TransparentFX
