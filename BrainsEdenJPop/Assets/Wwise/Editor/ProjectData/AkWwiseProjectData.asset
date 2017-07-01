@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}'
-    m_lastTimePsrt1: -918025730
-    m_lastTimePart2: -1999322963
+    m_lastTimePsrt1: -1065313323
+    m_lastTimePart2: -1999322962
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -118,7 +118,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1554327319
       Guid: fe5ef40d963cf24194797c149071f204
-      maxAttenuation: 20
+      maxAttenuation: 0
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -177,8 +177,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D7FF8C30-DA72-4C14-BB80-CDAF477F8EE6}'
-    m_lastTimePsrt1: -2051661240
-    m_lastTimePart2: -1999322964
+    m_lastTimePsrt1: -1064483240
+    m_lastTimePart2: -1999322962
     List:
     - Name: Main
       Path: Default Work Unit\Main
