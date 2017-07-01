@@ -14,6 +14,8 @@ public class JL_PCMovement : MonoBehaviour
     
     public bool BL_Carrying;
 
+    public bool BL_BobRight = true;
+
     // Use this for initialization
     void Start()
     {
@@ -36,14 +38,41 @@ public class JL_PCMovement : MonoBehaviour
         if (BL_Carrying) Agent_PC.speed = FL_Speed / 2;
         else Agent_PC.speed = FL_Speed;
 
-        if (Vector3.Distance(transform.position, Agent_PC.destination) > 1f)
+        Debug.Log("Bob");
+        if (BL_BobRight)
         {
-            Debug.Log("Bob");
+            gameObject.transform.Rotate(new Vector3(0, 0, -0.5f));
+            if (transform.rotation.eulerAngles.z <= -10)
+            {
+                BL_BobRight = false;
+            }
+        }
+        else
+        {
+            gameObject.transform.Rotate(new Vector3(0, 0, 0.5f));
+            if (transform.rotation.eulerAngles.z >= 10)
+            {
+                BL_BobRight = true;
+            }
+        }
+
+        /*if (Vector3.Distance(transform.position, Agent_PC.destination) > 1f)
+        {
+            
         }
         else
         {
             Debug.Log("Do Not Bob");
-        }
+            if (transform.rotation.eulerAngles.z <= -0.5f)
+            {
+                transform.Rotate(0, 0, 0.5f);
+            }
+            else if (transform.rotation.eulerAngles.z >= 0.5f)
+            {
+                transform.Rotate(0, 0, -0.5f);
+            }
+            else Debug.Log("I'm centered");
+        }*/
     }
 
     void MouseInput()
