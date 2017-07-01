@@ -1565,6 +1565,566 @@
 						<ItemRef Name="GORE Death Move Sequence 01 Long Brutal (stereo)" ID="{FFA3F9F3-EF32-42D3-BC08-C19BC90D1483}"/>
 					</Playlist>
 				</RandomSequenceContainer>
+				<SwitchContainer Name="Footsteps" ID="{E2959F8B-7CD2-4CB4-BA0E-3018F2BE3083}" ShortID="422273918">
+					<PropertyList>
+						<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Fast" ID="{30E795A7-37DD-412C-BEAD-F6256793BB83}" ShortID="850866">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>21</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Medium" ID="{AEB3F175-958B-45F2-A4C2-3FBD4F456568}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="FOOTSTEP Walk Trainers Compact Snow Fast RR1 (mono)" ID="{B71904A2-3336-4174-B8E8-DBD782E0BA96}" ShortID="206451952" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR1 (mono)" ID="{A5DE2BAF-B9D6-4E78-9E3F-BD9EA03BBDD0}" ShortID="617345413">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR1 (mono).wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR1 (mono)" ID="{A5DE2BAF-B9D6-4E78-9E3F-BD9EA03BBDD0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEP Walk Trainers Compact Snow Fast RR2 (mono)" ID="{D42D131E-045B-449D-A08B-3DA97975ACF2}" ShortID="807729831" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR2 (mono)" ID="{B3FC7708-DC37-4845-9ECE-58F9119BE2FF}" ShortID="287012141">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR2 (mono).wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR2 (mono)" ID="{B3FC7708-DC37-4845-9ECE-58F9119BE2FF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEP Walk Trainers Compact Snow Fast RR3 (mono)" ID="{12363C7B-2FCA-4E55-ACD9-58C6E4278C64}" ShortID="952543301" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR3 (mono)" ID="{54679B9C-E566-4666-8D17-C30AE027C6DA}" ShortID="423205903">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR3 (mono).wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR3 (mono)" ID="{54679B9C-E566-4666-8D17-C30AE027C6DA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEP Walk Trainers Compact Snow Fast RR4 (mono)" ID="{B5972E65-C0BF-49D9-8765-5958DF335464}" ShortID="293283658" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR4 (mono)" ID="{AC08828E-8A56-4F6C-9FDB-8AE548CB3D4D}" ShortID="182679539">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR4 (mono).wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR4 (mono)" ID="{AC08828E-8A56-4F6C-9FDB-8AE548CB3D4D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEP Walk Trainers Compact Snow Fast RR5 (mono)" ID="{02605EAE-7BEF-47C7-BFF9-E29C5CAFE3E8}" ShortID="824629860" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR5 (mono)" ID="{524F20D3-10BC-4D59-8B69-424977442D63}" ShortID="659429355">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR5 (mono).wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR5 (mono)" ID="{524F20D3-10BC-4D59-8B69-424977442D63}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEP Walk Trainers Compact Snow Fast RR6 (mono)" ID="{7AD96F23-78F6-4873-ABF9-94DB7A113878}" ShortID="772789362" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR6 (mono)" ID="{098F026E-8FFA-4F4D-9561-2FBD641F2E16}" ShortID="639345978">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR6 (mono).wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR6 (mono)" ID="{098F026E-8FFA-4F4D-9561-2FBD641F2E16}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEP Walk Trainers Compact Snow Fast RR7 (mono)" ID="{7AA37FA4-29F1-495B-9621-98A9E2F5B31C}" ShortID="703578465" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR7 (mono)" ID="{2EAEF79C-9612-47A3-AB1B-2D2C1F46E5D3}" ShortID="228575974">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR7 (mono).wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR7 (mono)" ID="{2EAEF79C-9612-47A3-AB1B-2D2C1F46E5D3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEP Walk Trainers Compact Snow Fast RR8 (mono)" ID="{4EC86538-A841-4229-8BC6-DF5DA304B7D8}" ShortID="885352070" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR8 (mono)" ID="{5DCA9D79-8320-4961-99F6-486183147CD6}" ShortID="672364413">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR8 (mono).wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR8 (mono)" ID="{5DCA9D79-8320-4961-99F6-486183147CD6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Slow" ID="{5E0BC274-FAE7-4DF4-A247-C0F4808A2561}" ShortID="814520178">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>27</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-450</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.75"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Medium" ID="{AEB3F175-958B-45F2-A4C2-3FBD4F456568}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="FOOTSTEP Walk Trainers Compact Snow Fast RR1 (mono)" ID="{F6754CC3-4F66-4194-AF1D-E874319462E5}" ShortID="688106089" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR1 (mono)" ID="{674F8FE7-09F5-4E5D-8DEA-8A16992C4123}" ShortID="363346314">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR1 (mono).wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="617345413"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR1 (mono)" ID="{674F8FE7-09F5-4E5D-8DEA-8A16992C4123}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEP Walk Trainers Compact Snow Fast RR2 (mono)" ID="{0C509B4A-C9D0-40BC-9F33-6ADF74A27493}" ShortID="325027830" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR2 (mono)" ID="{5C006E29-E933-4CCE-AE2E-11414446B036}" ShortID="863234979">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR2 (mono).wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="287012141"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR2 (mono)" ID="{5C006E29-E933-4CCE-AE2E-11414446B036}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEP Walk Trainers Compact Snow Fast RR3 (mono)" ID="{9E351A29-0FBF-4A67-B67C-61AF6B24E018}" ShortID="621006468" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR3 (mono)" ID="{40C2BCEE-77A4-48AD-A7A2-A336F67C75EF}" ShortID="1038252416">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR3 (mono).wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="423205903"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR3 (mono)" ID="{40C2BCEE-77A4-48AD-A7A2-A336F67C75EF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEP Walk Trainers Compact Snow Fast RR4 (mono)" ID="{2146461E-8043-424C-BFFE-E8670BE2FC64}" ShortID="1031208284" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR4 (mono)" ID="{6C98CD62-9D2D-4C8D-9425-C41F46E8436D}" ShortID="807480166">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR4 (mono).wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="182679539"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR4 (mono)" ID="{6C98CD62-9D2D-4C8D-9425-C41F46E8436D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEP Walk Trainers Compact Snow Fast RR5 (mono)" ID="{4459BB38-1384-486C-BD6B-ADC0DD108E1B}" ShortID="344985790" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR5 (mono)" ID="{5E9651FB-6CF6-41D5-A891-770ED55F63E1}" ShortID="361209318">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR5 (mono).wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="659429355"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR5 (mono)" ID="{5E9651FB-6CF6-41D5-A891-770ED55F63E1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEP Walk Trainers Compact Snow Fast RR6 (mono)" ID="{A67227DE-8938-4A87-A01D-0D090788DB7B}" ShortID="323743500" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR6 (mono)" ID="{CF28AB33-812E-4949-AC70-96C23DE55B33}" ShortID="985456834">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR6 (mono).wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="639345978"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR6 (mono)" ID="{CF28AB33-812E-4949-AC70-96C23DE55B33}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEP Walk Trainers Compact Snow Fast RR7 (mono)" ID="{F4B0BACE-8194-44CC-A8E3-969664E1B759}" ShortID="587092852" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR7 (mono)" ID="{03D101CC-1137-4696-8125-2412D89A610B}" ShortID="431207374">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR7 (mono).wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="228575974"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR7 (mono)" ID="{03D101CC-1137-4696-8125-2412D89A610B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEP Walk Trainers Compact Snow Fast RR8 (mono)" ID="{5A0D102E-BD41-49BB-985F-8482FF32E44D}" ShortID="578314514" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR8 (mono)" ID="{4F519618-B179-4BD9-B3CB-4F7CE4B49D30}" ShortID="835816084">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR8 (mono).wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="672364413"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR8 (mono)" ID="{4F519618-B179-4BD9-B3CB-4F7CE4B49D30}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Stop" ID="{4E4DB436-D676-40DC-AA71-DD6FB7FE3C88}" ShortID="714997875">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>21</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Medium" ID="{AEB3F175-958B-45F2-A4C2-3FBD4F456568}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="FOOTSTEP Walk Trainers Compact Snow Fast RR1 (mono)" ID="{0AA6DF13-3456-43A6-8A4F-B65533550825}" ShortID="371224453" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR1 (mono)" ID="{A78B1EAA-E39C-4931-B370-77C802BDCA1D}" ShortID="713183074">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR1 (mono).wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="617345413"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR1 (mono)" ID="{A78B1EAA-E39C-4931-B370-77C802BDCA1D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupRef Name="Footsteps" ID="{6FE40F4C-A076-4A6C-9155-E01189DEED1B}"/>
+						<DefaultSwitchRef Name="Fast" ID="{2DDBBF94-936F-4C4F-A2CB-B3271A94AE98}"/>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Stop" ID="{4E4DB436-D676-40DC-AA71-DD6FB7FE3C88}"/>
+								<PropertyList>
+									<Property Name="FadeInTime" Type="Real64">
+										<ValueList>
+											<Value>1</Value>
+										</ValueList>
+									</Property>
+									<Property Name="FadeOutTime" Type="Real64">
+										<ValueList>
+											<Value>1</Value>
+										</ValueList>
+									</Property>
+								</PropertyList>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Slow" ID="{5E0BC274-FAE7-4DF4-A247-C0F4808A2561}"/>
+								<PropertyList>
+									<Property Name="FadeOutTime" Type="Real64">
+										<ValueList>
+											<Value>1</Value>
+										</ValueList>
+									</Property>
+								</PropertyList>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Fast" ID="{30E795A7-37DD-412C-BEAD-F6256793BB83}"/>
+								<PropertyList>
+									<Property Name="FadeOutTime" Type="Real64">
+										<ValueList>
+											<Value>1</Value>
+										</ValueList>
+									</Property>
+								</PropertyList>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Slow" ID="{63B91151-E914-4370-8461-BC7EEAE20F09}"/>
+								<ItemList>
+									<ItemRef Name="Slow" ID="{5E0BC274-FAE7-4DF4-A247-C0F4808A2561}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Stop" ID="{EF3AEF73-E276-4B4B-9DB0-3A35F99BC784}"/>
+								<ItemList>
+									<ItemRef Name="Stop" ID="{4E4DB436-D676-40DC-AA71-DD6FB7FE3C88}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Fast" ID="{2DDBBF94-936F-4C4F-A2CB-B3271A94AE98}"/>
+								<ItemList>
+									<ItemRef Name="Fast" ID="{30E795A7-37DD-412C-BEAD-F6256793BB83}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<RandomSequenceContainer Name="MenuButton" ID="{EFA45912-B7BB-406A-BB18-348D50245686}" ShortID="293333510">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Our story begins sting" ID="{6D167F9D-880E-4356-A295-C5FA1622D435}" ShortID="8587225" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Our story begins sting" ID="{6944D328-7222-4424-8F0C-0FD3D78AEF78}" ShortID="467197522">
+									<Language>SFX</Language>
+									<AudioFile>Our story begins sting.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Our story begins sting" ID="{6944D328-7222-4424-8F0C-0FD3D78AEF78}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
