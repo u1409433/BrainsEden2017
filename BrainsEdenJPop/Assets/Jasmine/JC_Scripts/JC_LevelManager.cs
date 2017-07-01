@@ -6,6 +6,8 @@ public class JC_LevelManager : MonoBehaviour
 {
     protected GameObject[] mGO_ListOfNPCs;
 
+    public int IN_ChasingGhosts = 0;
+
     // Areas of Interest:
     // Area1
     private Vector2 mV2_Area1_X;
@@ -22,6 +24,8 @@ public class JC_LevelManager : MonoBehaviour
     {
         mV2_Area1_X = new Vector2(30, -3);
         mV2_Area1_Z = new Vector2(113, 80);
+
+        IN_ChasingGhosts = 0;
     }
 
     private void AssignNPCsToAreas()
