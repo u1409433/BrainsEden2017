@@ -154,8 +154,8 @@ MonoBehaviour:
     y: 0
     width: 206
     height: 948
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -230,8 +230,8 @@ MonoBehaviour:
     y: 0
     width: 1065
     height: 486
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -315,9 +315,9 @@ MonoBehaviour:
     height: 927
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: 68070000
     m_LastClickedID: 0
-    m_ExpandedIDs: e4fbffff00000000ce290000fe290000
+    m_ExpandedIDs: e6fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -410,7 +410,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Joey/Scripts
+    - Assets/Johannes
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
@@ -421,7 +421,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 26280000
     m_LastClickedID: 10278
-    m_ExpandedIDs: 000000009e260000042700004827000078270000be2700003a2800007628000082280000e2280000022900000c2900002c2a00002e2a0000302a0000322a0000342a0000
+    m_ExpandedIDs: 000000009a260000002700004427000074270000ba27000036280000722800007e280000de280000fe280000082900002c2a00002e2a0000302a0000322a0000342a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -449,7 +449,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009e260000042700004827000078270000be2700003a2800007628000082280000e2280000022900000c2900002c2a00002e2a0000302a0000322a0000342a0000
+    m_ExpandedIDs: 000000009a260000002700004427000074270000ba27000036280000722800007e280000de280000fe280000082900002c2a00002e2a0000302a0000322a0000342a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -639,7 +639,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.013808831, y: 0.006596665, z: -0.00009113298, w: -0.9998829}
     speed: 2
-    m_Value: {x: -0.013808832, y: 0.0065966654, z: -0.000091132984, w: -0.99988294}
+    m_Value: {x: -0.01380883, y: 0.0065966644, z: -0.00009113298, w: -0.9998828}
   m_Size:
     m_Target: 925.89056
     speed: 2
