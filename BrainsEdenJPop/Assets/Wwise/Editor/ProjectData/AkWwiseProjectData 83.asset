@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: AkWwiseProjectData 83
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
+<<<<<<< HEAD
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -292,6 +293,14 @@ MonoBehaviour:
   - /BrainsEdenJPop_WwiseProject/Switches
   - /BrainsEdenJPop_WwiseProject/Switches/Default Work Unit
   - /BrainsEdenJPop_WwiseProject/Switches/Default Work Unit/Ambience
+=======
+  EventWwu: []
+  AuxBusWwu: []
+  StateWwu: []
+  SwitchWwu: []
+  BankWwu: []
+  ExpandedItems: []
+>>>>>>> 5a30586efc43d5313b6e89d3d4bc65b5bc3435a7
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
