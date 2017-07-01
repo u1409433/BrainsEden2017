@@ -59,6 +59,9 @@ public class JL_Interactable : MonoBehaviour
                 }
                 else Debug.Log("You are not carrying a relic");
                 break;
+            case "EndPlatform":
+                GameObject.Find("LevelManager").GetComponent<JL_LevelManager>().WinState();
+                break;
             default:
                 break;
         }
