@@ -16,8 +16,18 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 1106192647
     m_lastTimePart2: -1999322940
+=======
+<<<<<<< HEAD
+    m_lastTimePsrt1: 466336695
+    m_lastTimePart2: -1999322947
+=======
+    m_lastTimePsrt1: 1480317898
+    m_lastTimePart2: -1999322941
+>>>>>>> fb6371f2fed83f18851018cccfaaf7923039c853
+>>>>>>> 40100ca5e5e7eaff5b6b99bb7af5b7f93b55e978
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -158,7 +168,11 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1554327319
       Guid: fe5ef40d963cf24194797c149071f204
+<<<<<<< HEAD
+      maxAttenuation: 0
+=======
       maxAttenuation: 20
+>>>>>>> fb6371f2fed83f18851018cccfaaf7923039c853
     - Name: Snickt
       Path: Default Work Unit\Snickt
       PathAndIcons:
@@ -188,27 +202,36 @@ MonoBehaviour:
         ObjectType: 3
       ID: 99965646
       Guid: 1507648710dc384cabf433c43b126f80
+<<<<<<< HEAD
+      maxAttenuation: 0
+=======
       maxAttenuation: 10
+>>>>>>> fb6371f2fed83f18851018cccfaaf7923039c853
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A1BE1F16-5A58-43CA-B653-D8BD0401B781}'
-    m_lastTimePsrt1: 1958753262
-    m_lastTimePart2: -1999323003
+    m_lastTimePsrt1: -1716330285
+    m_lastTimePart2: -1999322965
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{45CE0B3C-F78B-4ED5-BE21-A0213F1B7BFD}'
-    m_lastTimePsrt1: 1971333262
-    m_lastTimePart2: -1999323003
+    m_lastTimePsrt1: -1694598112
+    m_lastTimePart2: -1999322965
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8171BD08-1B48-4883-BDA9-5A92826AB052}'
+<<<<<<< HEAD
+    m_lastTimePsrt1: -1694598112
+    m_lastTimePart2: -1999322965
+=======
     m_lastTimePsrt1: 733284571
     m_lastTimePart2: -1999322945
+>>>>>>> fb6371f2fed83f18851018cccfaaf7923039c853
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -272,8 +295,18 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D7FF8C30-DA72-4C14-BB80-CDAF477F8EE6}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -1230098801
     m_lastTimePart2: -1999322940
+=======
+<<<<<<< HEAD
+    m_lastTimePsrt1: 468046695
+    m_lastTimePart2: -1999322947
+=======
+    m_lastTimePsrt1: 733264569
+    m_lastTimePart2: -1999322945
+>>>>>>> fb6371f2fed83f18851018cccfaaf7923039c853
+>>>>>>> 40100ca5e5e7eaff5b6b99bb7af5b7f93b55e978
     List:
     - Name: Main
       Path: Default Work Unit\Main
