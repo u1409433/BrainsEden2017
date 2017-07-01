@@ -20,7 +20,8 @@ public class JC_FSM : MonoBehaviour
 
     // Find PC:
     protected GameObject mGO_PC;
-    public GameObject mPF_TestObj;
+    public GameObject mPF_TestObjOK;
+    public GameObject mPF_TestObjNotOK;
 
     // Navmesh:
     protected NavMeshAgent mNMA_NavMeshAgent;
@@ -119,41 +120,58 @@ public class JC_FSM : MonoBehaviour
 
     protected void Roam()
     {
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            mBL_RoamReachedDest = true;
+        }
+
         if (!mBL_RoamReachedDest)
         {
             if (!mBL_IsRoaming)
             {
-                mV3_StartPos = gameObject.transform.position;
-                mV3_TargetPos = RandomDestination();
-
                 Ray tRY_Ray = new Ray((RandomDestination() + new Vector3(0, 20, 0)), Vector3.down);
                 RaycastHit tRY_Hit;
 
                 if (Physics.Raycast(tRY_Ray, out tRY_Hit, 150))
                 {
-                    //NavMeshHit tNM_Hit;
+                    NavMeshHit tNM_Hit;
+                    int tIN_LayerWalkable = 1 << NavMesh.GetAreaFromName("Walkable");
 
-                    if (tRY_Hit.transform.tag == "Terrain")
+                    if (NavMesh.SamplePosition(tRY_Hit.point, out tNM_Hit, 1, tIN_LayerWalkable))// && tRY_Hit.transform.tag == "Terrain")
                     {
-                        mV3_TargetPos = new Vector3(tRY_Hit.point.x, tRY_Hit.point.y + 1, tRY_Hit.point.z);
+                        mV3_TargetPos = new Vector3(tRY_Hit.point.x, tRY_Hit.point.y + 1f, tRY_Hit.point.z);
                         mBL_IsRoaming = true;
 
                         // Testing:
-                        // Instantiate(mPF_TestObj, mV3_TargetPos, transform.rotation);
+                        //Instantiate(mPF_TestObjOK, mV3_TargetPos, transform.rotation);
+                        //print("Right Hit Point");
 
                         mNMA_NavMeshAgent.speed = mFL_Speed;
                         mNMA_NavMeshAgent.SetDestination(mV3_TargetPos);
-                    }
 
+                        if (mNMA_NavMeshAgent.destination.y > transform.position.y)
+                        {
+                            print("Wrong Height:  " + mNMA_NavMeshAgent.destination.y + " , NPC Pos: " + transform.position.y);
+                            //mV3_TargetPos = RandomDestination();
+                            //print("New Random Destination");
+                        }
+
+                        //print("Area Mask: " + tNM_Hit.mask); 
+                    }
+                     
                     else
                     {
+                        //Instantiate(mPF_TestObjNotOK, mV3_TargetPos, transform.rotation);
                         mV3_TargetPos = RandomDestination();
+                        //print("Re generate Random Position");;
                     }
                 }
             }
 
-            else if (Vector3.Distance(transform.position, mV3_TargetPos) < 0.5f)
+            else if (Vector2.Distance(new Vector2(gameObject.transform.position.x, gameObject.transform.position.z), new Vector2(mV3_TargetPos.x, mV3_TargetPos.z)) < 1.25f)
             {
+                //print("Close enough");
+
                 mBL_RoamReachedDest = true;
                 mBL_IsRoaming = false;
             }
@@ -173,6 +191,14 @@ public class JC_FSM : MonoBehaviour
                 mBL_RoamTimerSet = false;
             }
         }
+
+        // Debug:
+        //print("Is he Roaming: " + mBL_IsRoaming + ", Has he reached the destination: " + mBL_RoamReachedDest + ", Raached position: " + mV3_TargetPos);
+    }
+
+    protected void CheckPosition()
+    {
+        bool TBL_CanMove;
     }
 
     protected void Chase()

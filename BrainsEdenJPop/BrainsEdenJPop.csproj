@@ -85,6 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_FSM.cs" />
+    <Compile Include="Assets\Jasmine\JC_Scripts\JC_OffMeshLinks.cs" />
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_Spawner.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_Camfollow.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_Interactable.cs" />
