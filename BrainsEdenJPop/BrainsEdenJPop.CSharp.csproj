@@ -93,6 +93,7 @@
     <Compile Include="Assets\Joey\Scripts\JL_LevelManager.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_PCMovement.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_Shrine.cs" />
+    <Compile Include="Assets\Joey\Scripts\JL_Spikes.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_TestScript.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_UIManager.cs" />
     <Compile Include="Assets\Joey\Scripts\RotateTest.cs" />
