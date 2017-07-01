@@ -15,15 +15,20 @@ namespace AK
     {
         static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID AMBIENCESTOP = 128372033U;
+        static const AkUniqueID FOOTSTEPSFAST = 482262760U;
+        static const AkUniqueID FOOTSTEPSSLOW = 4212861297U;
         static const AkUniqueID GHOSTSOUND = 920368843U;
         static const AkUniqueID GHOSTSOUNDSTOP = 2739173995U;
+        static const AkUniqueID MENUBUTTON = 2192397196U;
         static const AkUniqueID MENUMUSIC3 = 643126656U;
         static const AkUniqueID PAINHIGH = 3668682749U;
         static const AkUniqueID PAINLOW = 3695631561U;
         static const AkUniqueID PICKUPRELIC = 865029174U;
+        static const AkUniqueID PLACERELIC = 2025199039U;
         static const AkUniqueID ROCKDOOR = 1863577366U;
         static const AkUniqueID SHRINEAURA = 2740639977U;
         static const AkUniqueID SNICKT = 1781803135U;
+        static const AkUniqueID STABDEATH = 3712093981U;
         static const AkUniqueID UNSNICKT = 99965646U;
     } // namespace EVENTS
 
@@ -42,6 +47,18 @@ namespace AK
                 static const AkUniqueID SPAWN = 71202558U;
             } // namespace SWITCH
         } // namespace AMBIENCE
+
+        namespace FOOTSTEPS
+        {
+            static const AkUniqueID GROUP = 2385628198U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID FAST = 2965380179U;
+                static const AkUniqueID SLOW = 787604482U;
+                static const AkUniqueID STOP = 788884573U;
+            } // namespace SWITCH
+        } // namespace FOOTSTEPS
 
     } // namespace SWITCHES
 
