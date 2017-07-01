@@ -1282,6 +1282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 952804454}
   - component: {fileID: 952804453}
+  - component: {fileID: 952804455}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -1314,6 +1315,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &952804455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 952804452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de7668d0be2020e4697c31a7785caf7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IN_ChasingGhosts: 0
 --- !u!1001 &958578473
 Prefab:
   m_ObjectHideFlags: 0
@@ -1783,9 +1796,7 @@ GameObject:
   - component: {fileID: 1232039691}
   - component: {fileID: 1232039690}
   - component: {fileID: 1232039689}
-  - component: {fileID: 1232039688}
   - component: {fileID: 1232039687}
-  - component: {fileID: 1232039686}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -1806,30 +1817,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1232039686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1232039684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5c97b12e50514549ba56a449792806f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: 
-  useOtherObject: 0
-  valueGuid: fe5ef40d963cf24194797c149071f204
-  eventID: -1554327319
-  soundEmitterObject: {fileID: 0}
-  enableActionOnEvent: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  transitionDuration: 0
-  m_callbackData: {fileID: 0}
-  playingId: 0
-  multiPositionTypeLabel: 0
-  multiPositionArray: []
 --- !u!114 &1232039687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1845,30 +1832,6 @@ MonoBehaviour:
   useOtherObject: 0
   valueGuid: b4fe77c19798454092686f75d950bf16
   eventID: 865029174
-  soundEmitterObject: {fileID: 0}
-  enableActionOnEvent: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  transitionDuration: 0
-  m_callbackData: {fileID: 0}
-  playingId: 0
-  multiPositionTypeLabel: 0
-  multiPositionArray: []
---- !u!114 &1232039688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1232039684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5c97b12e50514549ba56a449792806f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: 
-  useOtherObject: 0
-  valueGuid: 822c176a7f47c343aa47676a97a85e46
-  eventID: -599335735
   soundEmitterObject: {fileID: 0}
   enableActionOnEvent: 0
   actionOnEventType: 0
@@ -1950,6 +1913,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf2749279290a70499921436aead5c42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FL_GhostDistance: 0
+  BL_GhostPlaying: 0
 --- !u!1 &1333875709
 GameObject:
   m_ObjectHideFlags: 0
