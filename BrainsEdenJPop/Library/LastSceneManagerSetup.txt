@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/James/Level one/Maya Mia!.unity
+- path: Assets/Josh/Test.unity
   isLoaded: 1
   isActive: 1
