@@ -124,6 +124,35 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="GhostSound" ID="{0DECAB66-B6F0-4683-8D22-C3627B8B86D2}">
+					<ChildrenList>
+						<Action Name="Play" ID="{BDCF6792-3CBA-4AF2-B9DC-2BCBED05E28C}" ShortID="713818203" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{D36A4C7A-09C7-4164-B5B8-D30CF3382B62}" Global="false">
+									<ObjectRef Name="GhostSound" ID="{0D18BF04-B819-43BC-90CA-C545AD24356A}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="GhostSoundStop" ID="{0E21D90A-ED0C-400D-B231-9A794976AFAD}">
+					<ChildrenList>
+						<Action Name="Play" ID="{8187B3F1-CB80-4DED-BCD7-E042C2367E5D}" ShortID="605384231" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{B5A66EA3-C079-4A12-8B7A-918E53881E9A}" Global="false">
+									<ObjectRef Name="GhostSoundTail" ID="{AD1B3EE1-8651-4C48-9948-B95D32F02253}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Stop" ID="{7703A5A3-A6A9-4F2C-B8B3-31BB2C6170DD}" ShortID="442040487" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{CF6C0C8B-E7FB-4D40-8F41-7ED8D6B453BA}" Global="false">
+									<ObjectRef Name="GhostSound" ID="{0D18BF04-B819-43BC-90CA-C545AD24356A}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
