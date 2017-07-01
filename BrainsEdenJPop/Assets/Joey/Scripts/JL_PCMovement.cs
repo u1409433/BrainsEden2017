@@ -28,6 +28,7 @@ public class JL_PCMovement : MonoBehaviour
         SC_AudioManager = GameObject.Find("AudioManager").GetComponent<JL_AudioManager>();
 
         FL_Speed = Agent_PC.speed;
+        FL_Speed += 1.5f;
 
     }
 

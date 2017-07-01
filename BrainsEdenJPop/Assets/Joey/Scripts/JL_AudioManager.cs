@@ -12,6 +12,7 @@ public class JL_AudioManager : MonoBehaviour
     public float FL_NextStep;
 
     public bool BL_Stepping;
+    
 
     // Use this for initialization
     void Start()
@@ -101,5 +102,10 @@ public class JL_AudioManager : MonoBehaviour
                 BL_Stepping = false;
                 break;
         }
+    }
+
+    public void SwitchAmbience(string Area)
+    {
+
     }
 }
