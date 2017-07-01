@@ -92,6 +92,7 @@
     <Compile Include="Assets\Joey\Scripts\JL_PCMovement.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_Shrine.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_TestScript.cs" />
+    <Compile Include="Assets\Joey\Scripts\JL_UIManager.cs" />
     <Compile Include="Assets\Johannes\Triggering Audio.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AKRESULT.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkActionOnEventType.cs" />
