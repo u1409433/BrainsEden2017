@@ -69,39 +69,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="MenuMusic" ID="{7413F272-F3F2-4257-A0D6-A8C49CA848C8}">
-					<ChildrenList>
-						<Action Name="Play" ID="{AAAFE7FE-8B20-47AC-A482-798806F597B3}" ShortID="758274752" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{D5B383BF-8438-45F3-838A-2286025A0326}" Global="false">
-									<ObjectRef Name="MenuMusic" ID="{4DA8F112-E02F-406D-AF57-C9BAD7550E73}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="MenuMusic1" ID="{039F8B92-758F-41F8-B255-0A3542A1D522}">
-					<ChildrenList>
-						<Action Name="Play" ID="{4DC6CB0D-45FF-478B-A7F2-AD8C155AF63A}" ShortID="731252447" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{D20D2DD4-CEAE-4131-9075-BCA932D1D122}" Global="false">
-									<ObjectRef Name="MenuMusic1" ID="{B96761A7-06C3-44C5-8E5F-ED3BA54E7C38}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="MenuMusic2" ID="{487B80A9-72AC-4AE7-8285-B99B2D420070}">
-					<ChildrenList>
-						<Action Name="Play" ID="{686F0029-C696-45CA-BC8D-DF5AFD77CAAA}" ShortID="559520883" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{58FE1553-327E-4105-AB9B-F4AC5700E9A3}" Global="false">
-									<ObjectRef Name="MenuMusic2" ID="{839A190C-4F4F-4D4C-BB27-47F10D6EF4FE}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="MenuMusic3" ID="{25F83615-D834-4BDC-86A8-CD5EF147CDC4}">
 					<ChildrenList>
 						<Action Name="Play" ID="{B80C41A8-4A02-464F-8035-9B0BE86DC8EC}" ShortID="150575959" Type="Play" Scope="One" Global="false">
@@ -113,12 +80,41 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="MenuMusic4" ID="{8CE6CA2A-3069-432D-AC15-4C4C5AB6D414}">
+				<Event Name="GhostSound" ID="{0DECAB66-B6F0-4683-8D22-C3627B8B86D2}">
 					<ChildrenList>
-						<Action Name="Play" ID="{3A992B9F-DDFC-4B6C-BEE0-61C2D73B2A9F}" ShortID="268582029" Type="Play" Scope="One" Global="false">
+						<Action Name="Play" ID="{BDCF6792-3CBA-4AF2-B9DC-2BCBED05E28C}" ShortID="713818203" Type="Play" Scope="One" Global="false">
 							<ElementList>
-								<Element ID="{8C44C16D-987F-4F7C-8905-AB9B3733396C}" Global="false">
-									<ObjectRef Name="MenuMusic4" ID="{0C2349E4-3C15-42CA-B24B-E352C15DDCAC}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+								<Element ID="{D36A4C7A-09C7-4164-B5B8-D30CF3382B62}" Global="false">
+									<ObjectRef Name="GhostSound" ID="{E0318A7A-4AD3-40F1-BE3C-DBA9CD643F44}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="GhostSoundStop" ID="{0E21D90A-ED0C-400D-B231-9A794976AFAD}">
+					<ChildrenList>
+						<Action Name="Play" ID="{8187B3F1-CB80-4DED-BCD7-E042C2367E5D}" ShortID="605384231" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{B5A66EA3-C079-4A12-8B7A-918E53881E9A}" Global="false">
+									<ObjectRef Name="GhostSoundTail" ID="{AD1B3EE1-8651-4C48-9948-B95D32F02253}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Stop" ID="{7703A5A3-A6A9-4F2C-B8B3-31BB2C6170DD}" ShortID="442040487" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{CF6C0C8B-E7FB-4D40-8F41-7ED8D6B453BA}" Global="false">
+									<ObjectRef Name="GhostSound" ID="{E0318A7A-4AD3-40F1-BE3C-DBA9CD643F44}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="RockDoor" ID="{05DD1EA4-77B5-463E-810D-548CE11DA88B}">
+					<ChildrenList>
+						<Action Name="Play" ID="{88E611DD-0FE0-4A42-B7DF-E728EA91E26C}" ShortID="117680529" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{1A9AAD90-A3CF-4831-AE43-DC2E5CDC1BAE}" Global="false">
+									<ObjectRef Name="RockDoor" ID="{51597B90-6C1D-4899-9AF8-2E09D6188DB8}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
 								</Element>
 							</ElementList>
 						</Action>

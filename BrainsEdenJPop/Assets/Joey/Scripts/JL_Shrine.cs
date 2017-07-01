@@ -29,5 +29,10 @@ public class JL_Shrine : MonoBehaviour
         BL_HasRelic = (BL_HasRelic) ? false : true;
         Ghost1.SendMessage("Change");
         Ghost2.SendMessage("Change");
+
+        if (BL_HasRelic)
+        {
+            GameObject.Find("AudioManager").GetComponent<JL_AudioManager>().PlaySound("ShrineAura");
+        }
     }
 }

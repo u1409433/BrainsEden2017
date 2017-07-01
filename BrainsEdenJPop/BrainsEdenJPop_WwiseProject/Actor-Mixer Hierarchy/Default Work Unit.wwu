@@ -446,37 +446,6 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="MenuMusic" ID="{4DA8F112-E02F-406D-AF57-C9BAD7550E73}" ShortID="497705022">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="Darkness - Stem B" ID="{24C4F196-3282-4F2E-9173-5BA1D356F3A4}" ShortID="1029120267" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Darkness - Stem B" ID="{8F8C7515-87E5-4E13-AEE6-B529F2C8B3C3}" ShortID="944216012">
-									<Language>SFX</Language>
-									<AudioFile>Darkness - Stem B.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Darkness - Stem B" ID="{8F8C7515-87E5-4E13-AEE6-B529F2C8B3C3}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="PainHigh" ID="{1DB83FF2-48D6-4EAE-9E6C-5650480C3C69}" ShortID="98973054">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -608,7 +577,6 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="ShrineAura" ID="{0A01B064-95C2-4863-8BE4-335E3E2AD660}" ShortID="126502648">
 					<PropertyList>
-						<Property Name="3DPositionSource" Type="int16" Value="0"/>
 						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
@@ -618,7 +586,7 @@
 									<Modifier Name="" ID="{7CC1FB34-FF35-4AEA-BC5D-C2515922076F}">
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="6"/>
+											<Property Name="Max" Type="Real64" Value="3"/>
 											<Property Name="Min" Type="Real64" Value="-2"/>
 										</PropertyList>
 									</Modifier>
@@ -635,6 +603,56 @@
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{215FCFAA-D888-4A6F-BFBD-0F0448B5F8F8}" ShortID="1012340428">
+									<PropertyList>
+										<Property Name="RadiusMax" Type="Real64" Value="20"/>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{892872B4-4014-46F2-BFB5-43FA0E9F5AE5}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>20</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
 						</Reference>
@@ -664,7 +682,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-19</Value>
+										<Value>-7</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -696,82 +714,6 @@
 					<PositioningInfo>
 						<Position Name="" ID="{FF529439-0E96-48BE-A051-47DE325E5FCB}"/>
 					</PositioningInfo>
-				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="MenuMusic1" ID="{B96761A7-06C3-44C5-8E5F-ED3BA54E7C38}" ShortID="509563765">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="Gaslamp Funworks" ID="{4F2D6CEE-66BE-4FA5-90CF-CB25F307516D}" ShortID="760940898" Type="SoundFX">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-14</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Gaslamp Funworks" ID="{A32B4A8E-D54B-4A76-A7A6-DDA6964C8A3B}" ShortID="669241968">
-									<Language>SFX</Language>
-									<AudioFile>Gaslamp Funworks.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Gaslamp Funworks" ID="{A32B4A8E-D54B-4A76-A7A6-DDA6964C8A3B}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="MenuMusic2" ID="{839A190C-4F4F-4D4C-BB27-47F10D6EF4FE}" ShortID="963524555">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="Firebrand" ID="{2423017C-11CD-4594-9C52-4ADCBDBD4C4C}" ShortID="159640910" Type="SoundFX">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-15</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Firebrand" ID="{29DD34A7-2F67-4E3D-8582-4443548B5815}" ShortID="610871184">
-									<Language>SFX</Language>
-									<AudioFile>Firebrand.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Firebrand" ID="{29DD34A7-2F67-4E3D-8582-4443548B5815}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="MenuMusic3" ID="{6BBF581F-25E6-49FA-B072-50BB8B911F73}" ShortID="107320069">
 					<ReferenceList>
@@ -811,7 +753,7 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="MenuMusic4" ID="{0C2349E4-3C15-42CA-B24B-E352C15DDCAC}" ShortID="237413330">
+				<BlendContainer Name="GhostSoundTail" ID="{AD1B3EE1-8651-4C48-9948-B95D32F02253}" ShortID="933045614">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
@@ -821,11 +763,139 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Take a Chance" ID="{7D4C14FC-C08F-4FDE-BC42-038763A6306C}" ShortID="926168021" Type="SoundFX">
+						<Sound Name="distorted white noise tail" ID="{C65A19D5-025A-4071-B502-F91B2D964395}" ShortID="84826328" Type="SoundFX">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-15</Value>
+										<Value>5</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{F2BF087B-2397-4DD8-9CDF-40DE30736F83}" ShortID="717626144">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="GhostDistance" ID="{218D1083-79B2-4095-9AA6-3A66279B7584}" WorkUnitID="{A32FA20F-3D15-492C-B732-FCCCFBD435EA}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{E060C147-6D44-4816-BEB2-53BBBADB4F58}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>20</XPos>
+														<YPos>-200</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="distorted white noise tail" ID="{C38116C0-52E0-429E-9602-21F58C7645E6}" ShortID="64326317">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.147321428571429"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.435267857142857"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>distorted white noise tail.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="distorted white noise tail" ID="{C38116C0-52E0-429E-9602-21F58C7645E6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="GhostSoundTail" ID="{F416833C-A9FF-4C2A-A1B9-7B13056D4D61}" ShortID="966018446" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>8</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{5C5E7770-75A2-4C8A-A7BC-A065D5CF1957}" ShortID="987267736">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="GhostDistance" ID="{218D1083-79B2-4095-9AA6-3A66279B7584}" WorkUnitID="{A32FA20F-3D15-492C-B732-FCCCFBD435EA}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{84793E9A-5FD5-482B-A3BA-5D980BA66402}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Exp2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>20</XPos>
+														<YPos>-200</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="high pitched gost scream" ID="{41381D60-B26A-40D4-8190-84E198579066}" ShortID="1038999948">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="4.36038477891163E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="4.99602001959048"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="7.28112482197097"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>high pitched gost scream.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="high pitched gost scream" ID="{41381D60-B26A-40D4-8190-84E198579066}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
+				<BlendContainer Name="RockDoor" ID="{51597B90-6C1D-4899-9AF8-2E09D6188DB8}" ShortID="852576540">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SCRAPE Concrete Slab on Concrete Slab Long (mono)" ID="{F5E59026-15CC-467D-8422-28D8F61057BA}" ShortID="44431860" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-2070</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -838,17 +908,445 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Take a Chance" ID="{2BA0AB0C-666F-4E26-A9A3-DE853520A7D1}" ShortID="388220911">
+								<AudioFileSource Name="SCRAPE Concrete Slab on Concrete Slab Long (mono)" ID="{EC5877E5-63B7-4505-9F11-61E27B1366E7}" ShortID="652656743">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="1"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.229586724570781"/>
+										<Property Name="LoopEnd" Type="Real64" Value="1.64176167193068"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
 									<Language>SFX</Language>
-									<AudioFile>Take a Chance.wav</AudioFile>
+									<AudioFile>SCRAPE Concrete Slab on Concrete Slab Long (mono).wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Take a Chance" ID="{2BA0AB0C-666F-4E26-A9A3-DE853520A7D1}" Platform="Linked"/>
+								<ActiveSource Name="SCRAPE Concrete Slab on Concrete Slab Long (mono)" ID="{EC5877E5-63B7-4505-9F11-61E27B1366E7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SCRAPE Concrete Slab on Concrete Slab Long (mono)_01" ID="{9D7863A4-EA10-4329-AF65-DF39CE9E7A66}" ShortID="324903704" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>71</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SCRAPE Concrete Slab on Concrete Slab Long (mono)" ID="{F885AF58-2109-4A91-95DA-E0E0C784A7CA}" ShortID="250617961">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="1"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.229586724570781"/>
+										<Property Name="LoopEnd" Type="Real64" Value="1.64176167193068"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SCRAPE Concrete Slab on Concrete Slab Long (mono).wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="652656743"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SCRAPE Concrete Slab on Concrete Slab Long (mono)" ID="{F885AF58-2109-4A91-95DA-E0E0C784A7CA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SCRAPE Concrete Slab on Concrete Slab Long (mono)_02" ID="{6A562EC9-FA1A-46AC-8AC8-0D1B63DE6A7E}" ShortID="983173537" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>37</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>29</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-580</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SCRAPE Concrete Slab on Concrete Slab Long (mono)" ID="{99753356-D921-4A08-AB48-ADC70919A44A}" ShortID="912653338">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="1"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.229586724570781"/>
+										<Property Name="LoopEnd" Type="Real64" Value="1.64176167193068"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SCRAPE Concrete Slab on Concrete Slab Long (mono).wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="652656743"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SCRAPE Concrete Slab on Concrete Slab Long (mono)" ID="{99753356-D921-4A08-AB48-ADC70919A44A}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
-				</RandomSequenceContainer>
+				</BlendContainer>
+				<BlendContainer Name="GhostSound" ID="{E0318A7A-4AD3-40F1-BE3C-DBA9CD643F44}" ShortID="257985715">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="GhostWail" ID="{C23F2FFC-E86C-4776-9B82-D91185F3AE30}" ShortID="1043272703">
+							<PropertyList>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="high pitched gost scream" ID="{9B335316-A29D-42C5-B492-3F60AB367F34}" ShortID="53746069" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{9F98DFA8-2C53-411F-B4CF-3669F7EAFE28}" ShortID="791556952">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="GhostDistance" ID="{218D1083-79B2-4095-9AA6-3A66279B7584}" WorkUnitID="{A32FA20F-3D15-492C-B732-FCCCFBD435EA}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{20258905-4A90-4010-A818-DCF28C795C9A}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>20</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="high pitched gost scream" ID="{F4D0AD11-8C12-4A91-A839-4DE5128158AF}" ShortID="639164793">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.10295205221585"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>high pitched gost scream.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="high pitched gost scream" ID="{F4D0AD11-8C12-4A91-A839-4DE5128158AF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="high pitched gost scream_01" ID="{D04B84ED-0AB0-4BA6-9CC9-8778D6440732}" ShortID="31351893" Type="SoundFX">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{37F0272B-90B9-49AE-BE6F-5853F8FBEE24}" ShortID="692796775">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="GhostDistance" ID="{218D1083-79B2-4095-9AA6-3A66279B7584}" WorkUnitID="{A32FA20F-3D15-492C-B732-FCCCFBD435EA}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{A797568A-41A7-42BB-BBFB-784807D8343E}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>20</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="high pitched gost scream" ID="{CD3BE0BB-34E8-4315-B586-D67970DF0BA7}" ShortID="209676334">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="1"/>
+												<Property Name="LoopBegin" Type="Real64" Value="4.12016596882872"/>
+												<Property Name="LoopEnd" Type="Real64" Value="6.39653286995961"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.88761211395345"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.61455210890519"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>high pitched gost scream.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="high pitched gost scream" ID="{CD3BE0BB-34E8-4315-B586-D67970DF0BA7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="high pitched gost scream" ID="{9B335316-A29D-42C5-B492-3F60AB367F34}"/>
+								<ItemRef Name="high pitched gost scream_01" ID="{D04B84ED-0AB0-4BA6-9CC9-8778D6440732}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<Sound Name="distorted white noise" ID="{B31603B1-BC1E-4A63-A11C-A2E7BE3B4849}" ShortID="654004467" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>69</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{584C1A18-BC8F-426A-8A3D-4FD8C7945802}" ShortID="887572445">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="GhostDistance" ID="{218D1083-79B2-4095-9AA6-3A66279B7584}" WorkUnitID="{A32FA20F-3D15-492C-B732-FCCCFBD435EA}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{210A9EB2-6039-403E-8DC3-80C694FCC55C}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>17</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>20</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{1DE87BBD-0C77-4D16-800C-901EBC2712EB}" ShortID="316752707">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="GhostDistance" ID="{218D1083-79B2-4095-9AA6-3A66279B7584}" WorkUnitID="{A32FA20F-3D15-492C-B732-FCCCFBD435EA}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{939093F0-27E9-4059-BA2D-B43FFEBCB1DE}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>20</XPos>
+														<YPos>66</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Guitar Distortion (Custom)" ID="{CF541AEF-10BB-4312-8106-6EE32D29BFE5}" ShortID="92315506" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+											<PropertyList>
+												<Property Name="DistortionDrive" Type="Real32" Value="77"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="distorted white noise" ID="{13B7569C-CE7A-4A8D-82EC-EE857BAF0374}" ShortID="523182354">
+									<PropertyList>
+										<Property Name="TrimEnd" Type="Real64" Value="2.64285714285714"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>distorted white noise.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="distorted white noise" ID="{13B7569C-CE7A-4A8D-82EC-EE857BAF0374}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="distorted white noise bitcrushed" ID="{0E67DDE7-5059-4EF0-9FE2-0DE41FDF45FB}" ShortID="333285154" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{ECDD6119-7229-4BFE-9EA9-8B4E602252AE}" ShortID="83171509">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="GhostDistance" ID="{218D1083-79B2-4095-9AA6-3A66279B7584}" WorkUnitID="{A32FA20F-3D15-492C-B732-FCCCFBD435EA}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{E0002142-D522-40CF-8CD3-A686296A2D21}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>20</XPos>
+														<YPos>100</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{A66E6027-2AB7-4B00-AB3A-6EAAB94FD5A5}" ShortID="834986272">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="GhostDistance" ID="{218D1083-79B2-4095-9AA6-3A66279B7584}" WorkUnitID="{A32FA20F-3D15-492C-B732-FCCCFBD435EA}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{96B63569-5709-4D21-A60A-7EB62DB4B9A7}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>19.999</XPos>
+														<YPos>-200</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>20</XPos>
+														<YPos>-200</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="distorted white noise bitcrushed" ID="{89EF4D13-60BE-466C-93BB-C5FB1B1F743B}" ShortID="953444512">
+									<Language>SFX</Language>
+									<AudioFile>distorted white noise bitcrushed.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="distorted white noise bitcrushed" ID="{89EF4D13-60BE-466C-93BB-C5FB1B1F743B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
