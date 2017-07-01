@@ -35,6 +35,15 @@ public class JL_PCMovement : MonoBehaviour
 
         if (BL_Carrying) Agent_PC.speed = FL_Speed / 2;
         else Agent_PC.speed = FL_Speed;
+
+        if (Vector3.Distance(transform.position, Agent_PC.destination) > 1f)
+        {
+            Debug.Log("Bob");
+        }
+        else
+        {
+            Debug.Log("Do Not Bob");
+        }
     }
 
     void MouseInput()
