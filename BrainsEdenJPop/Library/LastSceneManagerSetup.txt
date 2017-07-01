@@ -1,13 +1,4 @@
-<<<<<<< HEAD
-sceneSetups:
-- path: Assets/Joey/Joey Maya.unity
-=======
-<<<<<<< HEAD
-sceneSetups: []
-=======
 sceneSetups:
 - path: Assets/James/Mayamia.unity
->>>>>>> ae5ab9551e9fcf72292e6c1b5bb7599811b63afc
   isLoaded: 1
   isActive: 1
->>>>>>> bd079d7e396705fbd1df00ba68ed6ced541bf3f9
