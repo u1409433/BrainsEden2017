@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}'
-    m_lastTimePsrt1: 732214464
-    m_lastTimePart2: -1999322945
+    m_lastTimePsrt1: 1480317898
+    m_lastTimePart2: -1999322941
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -39,15 +39,25 @@ MonoBehaviour:
       ID: 128372033
       Guid: aef763ca9a86e44b9c5af99cfe4a4589
       maxAttenuation: 0
-    - Name: Footsteps
-      Path: Default Work Unit\Footsteps
+    - Name: FootstepsFast
+      Path: Default Work Unit\FootstepsFast
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Footsteps
+      - ElementName: FootstepsFast
         ObjectType: 3
-      ID: -1909339098
+      ID: 482262760
       Guid: 3ddd2a44239a584bbe70a47585fb3f80
+      maxAttenuation: 0
+    - Name: FootstepsSlow
+      Path: Default Work Unit\FootstepsSlow
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: FootstepsSlow
+        ObjectType: 3
+      ID: -82105999
+      Guid: 25ea2d252899b54999958387b3fcbfe8
       maxAttenuation: 0
     - Name: GhostSound
       Path: Default Work Unit\GhostSound
@@ -268,11 +278,6 @@ MonoBehaviour:
   - /BrainsEdenJPop_WwiseProject
   - /BrainsEdenJPop_WwiseProject/Events
   - /BrainsEdenJPop_WwiseProject/Events/Default Work Unit
-  - /BrainsEdenJPop_WwiseProject/SoundBanks
-  - /BrainsEdenJPop_WwiseProject/SoundBanks/Default Work Unit
-  - /BrainsEdenJPop_WwiseProject/Switches
-  - /BrainsEdenJPop_WwiseProject/Switches/Default Work Unit
-  - /BrainsEdenJPop_WwiseProject/Switches/Default Work Unit/Footsteps
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

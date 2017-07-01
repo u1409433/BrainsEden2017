@@ -87,7 +87,7 @@ public class JL_AudioManager : MonoBehaviour
         FL_GhostDistance = vDistance;
     }
 
-    public void SwitchingFootsteps(string State)
+    public void SwitchFootsteps(string State)
     {
         switch (State)
         {
