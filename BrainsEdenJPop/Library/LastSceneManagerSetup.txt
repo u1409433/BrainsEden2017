@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-sceneSetups: []
-=======
 sceneSetups:
-- path: Assets/Joey/Mayamia 1.unity
+- path: Assets/James/Level Two/Puzzlebox.unity
   isLoaded: 1
   isActive: 1
->>>>>>> 5ba212f9c2b9bf70076518fa123295677fc8664d
