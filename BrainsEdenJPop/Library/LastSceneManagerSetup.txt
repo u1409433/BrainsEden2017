@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Jasmine/JC_Scenes/JC_MayamiaTesting.unity
-=======
-- path: Assets/Joey/Joey Maya.unity
->>>>>>> 36ad576f84c316a0bae7445321509580c14eccc5
   isLoaded: 1
   isActive: 1
