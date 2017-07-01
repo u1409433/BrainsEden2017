@@ -150,4 +150,28 @@ public class JL_PCMovement : MonoBehaviour
             }
         }
     }
+
+    public void Die()
+    {
+        transform.position = new Vector3(70, 7, 42);
+        Debug.Log("I Died!");
+        SC_AudioManager.PlaySound("PainLow");
+    }
+
+    void Dodge(Vector3 vV3_SpawnPoint)
+    {
+        transform.position = vV3_SpawnPoint;
+        SC_AudioManager.PlaySound("PainLow");
+        Debug.Log("I Dodged!");
+    }
+
+    public void OnTriggerEnter(Collider vCollided)
+    {
+        Debug.Log("Collision");
+        if (vCollided.transform.name == "Cone")
+        {
+            Vector3 temp = vCollided.GetComponent<JL_Cone>().V3_DodgePoint;
+            Dodge(temp);
+        }
+    }
 }

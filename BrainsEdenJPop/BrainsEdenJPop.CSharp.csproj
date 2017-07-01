@@ -89,6 +89,7 @@
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_LevelManager.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_AudioManager.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_Camfollow.cs" />
+    <Compile Include="Assets\Joey\Scripts\JL_Cone.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_Interactable.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_LevelManager.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_PCMovement.cs" />

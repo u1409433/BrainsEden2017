@@ -112,7 +112,6 @@ public class JC_FSM : MonoBehaviour
         {
             SetState(State.Chase);
         }
-
         else
         {
             SetState(State.Roam);
