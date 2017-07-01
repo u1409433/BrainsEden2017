@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 0452b945e1006374bbc6901eb3bfe4a5
+=======
+guid: 5c2d84226fbbaf94e9c1451f1c39b06a
+>>>>>>> 7ed6f8d678e5ed96a4c94863665aac1d9050320e
 labels:
 - Not
 - Fully
@@ -11,4 +15,7 @@ MonoImporter:
   icon: {instanceID: 0}
   userData: 
   assetBundleName: 
+<<<<<<< HEAD
   assetBundleVariant: 
+=======
+>>>>>>> 7ed6f8d678e5ed96a4c94863665aac1d9050320e
