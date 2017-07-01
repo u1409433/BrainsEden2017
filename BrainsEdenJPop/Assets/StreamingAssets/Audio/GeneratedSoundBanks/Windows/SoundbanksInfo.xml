@@ -29,6 +29,7 @@
 				<Event Id="3668682749" Name="PainHigh" ObjectPath="\Events\Default Work Unit\PainHigh"/>
 				<Event Id="3695631561" Name="PainLow" ObjectPath="\Events\Default Work Unit\PainLow"/>
 				<Event Id="865029174" Name="PickupRelic" ObjectPath="\Events\Default Work Unit\PickupRelic"/>
+				<Event Id="1863577366" Name="RockDoor" ObjectPath="\Events\Default Work Unit\RockDoor"/>
 				<Event Id="2740639977" Name="ShrineAura" ObjectPath="\Events\Default Work Unit\ShrineAura" MaxAttenuation="20.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -87,6 +88,10 @@
 				<File Id="644753406" Language="SFX">
 					<ShortName>Our Story Begins.wav</ShortName>
 					<Path>SFX\Our Story Begins_50DB02DB.wem</Path>
+				</File>
+				<File Id="652656743" Language="SFX">
+					<ShortName>SCRAPE Concrete Slab on Concrete Slab Long (mono).wav</ShortName>
+					<Path>SFX\SCRAPE Concrete Slab on Concrete Slab Long (mono)_AC2123DB.wem</Path>
 				</File>
 				<File Id="842989869" Language="SFX">
 					<ShortName>magicAir.wav</ShortName>
