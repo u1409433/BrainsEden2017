@@ -1,1 +1,8 @@
+<<<<<<< HEAD
 sceneSetups: []
+=======
+sceneSetups:
+- path: Assets/James/Mayamia.unity
+  isLoaded: 1
+  isActive: 1
+>>>>>>> bd079d7e396705fbd1df00ba68ed6ced541bf3f9

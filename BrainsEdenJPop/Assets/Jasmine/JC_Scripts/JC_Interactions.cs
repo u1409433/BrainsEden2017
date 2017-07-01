@@ -19,6 +19,9 @@ public class JC_Interactions : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        
+        if (collision.transform.tag == "Player")
+        {
+            
+        }
     }
 }
