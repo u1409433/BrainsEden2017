@@ -86,7 +86,7 @@
   <ItemGroup>
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_FSM.cs" />
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_Interactions.cs" />
-    <Compile Include="Assets\Jasmine\JC_Scripts\JC_Spawner.cs" />
+    <Compile Include="Assets\Jasmine\JC_Scripts\JC_LevelManager.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_Camfollow.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_Interactable.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_LevelManager.cs" />
@@ -94,6 +94,7 @@
     <Compile Include="Assets\Joey\Scripts\JL_Shrine.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_TestScript.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_UIManager.cs" />
+    <Compile Include="Assets\Joey\Scripts\RotateTest.cs" />
     <Compile Include="Assets\Johannes\Scripts\JB_ChangeAmbience.cs" />
     <Compile Include="Assets\Johannes\Triggering Audio.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AKRESULT.cs" />
