@@ -59,10 +59,6 @@
 					<ShortName>high pitched gost scream.wav</ShortName>
 					<Path>SFX\high pitched gost scream_C357FBB1.wem</Path>
 				</File>
-				<File Id="306071059" Language="SFX">
-					<ShortName>SCRAPE Metal on Metal Cling Short (mono).wav</ShortName>
-					<Path>SFX\SCRAPE Metal on Metal Cling Short (mono)_924FDA37.wem</Path>
-				</File>
 				<File Id="335672728" Language="SFX">
 					<ShortName>GRUNT Male Hurt 03 (mono).wav</ShortName>
 					<Path>SFX\GRUNT Male Hurt 03 (mono)_50DB02DB.wem</Path>
@@ -70,6 +66,10 @@
 				<File Id="367362755" Language="SFX">
 					<ShortName>MACHINE Press Machine (loop mono).wav</ShortName>
 					<Path>SFX\MACHINE Press Machine (loop mono)_D2B9BC41.wem</Path>
+				</File>
+				<File Id="381109112" Language="SFX">
+					<ShortName>GORE Blade Chop (mono).wav</ShortName>
+					<Path>SFX\GORE Blade Chop (mono)_50DB02DB.wem</Path>
 				</File>
 				<File Id="387886567" Language="SFX">
 					<ShortName>GROAN Male Hurt Long Pain (mono).wav</ShortName>
