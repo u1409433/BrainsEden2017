@@ -85,6 +85,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_FSM.cs" />
+<<<<<<< HEAD
+    <Compile Include="Assets\Jasmine\JC_Scripts\JC_OffMeshLinks.cs" />
+=======
+    <Compile Include="Assets\Jasmine\JC_Scripts\JC_Interactions.cs" />
+>>>>>>> a8b02c3967c64d66f95a7bf369874a0748caf4b7
     <Compile Include="Assets\Jasmine\JC_Scripts\JC_Spawner.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_Camfollow.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_Interactable.cs" />
@@ -93,6 +98,7 @@
     <Compile Include="Assets\Joey\Scripts\JL_Shrine.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_TestScript.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_UIManager.cs" />
+    <Compile Include="Assets\Joey\Scripts\RotateTest.cs" />
     <Compile Include="Assets\Johannes\Scripts\JB_ChangeAmbience.cs" />
     <Compile Include="Assets\Johannes\Triggering Audio.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AKRESULT.cs" />
@@ -207,6 +213,10 @@
     <None Include="Assets\Joey\PlaceHolder.txt" />
     <None Include="Assets\Johannes\PlaceHolder.txt" />
     <None Include="Assets\Josh\AssetList.txt" />
+    <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Init.txt" />
+    <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Main.txt" />
+    <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\PluginInfo.xml" />
+    <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\SoundbanksInfo.xml" />
     <None Include="Assets\StreamingAssets\desc.txt" />
     <None Include="Assets\Wwise\Deployment\Plugins\Mac\Debug\AkSoundEngine.bundle\Contents\Resources\readme.txt" />
     <None Include="Assets\Wwise\Deployment\Plugins\Mac\Profile\AkSoundEngine.bundle\Contents\Resources\readme.txt" />

@@ -25,6 +25,8 @@ public class JC_FSM : MonoBehaviour
 
     // Navmesh:
     protected NavMeshAgent mNMA_NavMeshAgent;
+    protected Vector3 mV3_PrevDest;
+    protected Vector3 mV3_CurrentDest;
     public float mFL_Speed;
 
     // Movement Variables:
@@ -97,25 +99,6 @@ public class JC_FSM : MonoBehaviour
         {
             SetState(State.Roam);
         }
-
-        // Attack Distance:
-        //if (Vector3.Distance(gameObject.transform.position, mGO_PC.transform.position) <= mFL_AttackDistance)
-        //{
-        //    SetState(State.Attack);
-        //}
-
-        //else
-        //{
-        //    if (Vector3.Distance(gameObject.transform.position, mGO_PC.transform.position) <= mFL_ChaseDistance)
-        //    {
-        //        SetState(State.Chase);
-        //    }
-
-        //    else
-        //    {
-        //        SetState(State.Roam);
-        //    }
-        //}
     }
 
     protected void Roam()
@@ -127,6 +110,8 @@ public class JC_FSM : MonoBehaviour
 
         if (!mBL_RoamReachedDest)
         {
+            bool mBL_CanGo = true;
+
             if (!mBL_IsRoaming)
             {
                 Ray tRY_Ray = new Ray((RandomDestination() + new Vector3(0, 20, 0)), Vector3.down);
@@ -140,40 +125,47 @@ public class JC_FSM : MonoBehaviour
                     if (NavMesh.SamplePosition(tRY_Hit.point, out tNM_Hit, 1, tIN_LayerWalkable))// && tRY_Hit.transform.tag == "Terrain")
                     {
                         mV3_TargetPos = new Vector3(tRY_Hit.point.x, tRY_Hit.point.y + 1f, tRY_Hit.point.z);
-                        mBL_IsRoaming = true;
 
                         // Testing:
                         //Instantiate(mPF_TestObjOK, mV3_TargetPos, transform.rotation);
                         //print("Right Hit Point");
 
-                        mNMA_NavMeshAgent.speed = mFL_Speed;
-                        mNMA_NavMeshAgent.SetDestination(mV3_TargetPos);
-
-                        if (mNMA_NavMeshAgent.destination.y > transform.position.y)
+                        if (transform.position.y > tNM_Hit.position.y)
                         {
-                            print("Wrong Height:  " + mNMA_NavMeshAgent.destination.y + " , NPC Pos: " + transform.position.y);
-                            //mV3_TargetPos = RandomDestination();
-                            //print("New Random Destination");
+                            if (transform.position.y - tNM_Hit.position.y > 1)
+                            {
+                                print("Wrong Height: " + tNM_Hit.position.y + ", Player Height: " + transform.position.y);
+                                mBL_CanGo = false;
+                            } 
                         }
 
-                        //print("Area Mask: " + tNM_Hit.mask); 
-                    }
-                     
-                    else
-                    {
-                        //Instantiate(mPF_TestObjNotOK, mV3_TargetPos, transform.rotation);
-                        mV3_TargetPos = RandomDestination();
-                        //print("Re generate Random Position");;
+                        else
+                        {
+                            if (tNM_Hit.position.y - transform.position.y > 3)
+                            {
+                                print("Wrong Height: " + tNM_Hit.position.y + ", Player Height: " + transform.position.y);
+                                mBL_CanGo = false;
+                            }
+                        }
+
+                        if (mBL_CanGo)
+                        {
+                            print("Correct Height: " + tNM_Hit.position.y + ", Player Height: " + transform.position.y);
+                            mBL_IsRoaming = true;
+                            mNMA_NavMeshAgent.speed = mFL_Speed;
+                            mNMA_NavMeshAgent.SetDestination(mV3_TargetPos);
+                        }
                     }
                 }
             }
 
-            else if (Vector2.Distance(new Vector2(gameObject.transform.position.x, gameObject.transform.position.z), new Vector2(mV3_TargetPos.x, mV3_TargetPos.z)) < 1.25f)
+            else 
             {
-                //print("Close enough");
-
-                mBL_RoamReachedDest = true;
-                mBL_IsRoaming = false;
+                if (Vector2.Distance(new Vector2(gameObject.transform.position.x, gameObject.transform.position.z), new Vector2(mV3_TargetPos.x, mV3_TargetPos.z)) < 1f)
+                {
+                    mBL_RoamReachedDest = true;
+                    mBL_IsRoaming = false; 
+                }
             }
         }
 
@@ -194,11 +186,6 @@ public class JC_FSM : MonoBehaviour
 
         // Debug:
         //print("Is he Roaming: " + mBL_IsRoaming + ", Has he reached the destination: " + mBL_RoamReachedDest + ", Raached position: " + mV3_TargetPos);
-    }
-
-    protected void CheckPosition()
-    {
-        bool TBL_CanMove;
     }
 
     protected void Chase()
