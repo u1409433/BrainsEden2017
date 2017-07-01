@@ -10,7 +10,8 @@ public class JL_PCMovement : MonoBehaviour
 
     public Camera Cam_Main;
 
-    public JL_LevelManager SC_LevelManager;
+    private JL_LevelManager SC_LevelManager;
+    private JL_AudioManager SC_AudioManager;
     
     public bool BL_Carrying;
 
@@ -24,6 +25,7 @@ public class JL_PCMovement : MonoBehaviour
         Cam_Main = GameObject.Find("Main Camera").GetComponent<Camera>();
 
         SC_LevelManager = GameObject.Find("LevelManager").GetComponent<JL_LevelManager>();
+        SC_AudioManager = GameObject.Find("AudioManager").GetComponent<JL_AudioManager>();
 
         FL_Speed = Agent_PC.speed;
     }
@@ -38,41 +40,41 @@ public class JL_PCMovement : MonoBehaviour
         if (BL_Carrying) Agent_PC.speed = FL_Speed / 2;
         else Agent_PC.speed = FL_Speed;
 
-        Debug.Log("Bob");
-        if (BL_BobRight)
-        {
-            gameObject.transform.Rotate(new Vector3(0, 0, -0.5f));
-            if (transform.rotation.eulerAngles.z <= -10)
-            {
-                BL_BobRight = false;
-            }
-        }
-        else
-        {
-            gameObject.transform.Rotate(new Vector3(0, 0, 0.5f));
-            if (transform.rotation.eulerAngles.z >= 10)
-            {
-                BL_BobRight = true;
-            }
-        }
+        //Debug.Log("Bob");
+        //if (BL_BobRight)
+        //{
+        //    gameObject.transform.Rotate(new Vector3(0, 0, -0.5f));
+        //    if (transform.rotation.eulerAngles.z <= -10)
+        //    {
+        //        BL_BobRight = false;
+        //    }
+        //}
+        //else
+        //{
+        //    gameObject.transform.Rotate(new Vector3(0, 0, 0.5f));
+        //    if (transform.rotation.eulerAngles.z >= 10)
+        //    {
+        //        BL_BobRight = true;
+        //    }
+        //}
 
-        /*if (Vector3.Distance(transform.position, Agent_PC.destination) > 1f)
-        {
+        ///*if (Vector3.Distance(transform.position, Agent_PC.destination) > 1f)
+        //{
             
-        }
-        else
-        {
-            Debug.Log("Do Not Bob");
-            if (transform.rotation.eulerAngles.z <= -0.5f)
-            {
-                transform.Rotate(0, 0, 0.5f);
-            }
-            else if (transform.rotation.eulerAngles.z >= 0.5f)
-            {
-                transform.Rotate(0, 0, -0.5f);
-            }
-            else Debug.Log("I'm centered");
-        }*/
+        //}
+        //else
+        //{
+        //    Debug.Log("Do Not Bob");
+        //    if (transform.rotation.eulerAngles.z <= -0.5f)
+        //    {
+        //        transform.Rotate(0, 0, 0.5f);
+        //    }
+        //    else if (transform.rotation.eulerAngles.z >= 0.5f)
+        //    {
+        //        transform.Rotate(0, 0, -0.5f);
+        //    }
+        //    else Debug.Log("I'm centered");
+        //}*/
     }
 
     void MouseInput()

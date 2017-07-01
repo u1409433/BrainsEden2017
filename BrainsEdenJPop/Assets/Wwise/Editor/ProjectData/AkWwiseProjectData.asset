@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}'
-    m_lastTimePsrt1: -972838867
-    m_lastTimePart2: -1999322997
+    m_lastTimePsrt1: 94146722
+    m_lastTimePart2: -1999322988
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -133,22 +133,22 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A1BE1F16-5A58-43CA-B653-D8BD0401B781}'
-    m_lastTimePsrt1: -1897473178
-    m_lastTimePart2: -1999323004
+    m_lastTimePsrt1: 1958753262
+    m_lastTimePart2: -1999323003
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{45CE0B3C-F78B-4ED5-BE21-A0213F1B7BFD}'
-    m_lastTimePsrt1: -1884069090
-    m_lastTimePart2: -1999323004
+    m_lastTimePsrt1: 1971333262
+    m_lastTimePart2: -1999323003
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8171BD08-1B48-4883-BDA9-5A92826AB052}'
-    m_lastTimePsrt1: -1884059057
-    m_lastTimePart2: -1999323004
+    m_lastTimePsrt1: 1971343262
+    m_lastTimePart2: -1999323003
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -187,8 +187,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D7FF8C30-DA72-4C14-BB80-CDAF477F8EE6}'
-    m_lastTimePsrt1: -972888872
-    m_lastTimePart2: -1999322997
+    m_lastTimePsrt1: 104247732
+    m_lastTimePart2: -1999322988
     List:
     - Name: Main
       Path: Default Work Unit\Main
@@ -206,8 +206,6 @@ MonoBehaviour:
   - /BrainsEdenJPop_WwiseProject/SoundBanks
   - /BrainsEdenJPop_WwiseProject/SoundBanks/Default Work Unit
   - /BrainsEdenJPop_WwiseProject/Switches
-  - /BrainsEdenJPop_WwiseProject/Switches/Default Work Unit
-  - /BrainsEdenJPop_WwiseProject/Switches/Default Work Unit/Ambience
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
