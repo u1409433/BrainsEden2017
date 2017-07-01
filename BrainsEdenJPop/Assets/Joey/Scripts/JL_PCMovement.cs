@@ -28,6 +28,8 @@ public class JL_PCMovement : MonoBehaviour
         SC_AudioManager = GameObject.Find("AudioManager").GetComponent<JL_AudioManager>();
 
         FL_Speed = Agent_PC.speed;
+        FL_Speed += 1.5f;
+
     }
 
     // Update is called once per frame
@@ -39,6 +41,23 @@ public class JL_PCMovement : MonoBehaviour
 
         if (BL_Carrying) Agent_PC.speed = FL_Speed / 2;
         else Agent_PC.speed = FL_Speed;
+
+        //If im walking 
+        if (Vector3.Distance(transform.position, Agent_PC.destination) > 1f)
+        {
+            if (BL_Carrying)
+            {
+                SC_AudioManager.SwitchFootsteps("Slow");
+            }
+            else
+            {
+                SC_AudioManager.SwitchFootsteps("Fast");
+            }
+        }
+        else
+        {
+            SC_AudioManager.SwitchFootsteps("Stop");
+        }
 
         //Debug.Log("Bob");
         //if (BL_BobRight)
@@ -58,9 +77,7 @@ public class JL_PCMovement : MonoBehaviour
         //    }
         //}
 
-        ///*if (Vector3.Distance(transform.position, Agent_PC.destination) > 1f)
-        //{
-            
+
         //}
         //else
         //{
@@ -148,6 +165,32 @@ public class JL_PCMovement : MonoBehaviour
             {
                 Debug.Log("I am not carrying anything");
             }
+        }
+    }
+
+    public void Die()
+    {
+        transform.position = new Vector3(70, 7, 42);
+        Debug.Log("I Died!");
+        //Play "Pop sounds" and start base ambience
+        //HERE
+        SC_AudioManager.PlaySound("PainLow");
+    }
+
+    void Dodge(Vector3 vV3_SpawnPoint)
+    {
+        transform.position = vV3_SpawnPoint;
+        SC_AudioManager.PlaySound("PainLow");
+        Debug.Log("I Dodged!");
+    }
+
+    public void OnTriggerEnter(Collider vCollided)
+    {
+        Debug.Log("Collision");
+        if (vCollided.transform.name == "Cone")
+        {
+            Vector3 temp = vCollided.GetComponent<JL_Cone>().V3_DodgePoint;
+            Dodge(temp);
         }
     }
 }

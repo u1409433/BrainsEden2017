@@ -7,16 +7,30 @@ public class JL_AudioManager : MonoBehaviour
     public float FL_GhostDistance;
 
     public bool BL_GhostPlaying = false;
+
+    public float FL_Cooldown;
+    public float FL_NextStep;
+
+    public bool BL_Stepping;
+    
+
     // Use this for initialization
     void Start()
     {
-
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        //If I'm walking check when to play a footstep
+        if (BL_Stepping)
+        {
+            if (FL_NextStep <= Time.time)
+            {
+                AkSoundEngine.PostEvent("FootstepsFast", gameObject);
+                FL_NextStep = Time.time + FL_Cooldown;
+            }
+        }
     }
 
     void LateUpdate()
@@ -70,5 +84,28 @@ public class JL_AudioManager : MonoBehaviour
         }
 
         FL_GhostDistance = vDistance;
+    }
+
+    public void SwitchFootsteps(string State)
+    {
+        switch (State)
+        {
+            case "Fast":
+                BL_Stepping = true;
+                FL_Cooldown = 0.5f;
+                break;
+            case "Slow":
+                BL_Stepping = true;
+                FL_Cooldown = 0.75f;
+                break;
+            case "Stop":
+                BL_Stepping = false;
+                break;
+        }
+    }
+
+    public void SwitchAmbience(string Area)
+    {
+
     }
 }

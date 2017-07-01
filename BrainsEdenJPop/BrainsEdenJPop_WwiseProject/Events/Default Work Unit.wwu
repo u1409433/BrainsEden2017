@@ -120,6 +120,83 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Snickt" ID="{6B838605-C352-4242-B978-53F15441B945}">
+					<ChildrenList>
+						<Action Name="Play" ID="{C846D890-2CC7-448D-9192-E3AB63528059}" ShortID="793457387" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{5A24AA78-2822-4232-B8DD-80ED39D45B82}" Global="false">
+									<ObjectRef Name="Snickt" ID="{5575EE70-BE0B-429F-A9E9-683E96BD1FCE}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Unsnickt" ID="{87640715-DC10-4C38-ABF4-33C43B126F80}">
+					<ChildrenList>
+						<Action Name="Play" ID="{635695EC-CA8A-4CA1-97B4-2E4A1F2C85CE}" ShortID="544879396" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{BEE3C0A6-3E3D-4187-B76E-6F2FF7F05619}" Global="false">
+									<ObjectRef Name="Unsnickt" ID="{EB562C50-CF50-43E8-86FA-C0B44FFE0D5C}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StabDeath" ID="{4DEFCD4B-6E56-48BC-BC42-405FDE737BE3}">
+					<ChildrenList>
+						<Action Name="Play" ID="{FAB6E5A4-7DCC-4AE3-8DD3-C34440250151}" ShortID="213774231" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{277D39D2-E1A3-4BAA-B4B0-F764433228CE}" Global="false">
+									<ObjectRef Name="StabDeath" ID="{43C01BBD-6363-4FCE-AFE6-96702FBB5A40}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FootstepsFast" ID="{442ADD3D-9A23-4B58-BE70-A47585FB3F80}">
+					<ChildrenList>
+						<Action Name="Play" ID="{2BA8E3F8-2741-4157-BA4C-1EA14A2AFA1F}" ShortID="193927964" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{3E024A24-98F1-4A4D-A4EB-9BC4164172ED}" Global="false">
+									<ObjectRef Name="FootsepsFast" ID="{30E795A7-37DD-412C-BEAD-F6256793BB83}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MenuButton" ID="{0D8C1906-2976-4D47-AB05-5ACBEA33AFC7}">
+					<ChildrenList>
+						<Action Name="Play" ID="{94FADB0A-59E1-4810-92C4-31290C5EB088}" ShortID="341411479" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{B6836321-4F17-49D1-BA88-5464D6DAE656}" Global="false">
+									<ObjectRef Name="MenuButton" ID="{EFA45912-B7BB-406A-BB18-348D50245686}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FootstepsSlow" ID="{252DEA25-9928-49B5-9995-8387B3FCBFE8}">
+					<ChildrenList>
+						<Action Name="Play" ID="{CFFC7C36-EA0F-4C66-A55C-17A6DF8E04F4}" ShortID="518331737" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{97936B94-0255-4143-B22D-C68AD80E0759}" Global="false">
+									<ObjectRef Name="FootstepSlow" ID="{5E0BC274-FAE7-4DF4-A247-C0F4808A2561}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlaceRelic" ID="{918E2E61-D6D3-47FE-B4E3-6F9691FEF0C7}">
+					<ChildrenList>
+						<Action Name="Play" ID="{2CDD286F-6317-40E7-A085-D9AF7ADCE569}" ShortID="292452680" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{EE8918BA-4306-4B6C-929D-7ED5295E3EE0}" Global="false">
+									<ObjectRef Name="PlaceRelic" ID="{491E4E45-7A07-4482-A48A-00849C7B2D0A}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

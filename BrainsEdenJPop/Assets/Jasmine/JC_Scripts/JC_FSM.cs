@@ -161,7 +161,6 @@ public class JC_FSM : MonoBehaviour
                 } 
             }
         }
-
         else
         {
             SetState(State.Roam);

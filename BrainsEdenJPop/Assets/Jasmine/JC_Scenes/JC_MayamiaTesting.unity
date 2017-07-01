@@ -100,13 +100,14 @@ NavMeshSettings:
     agentSlope: 45
     agentClimb: 0.4
     ledgeDropHeight: 0
-    maxJumpAcrossDistance: 6
-    minRegionArea: 1
-    manualCellSize: 1
-    cellSize: 0.13
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+<<<<<<< HEAD
   m_NavMeshData: {fileID: 23800000, guid: ee090daa4b0f73049a8e8e8d52d7f94a, type: 2}
 --- !u!4 &320772 stripped
 Transform:
@@ -1440,3 +1441,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2069567787}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+=======
+  m_NavMeshData: {fileID: 0}
+>>>>>>> 7c60689a4ccbce3e1edd8c0d32150573538def6c

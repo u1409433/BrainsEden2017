@@ -1,0 +1,305 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2935eca0fd9c6f848b8be2cd991d39fc, type: 3}
+  m_Name: AkWwiseProjectData 97
+  m_EditorClassIdentifier: 
+  CurrentPluginConfig: 
+<<<<<<< HEAD
+  EventWwu: []
+  AuxBusWwu: []
+  StateWwu: []
+  SwitchWwu: []
+  BankWwu: []
+=======
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}'
+    m_lastTimePsrt1: 1106192647
+    m_lastTimePart2: -1999322940
+    List:
+    - Name: Ambience
+      Path: Default Work Unit\Ambience
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambience
+        ObjectType: 3
+      ID: 85412153
+      Guid: 998b7cb7ec2d83448063215350a0ea35
+      maxAttenuation: 0
+    - Name: AmbienceStop
+      Path: Default Work Unit\AmbienceStop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AmbienceStop
+        ObjectType: 3
+      ID: 128372033
+      Guid: aef763ca9a86e44b9c5af99cfe4a4589
+      maxAttenuation: 0
+    - Name: FootstepsFast
+      Path: Default Work Unit\FootstepsFast
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: FootstepsFast
+        ObjectType: 3
+      ID: 482262760
+      Guid: 3ddd2a44239a584bbe70a47585fb3f80
+      maxAttenuation: 0
+    - Name: FootstepsSlow
+      Path: Default Work Unit\FootstepsSlow
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: FootstepsSlow
+        ObjectType: 3
+      ID: -82105999
+      Guid: 25ea2d252899b54999958387b3fcbfe8
+      maxAttenuation: 0
+    - Name: GhostSound
+      Path: Default Work Unit\GhostSound
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GhostSound
+        ObjectType: 3
+      ID: 920368843
+      Guid: 66abec0df0b683468d22c3627b8b86d2
+      maxAttenuation: 0
+    - Name: GhostSoundStop
+      Path: Default Work Unit\GhostSoundStop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GhostSoundStop
+        ObjectType: 3
+      ID: -1555793301
+      Guid: 0ad9210e0ced0d40b2319a794976afad
+      maxAttenuation: 0
+    - Name: MenuButton
+      Path: Default Work Unit\MenuButton
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MenuButton
+        ObjectType: 3
+      ID: -2102570100
+      Guid: 06198c0d7629474dab055acbea33afc7
+      maxAttenuation: 0
+    - Name: MenuMusic3
+      Path: Default Work Unit\MenuMusic3
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MenuMusic3
+        ObjectType: 3
+      ID: 643126656
+      Guid: 1536f82534d8dc4b86a8cd5ef147cdc4
+      maxAttenuation: 0
+    - Name: PainHigh
+      Path: Default Work Unit\PainHigh
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PainHigh
+        ObjectType: 3
+      ID: -626284547
+      Guid: 5b0aaa673f6f4c4e9174430c9104d023
+      maxAttenuation: 0
+    - Name: PainLow
+      Path: Default Work Unit\PainLow
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PainLow
+        ObjectType: 3
+      ID: -599335735
+      Guid: 822c176a7f47c343aa47676a97a85e46
+      maxAttenuation: 0
+    - Name: PickupRelic
+      Path: Default Work Unit\PickupRelic
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PickupRelic
+        ObjectType: 3
+      ID: 865029174
+      Guid: b4fe77c19798454092686f75d950bf16
+      maxAttenuation: 0
+    - Name: PlaceRelic
+      Path: Default Work Unit\PlaceRelic
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PlaceRelic
+        ObjectType: 3
+      ID: 2025199039
+      Guid: 612e8e91d3d6fe47b4e36f9691fef0c7
+      maxAttenuation: 0
+    - Name: RockDoor
+      Path: Default Work Unit\RockDoor
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RockDoor
+        ObjectType: 3
+      ID: 1863577366
+      Guid: a41edd05b5773e46810d548ce11da88b
+      maxAttenuation: 0
+    - Name: ShrineAura
+      Path: Default Work Unit\ShrineAura
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ShrineAura
+        ObjectType: 3
+      ID: -1554327319
+      Guid: fe5ef40d963cf24194797c149071f204
+      maxAttenuation: 20
+    - Name: Snickt
+      Path: Default Work Unit\Snickt
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Snickt
+        ObjectType: 3
+      ID: 1781803135
+      Guid: 0586836b52c34242b97853f15441b945
+      maxAttenuation: 0
+    - Name: StabDeath
+      Path: Default Work Unit\StabDeath
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: StabDeath
+        ObjectType: 3
+      ID: -582873315
+      Guid: 4bcdef4d566ebc48bc42405fde737be3
+      maxAttenuation: 0
+    - Name: Unsnickt
+      Path: Default Work Unit\Unsnickt
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Unsnickt
+        ObjectType: 3
+      ID: 99965646
+      Guid: 1507648710dc384cabf433c43b126f80
+      maxAttenuation: 0
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{A1BE1F16-5A58-43CA-B653-D8BD0401B781}'
+    m_lastTimePsrt1: 1958753262
+    m_lastTimePart2: -1999323003
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{45CE0B3C-F78B-4ED5-BE21-A0213F1B7BFD}'
+    m_lastTimePsrt1: 1971333262
+    m_lastTimePart2: -1999323003
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{8171BD08-1B48-4883-BDA9-5A92826AB052}'
+    m_lastTimePsrt1: 733284571
+    m_lastTimePart2: -1999322945
+    List:
+    - Name: Ambience
+      Path: Default Work Unit\Ambience
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambience
+        ObjectType: 11
+      ID: 85412153
+      Guid: 03e0b83f3a6a1542a22ff76f0b2d4b77
+      values:
+      - Altar1
+      - Altar2
+      - Altar3
+      - Exit
+      - Spawn
+      ValueIcons:
+      - ElementName: Altar1
+        ObjectType: 10
+      - ElementName: Altar2
+        ObjectType: 10
+      - ElementName: Altar3
+        ObjectType: 10
+      - ElementName: Exit
+        ObjectType: 10
+      - ElementName: Spawn
+        ObjectType: 10
+      valueIDs: c0368fa9c3368fa9c2368fa945479901fe763e04
+      ValueGuids:
+      - bytes: 9daebaec97252e48a035c380bc54e489
+      - bytes: 03a3eaa4768eea4892e387cbe52a6716
+      - bytes: 6ed085f581b6174cb9e5f857807ae31f
+      - bytes: 5a7cc8e0eaaefa46afb4b955296cbe03
+      - bytes: 6ef6c2d42751fd44843f57887a3ed685
+    - Name: Footsteps
+      Path: Default Work Unit\Footsteps
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Footsteps
+        ObjectType: 11
+      ID: -1909339098
+      Guid: 4c0fe46f76a06c4a9155e01189deed1b
+      values:
+      - Fast
+      - Slow
+      - Stop
+      ValueIcons:
+      - ElementName: Fast
+        ObjectType: 10
+      - ElementName: Slow
+        ObjectType: 10
+      - ElementName: Stop
+        ObjectType: 10
+      valueIDs: 531cc0b002e4f12e5d6c052f
+      ValueGuids:
+      - bytes: 94bfdb2d6f934f4ca2cbb3271a94ae98
+      - bytes: 5111b96314e970438461bc7eeae20f09
+      - bytes: 73ef3aef76e24b4b9db03a35f99bc784
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{D7FF8C30-DA72-4C14-BB80-CDAF477F8EE6}'
+    m_lastTimePsrt1: -1230098801
+    m_lastTimePart2: -1999322940
+    List:
+    - Name: Main
+      Path: Default Work Unit\Main
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main
+        ObjectType: 7
+      ID: -1133058374
+      Guid: dc99ddb5ae9642458612abb83aa9f5aa
+>>>>>>> 20f1254d1bfc99dc6be655f67a7983a089079da7
+  ExpandedItems: []
+  m_lastPopulateTimePsrt1: 0
+  m_lastPopulateTimePart2: 0
+  autoPopulateEnabled: 1
+  basePath: Audio\GeneratedSoundBanks
+  language: English(US)
+  defaultPoolSize: 4096
+  lowerPoolSize: 2048
+  streamingPoolSize: 1024
+  preparePoolSize: 0
+  memoryCutoffThreshold: 0.95

@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Jasmine/JC_Scenes/JC_MayamiaTesting.unity
+=======
+- path: Assets/James/Level one/Maya Mia!.unity
+>>>>>>> 7c60689a4ccbce3e1edd8c0d32150573538def6c
   isLoaded: 1
   isActive: 1
