@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class JL_UIManager : MonoBehaviour
@@ -15,5 +16,10 @@ public class JL_UIManager : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public void StartButton()
+    {
+        SceneManager.LoadScene(1, LoadSceneMode.Single);
     }
 }
