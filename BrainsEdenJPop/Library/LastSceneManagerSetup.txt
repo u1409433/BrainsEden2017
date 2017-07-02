@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Johannes/particle.unity
-=======
-- path: Assets/Josh/Test.unity
->>>>>>> 7ed6f8d678e5ed96a4c94863665aac1d9050320e
+- path: Assets/Joey/Mayamia 1.unity
   isLoaded: 1
   isActive: 1
