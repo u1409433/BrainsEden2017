@@ -12,12 +12,21 @@ MonoBehaviour:
   m_Name: AkWwiseProjectData 206
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 39e4a2e26b0b258a15a4d31b7a1556b50f2b1c87
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -786711304
     m_lastTimePart2: -1999322839
+=======
+    m_lastTimePsrt1: 1324644124
+    m_lastTimePart2: -1999322838
+>>>>>>> 39e4a2e26b0b258a15a4d31b7a1556b50f2b1c87
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -203,22 +212,37 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A1BE1F16-5A58-43CA-B653-D8BD0401B781}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -781198332
     m_lastTimePart2: -1999322839
+=======
+    m_lastTimePsrt1: 1326694329
+    m_lastTimePart2: -1999322838
+>>>>>>> 39e4a2e26b0b258a15a4d31b7a1556b50f2b1c87
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{45CE0B3C-F78B-4ED5-BE21-A0213F1B7BFD}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -736583769
     m_lastTimePart2: -1999322839
+=======
+    m_lastTimePsrt1: 1445806239
+    m_lastTimePart2: -1999322838
+>>>>>>> 39e4a2e26b0b258a15a4d31b7a1556b50f2b1c87
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8171BD08-1B48-4883-BDA9-5A92826AB052}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -736553697
     m_lastTimePart2: -1999322839
+=======
+    m_lastTimePsrt1: 1445806239
+    m_lastTimePart2: -1999322838
+>>>>>>> 39e4a2e26b0b258a15a4d31b7a1556b50f2b1c87
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -282,8 +306,13 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D7FF8C30-DA72-4C14-BB80-CDAF477F8EE6}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -736653951
     m_lastTimePart2: -1999322839
+=======
+    m_lastTimePsrt1: 1445786237
+    m_lastTimePart2: -1999322838
+>>>>>>> 39e4a2e26b0b258a15a4d31b7a1556b50f2b1c87
     List:
     - Name: Main
       Path: Default Work Unit\Main
@@ -294,6 +323,16 @@ MonoBehaviour:
         ObjectType: 7
       ID: -1133058374
       Guid: dc99ddb5ae9642458612abb83aa9f5aa
+<<<<<<< HEAD
+=======
+=======
+  EventWwu: []
+  AuxBusWwu: []
+  StateWwu: []
+  SwitchWwu: []
+  BankWwu: []
+>>>>>>> a64023386f091696db022073786ec4544d63b90e
+>>>>>>> 39e4a2e26b0b258a15a4d31b7a1556b50f2b1c87
   ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0

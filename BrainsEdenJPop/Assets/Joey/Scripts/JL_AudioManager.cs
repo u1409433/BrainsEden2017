@@ -70,6 +70,12 @@ public class JL_AudioManager : MonoBehaviour
             case "ShrineAura":
                 AkSoundEngine.PostEvent("ShrineAura", gameObject);
                 break;
+            case "PlaceRelic":
+                AkSoundEngine.PostEvent("PlaceRelic", gameObject);
+                break;
+            case "PlaceRelicSuccess":
+                AkSoundEngine.PostEvent("PlaceRelicSuccess", gameObject);
+                break;
             default:
                 break;
         }

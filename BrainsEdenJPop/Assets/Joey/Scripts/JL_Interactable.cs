@@ -38,7 +38,6 @@ public class JL_Interactable : MonoBehaviour
                         if (transform.parent.name == "Shrine")
                         {
                             transform.parent.GetComponent<JL_Shrine>().SwitchRelic();
-                            
                         }
                     }
 
@@ -57,8 +56,19 @@ public class JL_Interactable : MonoBehaviour
                     transform.Find("Relic").localPosition = gameObject.transform.Find("Target").transform.localPosition;
                     transform.Find("Relic").GetComponent<JL_Interactable>().BL_Carried = false;
                     SC_PCScript.BL_Carrying = false;
+                    GameObject.Find("AudioManager").GetComponent<JL_AudioManager>().PlaySound("PlaceRelic");
                     gameObject.GetComponent<JL_Shrine>().SwitchRelic();
-                    GameObject.Find("AudioManager").GetComponent<JL_AudioManager>().PlaySound("ShrineAura");
+                }
+                else Debug.Log("You are not carrying a relic");
+                break;
+            case "FakeShrine":
+                if (SC_PCScript.BL_Carrying)
+                {
+                    GO_PC.transform.Find("Relic").transform.SetParent(gameObject.transform);
+                    transform.Find("Relic").localPosition = gameObject.transform.Find("Target").transform.localPosition;
+                    transform.Find("Relic").GetComponent<JL_Interactable>().BL_Carried = false;
+                    SC_PCScript.BL_Carrying = false;
+                    GameObject.Find("AudioManager").GetComponent<JL_AudioManager>().PlaySound("PlaceRelic");
                 }
                 else Debug.Log("You are not carrying a relic");
                 break;

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Josh/fgg.unity
+- path: Assets/James/Level one/SAFE MAYA MIA.unity
   isLoaded: 1
   isActive: 1
