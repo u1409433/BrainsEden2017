@@ -14,8 +14,12 @@ public class JL_PCMovement : MonoBehaviour
     private JL_AudioManager SC_AudioManager;
     
     public bool BL_Carrying;
+    public bool BL_Dying;
 
-    public bool BL_BobRight = true;
+    private Vector3 V3_DeathRot = new Vector3(0,0,-90);
+    private Vector3 V3_SpawnPoint;
+    private Quaternion QU_SpawnRotation;
+    private Vector3 V3_CurrentRot;
 
     // Use this for initialization
     void Start()
@@ -30,15 +34,29 @@ public class JL_PCMovement : MonoBehaviour
         FL_Speed = Agent_PC.speed;
         FL_Speed += 1.5f;
 
+        V3_SpawnPoint = transform.position;
+        QU_SpawnRotation = transform.rotation;
     }
 
     // Update is called once per frame
     void Update()
     {
-        MouseInput();
 
-        if (BL_Carrying) Agent_PC.speed = FL_Speed / 2;
-        else Agent_PC.speed = FL_Speed;
+        if (BL_Dying)
+        {
+            V3_CurrentRot = new Vector3(Mathf.LerpAngle(V3_CurrentRot.x, V3_DeathRot.x, Time.deltaTime),
+                                        Mathf.LerpAngle(V3_CurrentRot.y, V3_DeathRot.y, Time.deltaTime),
+                                        Mathf.LerpAngle(V3_CurrentRot.z, V3_DeathRot.z, Time.deltaTime));
+
+            transform.eulerAngles = V3_CurrentRot;
+        }
+        else
+        {
+            MouseInput();
+
+            if (BL_Carrying) Agent_PC.speed = FL_Speed / 2;
+            else Agent_PC.speed = FL_Speed;
+        }
 
         FootSteps();
     }
@@ -91,7 +109,7 @@ public class JL_PCMovement : MonoBehaviour
     void FootSteps()
     {
         //If im walking 
-        if (Vector3.Distance(transform.position, Agent_PC.destination) > 1f)
+        if (Vector3.Distance(transform.position, Agent_PC.destination) > 2f)
         {
             if (BL_Carrying)
             {
@@ -110,7 +128,15 @@ public class JL_PCMovement : MonoBehaviour
 
     public void Die()
     {
-        transform.position = new Vector3(70, 7, 42);
+        Debug.Log("Die");
+        //Start the lerp to my death position
+        V3_CurrentRot = transform.rotation.eulerAngles;
+        BL_Dying = true;
+        Agent_PC.SetDestination(transform.position);
+
+        Invoke("Respawn", 5);
+
+        //transform.position = new Vector3(70, 7, 42);
         SC_AudioManager.PlaySound("PainLow");
     }
 
@@ -124,8 +150,25 @@ public class JL_PCMovement : MonoBehaviour
     {
         if (vCollided.transform.name == "Cone")
         {
-            Vector3 temp = vCollided.GetComponent<JL_Cone>().V3_DodgePoint;
-            Dodge(temp);
+            //Vector3 temp = vCollided.GetComponent<JL_Cone>().V3_DodgePoint;
+            if (!BL_Dying)
+            {
+                Die();
+                if (transform.Find("Relic") != null)
+                {
+                    transform.Find("Relic").transform.SetParent(null);
+                    transform.Find("Relic").GetComponent<JL_Interactable>().BL_Carried = false;
+                    BL_Carrying = false;
+                }
+            }
         }
+    }
+
+    public void Respawn()
+    {
+        transform.position = V3_SpawnPoint;
+        transform.rotation = QU_SpawnRotation;
+        BL_Dying = false;
+        Agent_PC.SetDestination(transform.position);
     }
 }
