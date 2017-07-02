@@ -891,7 +891,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4375337225333964, guid: ffb77be8d0d57414cad608736212d72e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 100.58
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4375337225333964, guid: ffb77be8d0d57414cad608736212d72e, type: 2}
       propertyPath: m_LocalPosition.y
@@ -899,7 +899,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4375337225333964, guid: ffb77be8d0d57414cad608736212d72e, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 38.32
+      value: 82.3
       objectReference: {fileID: 0}
     - target: {fileID: 4375337225333964, guid: ffb77be8d0d57414cad608736212d72e, type: 2}
       propertyPath: m_LocalRotation.x
@@ -920,40 +920,6 @@ Prefab:
     - target: {fileID: 4375337225333964, guid: ffb77be8d0d57414cad608736212d72e, type: 2}
       propertyPath: m_RootOrder
       value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114125441686527392, guid: ffb77be8d0d57414cad608736212d72e,
-        type: 2}
-      propertyPath: mDB_ChasePause
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114125441686527392, guid: ffb77be8d0d57414cad608736212d72e,
-        type: 2}
-      propertyPath: mFL_ChaseDistance
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1192014858712780, guid: ffb77be8d0d57414cad608736212d72e, type: 2}
-      propertyPath: m_TagString
-      value: Ghost
-      objectReference: {fileID: 0}
-    - target: {fileID: 114125441686527392, guid: ffb77be8d0d57414cad608736212d72e,
-        type: 2}
-      propertyPath: mDB_RoamPause
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114125441686527392, guid: ffb77be8d0d57414cad608736212d72e,
-        type: 2}
-      propertyPath: mFL_SpeedArea1
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114125441686527392, guid: ffb77be8d0d57414cad608736212d72e,
-        type: 2}
-      propertyPath: mFL_SpeedArea2
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114125441686527392, guid: ffb77be8d0d57414cad608736212d72e,
-        type: 2}
-      propertyPath: mFL_SpeedArea3
-      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffb77be8d0d57414cad608736212d72e, type: 2}
@@ -1308,6 +1274,86 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 351e2df0528b0b842b31ed344387a9d5, type: 3}
+--- !u!1001 &1750236937
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4375337225333964, guid: ffb77be8d0d57414cad608736212d72e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 96.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375337225333964, guid: ffb77be8d0d57414cad608736212d72e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 6.7999964
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375337225333964, guid: ffb77be8d0d57414cad608736212d72e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 24.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375337225333964, guid: ffb77be8d0d57414cad608736212d72e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375337225333964, guid: ffb77be8d0d57414cad608736212d72e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375337225333964, guid: ffb77be8d0d57414cad608736212d72e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375337225333964, guid: ffb77be8d0d57414cad608736212d72e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375337225333964, guid: ffb77be8d0d57414cad608736212d72e, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 114125441686527392, guid: ffb77be8d0d57414cad608736212d72e,
+        type: 2}
+      propertyPath: mDB_ChasePause
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114125441686527392, guid: ffb77be8d0d57414cad608736212d72e,
+        type: 2}
+      propertyPath: mFL_ChaseDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192014858712780, guid: ffb77be8d0d57414cad608736212d72e, type: 2}
+      propertyPath: m_TagString
+      value: Ghost
+      objectReference: {fileID: 0}
+    - target: {fileID: 114125441686527392, guid: ffb77be8d0d57414cad608736212d72e,
+        type: 2}
+      propertyPath: mDB_RoamPause
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114125441686527392, guid: ffb77be8d0d57414cad608736212d72e,
+        type: 2}
+      propertyPath: mFL_SpeedArea1
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114125441686527392, guid: ffb77be8d0d57414cad608736212d72e,
+        type: 2}
+      propertyPath: mFL_SpeedArea2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114125441686527392, guid: ffb77be8d0d57414cad608736212d72e,
+        type: 2}
+      propertyPath: mFL_SpeedArea3
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192014858712780, guid: ffb77be8d0d57414cad608736212d72e, type: 2}
+      propertyPath: m_Name
+      value: TestNPC (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ffb77be8d0d57414cad608736212d72e, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1783333577
 GameObject:
   m_ObjectHideFlags: 0

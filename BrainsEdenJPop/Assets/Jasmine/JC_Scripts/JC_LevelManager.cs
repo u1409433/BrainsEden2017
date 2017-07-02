@@ -22,6 +22,11 @@ public class JC_LevelManager : MonoBehaviour
     public Vector2 mV2_Area3_X;
     [HideInInspector]
     public Vector2 mV2_Area3_Z;
+    [HideInInspector]
+    public Vector2 mV2_Area4_X;
+    [HideInInspector]
+    public Vector2 mV2_Area4_Z;
+
 
     // Use this for initialization
     void Start()
