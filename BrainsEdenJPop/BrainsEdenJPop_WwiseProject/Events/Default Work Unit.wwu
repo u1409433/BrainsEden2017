@@ -191,7 +191,18 @@
 						<Action Name="Play" ID="{2CDD286F-6317-40E7-A085-D9AF7ADCE569}" ShortID="292452680" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{EE8918BA-4306-4B6C-929D-7ED5295E3EE0}" Global="false">
-									<ObjectRef Name="PlaceRelic" ID="{491E4E45-7A07-4482-A48A-00849C7B2D0A}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+									<ObjectRef Name="PlaceRelic" ID="{0DA2DBE8-EC4C-4B0E-A4F6-5E3879538088}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlaceRelicSuccess" ID="{61177C79-1FC4-4298-BEC9-4A4469081AE1}">
+					<ChildrenList>
+						<Action Name="Play" ID="{AAB277D2-CC51-4911-BF75-5169635231FC}" ShortID="822862534" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{089E77DA-90FC-409F-8DD7-1BC0E0A57AAF}" Global="false">
+									<ObjectRef Name="PlaceRelicSuccess" ID="{56452F8A-83E4-4693-9E62-97137CB22BAE}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
 								</Element>
 							</ElementList>
 						</Action>

@@ -313,6 +313,9 @@
 				<Sound Name="PickupGroan" ID="{C6091366-97E8-48E8-8124-EF3BECE20257}" ShortID="732906741" Type="SoundFX">
 					<PropertyList>
 						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-180</Value>
+							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
 									<Modifier Name="" ID="{0185AC07-B0D4-4FEE-86F4-F01F41AD6778}">
@@ -330,6 +333,15 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
 						</Reference>
+						<Reference Name="Effect0">
+							<Custom>
+								<Effect Name="Wwise Time Stretch (Custom)" ID="{B78ED69A-4A5A-4116-A1E3-9112B7536766}" ShortID="530178717" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+									<PropertyList>
+										<Property Name="TimeStretch" Type="Real32" Value="108"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
 						</Reference>
@@ -339,8 +351,7 @@
 							<PropertyList>
 								<Property Name="FadeInDuration" Type="Real64" Value="0.212917198129252"/>
 								<Property Name="FadeOutDuration" Type="Real64" Value="0.222650555758017"/>
-								<Property Name="TrimBegin" Type="Real64" Value="0.260367316569485"/>
-								<Property Name="TrimEnd" Type="Real64" Value="0.728785152453838"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.316334122934888"/>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>GROAN Male Hurt Long (mono).wav</AudioFile>
@@ -593,7 +604,6 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
-						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
 						<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 						<Property Name="Volume" Type="Real64">
@@ -605,14 +615,14 @@
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<Custom>
-								<Attenuation Name="Attenuation (Custom)" ID="{215FCFAA-D888-4A6F-BFBD-0F0448B5F8F8}" ShortID="1012340428">
+								<Attenuation Name="Attenuation (Custom)" ID="{D96A140F-C45E-4C43-8E71-F144F45AE597}" ShortID="935389240">
 									<PropertyList>
 										<Property Name="RadiusMax" Type="Real64" Value="20"/>
 									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{892872B4-4014-46F2-BFB5-43FA0E9F5AE5}">
+												<Curve Name="VolumeDry" ID="{AFAA9E5A-B97E-48B2-91BF-AB5CF12B99FA}">
 													<PropertyList>
 														<Property Name="Flags" Type="int32" Value="3"/>
 													</PropertyList>
@@ -699,8 +709,8 @@
 									<PropertyList>
 										<Property Name="FadeInDuration" Type="Real64" Value="0.719486745380763"/>
 										<Property Name="FadeOutDuration" Type="Real64" Value="0.736218995273333"/>
-										<Property Name="TrimBegin" Type="Real64" Value="62.5137771298995"/>
-										<Property Name="TrimEnd" Type="Real64" Value="66.0382687049276"/>
+										<Property Name="TrimBegin" Type="Real64" Value="63.224897750334"/>
+										<Property Name="TrimEnd" Type="Real64" Value="65.0510659612656"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>magicAir.wav</AudioFile>
@@ -1072,7 +1082,7 @@
 															</Point>
 															<Point>
 																<XPos>5</XPos>
-																<YPos>-200</YPos>
+																<YPos>-13.93101</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -1127,7 +1137,7 @@
 															</Point>
 															<Point>
 																<XPos>5</XPos>
-																<YPos>-200</YPos>
+																<YPos>-13.931</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -2014,15 +2024,7 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="PlaceRelic" ID="{491E4E45-7A07-4482-A48A-00849C7B2D0A}" ShortID="340182803">
-					<PropertyList>
-						<Property Name="Highpass" Type="int16">
-							<ValueList>
-								<Value>22</Value>
-							</ValueList>
-						</Property>
-						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-					</PropertyList>
+				<BlendContainer Name="PlaceRelic" ID="{0DA2DBE8-EC4C-4B0E-A4F6-5E3879538088}" ShortID="809722114">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
@@ -2056,11 +2058,80 @@
 								<ActiveSource Name="SCRAPE Hollow Fade In and Out (mono)" ID="{15AB3A09-7CC3-4201-A73D-9C5E1EAAE0F3}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="RelicPlacedMusicSting" ID="{9BB54E86-5F0E-45A5-B799-0329C5FB464B}" ShortID="713756193" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="RelicPlacedMusicSting" ID="{2F18B2FD-85C2-4944-86BC-627FEE64982F}" ShortID="679197854">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.43812120383868"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>RelicPlacedMusicSting.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="RelicPlacedMusicSting" ID="{2F18B2FD-85C2-4944-86BC-627FEE64982F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<Playlist>
-						<ItemRef Name="SCRAPE Hollow Fade In and Out (mono)" ID="{7A2087B7-18E8-4DA0-9D70-1A206F2AC75D}"/>
-					</Playlist>
-				</RandomSequenceContainer>
+				</BlendContainer>
+				<BlendContainer Name="PlaceRelicSuccess" ID="{56452F8A-83E4-4693-9E62-97137CB22BAE}" ShortID="650665932">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="RelicPlacedMusicSting" ID="{C0706CB2-309F-43BC-8D2A-998EFD75BA33}" ShortID="369171140" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="RelicPlacedMusicSting" ID="{FC13CDF1-DAE9-442A-B674-404AEF9AEC2A}" ShortID="913778462">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.53220389941691"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.27142507896016"/>
+										<Property Name="TrimEnd" Type="Real64" Value="3.49450012147716"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>RelicPlacedMusicSting.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="RelicPlacedMusicSting" ID="{FC13CDF1-DAE9-442A-B674-404AEF9AEC2A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
