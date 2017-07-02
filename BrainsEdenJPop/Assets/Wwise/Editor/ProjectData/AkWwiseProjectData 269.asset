@@ -16,8 +16,13 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -1249010728
     m_lastTimePart2: -1999322819
+=======
+    m_lastTimePsrt1: -786711304
+    m_lastTimePart2: -1999322839
+>>>>>>> f010a83c2982c9384e6e78cc48fb1c8719edbab2
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -168,7 +173,11 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1554327319
       Guid: fe5ef40d963cf24194797c149071f204
+<<<<<<< HEAD
       maxAttenuation: 100
+=======
+      maxAttenuation: 0
+>>>>>>> f010a83c2982c9384e6e78cc48fb1c8719edbab2
     - Name: Snickt
       Path: Default Work Unit\Snickt
       PathAndIcons:
@@ -203,22 +212,37 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A1BE1F16-5A58-43CA-B653-D8BD0401B781}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -1246498825
     m_lastTimePart2: -1999322819
+=======
+    m_lastTimePsrt1: -781198332
+    m_lastTimePart2: -1999322839
+>>>>>>> f010a83c2982c9384e6e78cc48fb1c8719edbab2
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{45CE0B3C-F78B-4ED5-BE21-A0213F1B7BFD}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -1201286717
     m_lastTimePart2: -1999322819
+=======
+    m_lastTimePsrt1: -736583769
+    m_lastTimePart2: -1999322839
+>>>>>>> f010a83c2982c9384e6e78cc48fb1c8719edbab2
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8171BD08-1B48-4883-BDA9-5A92826AB052}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -1201276691
     m_lastTimePart2: -1999322819
+=======
+    m_lastTimePsrt1: -736553697
+    m_lastTimePart2: -1999322839
+>>>>>>> f010a83c2982c9384e6e78cc48fb1c8719edbab2
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -282,8 +306,13 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D7FF8C30-DA72-4C14-BB80-CDAF477F8EE6}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -1201296718
     m_lastTimePart2: -1999322819
+=======
+    m_lastTimePsrt1: -736653951
+    m_lastTimePart2: -1999322839
+>>>>>>> f010a83c2982c9384e6e78cc48fb1c8719edbab2
     List:
     - Name: Main
       Path: Default Work Unit\Main
