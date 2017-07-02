@@ -36,7 +36,7 @@
 				<Event Id="2578006488" Name="PlaceRelicSuccess" ObjectPath="\Events\Default Work Unit\PlaceRelicSuccess"/>
 				<Event Id="1863577366" Name="RockDoor" ObjectPath="\Events\Default Work Unit\RockDoor"/>
 				<Event Id="2740639977" Name="ShrineAura" ObjectPath="\Events\Default Work Unit\ShrineAura" MaxAttenuation="100.000000"/>
-				<Event Id="1781803135" Name="Snickt" ObjectPath="\Events\Default Work Unit\Snickt" MaxAttenuation="100.000000"/>
+				<Event Id="1781803135" Name="Snickt" ObjectPath="\Events\Default Work Unit\Snickt" MaxAttenuation="50.000000"/>
 				<Event Id="3712093981" Name="StabDeath" ObjectPath="\Events\Default Work Unit\StabDeath"/>
 				<Event Id="99965646" Name="Unsnickt" ObjectPath="\Events\Default Work Unit\Unsnickt" MaxAttenuation="100.000000"/>
 			</IncludedEvents>
