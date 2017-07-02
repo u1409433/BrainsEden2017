@@ -78,6 +78,9 @@ public class JC_FSM : MonoBehaviour
     bool mBL_IsInArea = true;
     bool mBL_PCIsInArea = true;
 
+    // Lights:
+    public Light mLG_FaceLight;
+
     // Use this for initialization
     void Start()
     {
@@ -114,8 +117,15 @@ public class JC_FSM : MonoBehaviour
         switch (GetState())
         {
             case State.Idle: /*Do nothing*/; break;
-            case State.Roam: /*CheckInArea();*/ Roam(); break;
-            case State.Chase: Chase(); break;
+
+            case State.Roam: Roam();
+                            mLG_FaceLight.enabled = false; break;
+
+            case State.Chase: Chase();
+                            mLG_FaceLight.enabled = true;
+                            AkSoundEngine.PostEvent("FaceLight", gameObject);
+                            break;
+
             case State.GoBack:; break;
         }
     }
@@ -230,178 +240,6 @@ public class JC_FSM : MonoBehaviour
 
         mNMA_NavMeshAgent.SetDestination(tV3_OppositeDirection);
     }
-
-#if !UNITY_EDITOR
-    protected void Roam()
-    {
-        if (!mBL_RoamReachedDest)
-        {
-            bool mBL_CanGo = true;
-
-            if (!mBL_IsRoaming)
-            {
-                Ray tRY_Ray = new Ray((RandomDestination() + new Vector3(0, 20, 0)), Vector3.down);
-                RaycastHit tRY_Hit;
-
-                if (Physics.Raycast(tRY_Ray, out tRY_Hit, 150))
-                {
-                    NavMeshHit tNM_Hit;
-                    int tIN_LayerWalkable = 1 << NavMesh.GetAreaFromName("Walkable");
-
-                    if (NavMesh.SamplePosition(tRY_Hit.point, out tNM_Hit, 1, tIN_LayerWalkable))// && tRY_Hit.transform.tag == "Terrain")
-                    {
-                        mV3_TargetPos = new Vector3(tRY_Hit.point.x, tRY_Hit.point.y + 1f, tRY_Hit.point.z);
-
-                        if (transform.position.y > tNM_Hit.position.y)
-                        {
-                            if (transform.position.y - tNM_Hit.position.y > 1)
-                            {
-                                //print("Wrong Height: " + tNM_Hit.position.y + ", Player Height: " + transform.position.y);
-                                mBL_CanGo = false;
-                            } 
-                        }
-
-                        else
-                        {
-                            if (tNM_Hit.position.y - transform.position.y > 3)
-                            {
-                                //print("Wrong Height: " + tNM_Hit.position.y + ", Player Height: " + transform.position.y);
-                                mBL_CanGo = false;
-                            }
-                        }
-
-                        if (mBL_CanGo)
-                        {
-                            //print("Correct Height: " + tNM_Hit.position.y + ", Player Height: " + transform.position.y);
-                            mBL_IsRoaming = true;
-                            mNMA_NavMeshAgent.speed = mFL_Speed;
-                            mNMA_NavMeshAgent.SetDestination(mV3_TargetPos);
-                        }
-                    }
-                }
-            }
-
-            else 
-            {
-                if (Vector2.Distance(new Vector2(gameObject.transform.position.x, gameObject.transform.position.z), new Vector2(mV3_TargetPos.x, mV3_TargetPos.z)) < 1f)
-                {
-                    mBL_RoamReachedDest = true;
-                    mBL_IsRoaming = false; 
-                }
-            }
-        }
-
-        else
-        {
-            if (!mBL_RoamTimerSet)
-            {
-                mFL_RoamTimer = Time.time + (float)mDB_RoamPause;
-                mBL_RoamTimerSet = true;
-            }
-
-            if (Time.time > mFL_RoamTimer)
-            {
-                mBL_RoamReachedDest = false;
-                mBL_RoamTimerSet = false;
-            }
-        }
-    }
-#else
-
-    //protected void Roam()
-    //{
-    //    if (!mBL_RoamReachedDest)           
-    //    {
-    //        if (!mBL_IsRoaming)
-    //        {
-    //            Ray tRY_Ray = new Ray((RandomDestination() + new Vector3(0, 20, 0)), Vector3.down);
-    //            RaycastHit tRY_Hit;
-
-    //            if (Physics.Raycast(tRY_Ray, out tRY_Hit, 15000))
-    //            {
-    //                NavMeshHit tNM_Hit;
-    //                int tIN_LayerWalkable = 1 << NavMesh.GetAreaFromName("Walkable");
-
-    //                if (NavMesh.SamplePosition(tRY_Hit.point, out tNM_Hit, 1, tIN_LayerWalkable))// && tRY_Hit.transform.tag == "Terrain")
-    //                {
-    //                    mV3_TargetPos = new Vector3(tRY_Hit.point.x, tRY_Hit.point.y + 1f, tRY_Hit.point.z);
-
-    //                    // Check if within the right Area:
-    //                    // Check if Right Height:
-
-    //                    if (transform.position.y > tNM_Hit.position.y)
-    //                    {
-    //                        print("Wrong Height: " + tNM_Hit.position.y + ", Player Height: " + transform.position.y);
-
-    //                        if (transform.position.y - tNM_Hit.position.y > 1)
-    //                        {
-    //                            print("Wrong Height: " + tNM_Hit.position.y + ", Player Height: " + transform.position.y);
-    //                            mBL_CanGo = false;
-    //                        }
-    //                    }
-
-    //                    else if (!(transform.position.y > tNM_Hit.position.y))
-    //                    {
-    //                        if (tNM_Hit.position.y - transform.position.y > 3)
-    //                        {
-    //                            print("Wrong Height: " + tNM_Hit.position.y + ", Player Height: " + transform.position.y);
-    //                            mBL_CanGo = false;
-    //                        }
-    //                    }
-
-    //                    else
-    //                    {
-    //                        mBL_CanGo = false;
-    //                    } 
-
-
-    //                    if (mBL_CanGo)
-    //                    {
-    //                        print("Correct Height: " + tNM_Hit.position.y + ", Player Height: " + transform.position.y);
-    //                        mBL_IsRoaming = true;
-
-    //                        //if (true)
-    //                        //{
-    //                        mNMA_NavMeshAgent.speed = mFL_Speed;
-    //                        //}
-
-    //                        mNMA_NavMeshAgent.SetDestination(mV3_TargetPos);
-    //                    }
-    //                }
-    //            }
-
-    //            else
-    //            {
-    //                Debug.LogError("Raycast did not hit anything. Will retry next frame.");
-    //            }
-    //        }
-
-    //        else
-    //        {
-    //            if (Vector2.Distance(new Vector2(gameObject.transform.position.x, gameObject.transform.position.z), new Vector2(mV3_TargetPos.x, mV3_TargetPos.z)) < 1f)
-    //            {
-    //                mBL_RoamReachedDest = true;
-    //                mBL_IsRoaming = false;
-    //            }
-    //        }
-    //    }
-
-    //    else
-    //    {
-    //        if (!mBL_RoamTimerSet)
-    //        {
-    //            mFL_RoamTimer = Time.time + (float)mDB_RoamPause;
-    //            mBL_RoamTimerSet = true;
-    //        }
-
-    //        if (Time.time > mFL_RoamTimer)
-    //        {
-    //            mBL_RoamReachedDest = false;
-    //            mBL_RoamTimerSet = false;
-    //        }
-    //    }
-    //}
-#endif
 
     protected void Roam()
     {

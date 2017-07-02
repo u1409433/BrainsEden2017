@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Josh/fgg.unity
+- path: Assets/Jasmine/JC_Scenes/JC_Level1Working.unity
   isLoaded: 1
   isActive: 1
