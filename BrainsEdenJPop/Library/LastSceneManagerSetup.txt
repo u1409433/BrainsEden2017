@@ -1,12 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Joey/Mayamia 1.unity
-=======
-<<<<<<< HEAD
-- path: Assets/Jasmine/JC_Scenes/JC_MayamiaTesting.unity
-=======
-- path: Assets/James/Level one/Maya Mia!.unity
->>>>>>> 7c60689a4ccbce3e1edd8c0d32150573538def6c
->>>>>>> a607956a2d1aee8c34a86255955bfcf50d5a0005
+- path: Assets/Johannes/googly.unity
   isLoaded: 1
   isActive: 1

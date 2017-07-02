@@ -9,15 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2935eca0fd9c6f848b8be2cd991d39fc, type: 3}
-  m_Name: AkWwiseProjectData 136
+  m_Name: AkWwiseProjectData 138
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}'
-    m_lastTimePsrt1: 25645888
-    m_lastTimePart2: -1999322940
+    m_lastTimePsrt1: -1556460410
+    m_lastTimePart2: -1999322841
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -138,6 +138,16 @@ MonoBehaviour:
         ObjectType: 3
       ID: 2025199039
       Guid: 612e8e91d3d6fe47b4e36f9691fef0c7
+      maxAttenuation: 0
+    - Name: PlaceRelicSuccess
+      Path: Default Work Unit\PlaceRelicSuccess
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PlaceRelicSuccess
+        ObjectType: 3
+      ID: -1716960808
+      Guid: 797c1761c41f9842bec94a4469081ae1
       maxAttenuation: 0
     - Name: RockDoor
       Path: Default Work Unit\RockDoor
@@ -272,8 +282,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D7FF8C30-DA72-4C14-BB80-CDAF477F8EE6}'
-    m_lastTimePsrt1: 2016132704
-    m_lastTimePart2: -1999322940
+    m_lastTimePsrt1: 1440536872
+    m_lastTimePart2: -1999322840
     List:
     - Name: Main
       Path: Default Work Unit\Main
