@@ -13,17 +13,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
   EventWwu: []
   AuxBusWwu: []
   StateWwu: []
   SwitchWwu: []
   BankWwu: []
 =======
+>>>>>>> a607956a2d1aee8c34a86255955bfcf50d5a0005
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}'
+<<<<<<< HEAD
+    m_lastTimePsrt1: 25645888
+=======
     m_lastTimePsrt1: 1106192647
+>>>>>>> a607956a2d1aee8c34a86255955bfcf50d5a0005
     m_lastTimePart2: -1999322940
     List:
     - Name: Ambience
@@ -200,22 +207,37 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A1BE1F16-5A58-43CA-B653-D8BD0401B781}'
+<<<<<<< HEAD
+    m_lastTimePsrt1: -2116446849
+    m_lastTimePart2: -1999323155
+=======
     m_lastTimePsrt1: 1958753262
     m_lastTimePart2: -1999323003
+>>>>>>> a607956a2d1aee8c34a86255955bfcf50d5a0005
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{45CE0B3C-F78B-4ED5-BE21-A0213F1B7BFD}'
+<<<<<<< HEAD
+    m_lastTimePsrt1: -2115876446
+    m_lastTimePart2: -1999323155
+=======
     m_lastTimePsrt1: 1971333262
     m_lastTimePart2: -1999323003
+>>>>>>> a607956a2d1aee8c34a86255955bfcf50d5a0005
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8171BD08-1B48-4883-BDA9-5A92826AB052}'
+<<<<<<< HEAD
+    m_lastTimePsrt1: -903792617
+    m_lastTimePart2: -1999322946
+=======
     m_lastTimePsrt1: 733284571
     m_lastTimePart2: -1999322945
+>>>>>>> a607956a2d1aee8c34a86255955bfcf50d5a0005
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -279,7 +301,11 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D7FF8C30-DA72-4C14-BB80-CDAF477F8EE6}'
+<<<<<<< HEAD
+    m_lastTimePsrt1: 2016132704
+=======
     m_lastTimePsrt1: -1230098801
+>>>>>>> a607956a2d1aee8c34a86255955bfcf50d5a0005
     m_lastTimePart2: -1999322940
     List:
     - Name: Main
@@ -291,7 +317,10 @@ MonoBehaviour:
         ObjectType: 7
       ID: -1133058374
       Guid: dc99ddb5ae9642458612abb83aa9f5aa
+<<<<<<< HEAD
+=======
 >>>>>>> 20f1254d1bfc99dc6be655f67a7983a089079da7
+>>>>>>> a607956a2d1aee8c34a86255955bfcf50d5a0005
   ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
