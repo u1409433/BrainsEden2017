@@ -28,6 +28,7 @@ public class JL_PCMovement : MonoBehaviour
         SC_AudioManager = GameObject.Find("AudioManager").GetComponent<JL_AudioManager>();
 
         FL_Speed = Agent_PC.speed;
+        FL_Speed += 1.5f;
 
     }
 
@@ -36,61 +37,10 @@ public class JL_PCMovement : MonoBehaviour
     {
         MouseInput();
 
-        ButtonInput();
-
         if (BL_Carrying) Agent_PC.speed = FL_Speed / 2;
         else Agent_PC.speed = FL_Speed;
 
-        //If im walking 
-        if (Vector3.Distance(transform.position, Agent_PC.destination) > 1f)
-        {
-            if (BL_Carrying)
-            {
-                SC_AudioManager.SwitchFootsteps("Slow");
-            }
-            else
-            {
-                SC_AudioManager.SwitchFootsteps("Fast");
-            }
-        }
-        else
-        {
-            SC_AudioManager.SwitchFootsteps("Stop");
-        }
-
-        //Debug.Log("Bob");
-        //if (BL_BobRight)
-        //{
-        //    gameObject.transform.Rotate(new Vector3(0, 0, -0.5f));
-        //    if (transform.rotation.eulerAngles.z <= -10)
-        //    {
-        //        BL_BobRight = false;
-        //    }
-        //}
-        //else
-        //{
-        //    gameObject.transform.Rotate(new Vector3(0, 0, 0.5f));
-        //    if (transform.rotation.eulerAngles.z >= 10)
-        //    {
-        //        BL_BobRight = true;
-        //    }
-        //}
-
-
-        //}
-        //else
-        //{
-        //    Debug.Log("Do Not Bob");
-        //    if (transform.rotation.eulerAngles.z <= -0.5f)
-        //    {
-        //        transform.Rotate(0, 0, 0.5f);
-        //    }
-        //    else if (transform.rotation.eulerAngles.z >= 0.5f)
-        //    {
-        //        transform.Rotate(0, 0, -0.5f);
-        //    }
-        //    else Debug.Log("I'm centered");
-        //}*/
+        FootSteps();
     }
 
     void MouseInput()
@@ -118,7 +68,14 @@ public class JL_PCMovement : MonoBehaviour
             {
                 if (RayHit.transform.tag == "Interactable" && Vector3.Distance(RayHit.transform.position, transform.position) < 3f)
                 {
-                    RayHit.transform.SendMessage("Interact");
+                    if (RayHit.transform.name == "Relic" && BL_Carrying)
+                    {
+                        Debug.Log("You're already holding a relic!");
+                    }
+                    else
+                    {
+                        RayHit.transform.SendMessage("Interact");
+                    }
                 }
                 else if (RayHit.transform.tag == "Terrain" && Vector3.Distance(RayHit.point, transform.position) < 3f)
                 {
@@ -131,48 +88,29 @@ public class JL_PCMovement : MonoBehaviour
         }
     }
 
-    void ButtonInput()
+    void FootSteps()
     {
-        //Pickup an object
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            Debug.Log("F");
-
-            float tFL_Close = 1000;
-            GameObject tGO_Close = null;
-
-            foreach (GameObject Interactable in SC_LevelManager.LS_GO_Interactables)
-            {
-                if (Vector3.Distance(Interactable.transform.position, gameObject.transform.position) < tFL_Close)
-                {
-                    tFL_Close = Vector3.Distance(Interactable.transform.position, gameObject.transform.position);
-                    tGO_Close = Interactable;
-                }
-            }
-
-            tGO_Close.SendMessage("Interact");
-        }
-
-        //Put down an object
-        if (Input.GetKeyDown(KeyCode.G))
+        //If im walking 
+        if (Vector3.Distance(transform.position, Agent_PC.destination) > 1f)
         {
             if (BL_Carrying)
             {
-                //Put the object down on a shrine or just on the ground
+                SC_AudioManager.SwitchFootsteps("Slow");
             }
             else
             {
-                Debug.Log("I am not carrying anything");
+                SC_AudioManager.SwitchFootsteps("Fast");
             }
+        }
+        else
+        {
+            SC_AudioManager.SwitchFootsteps("Stop");
         }
     }
 
     public void Die()
     {
         transform.position = new Vector3(70, 7, 42);
-        Debug.Log("I Died!");
-        //Play "Pop sounds" and start base ambience
-        //HERE
         SC_AudioManager.PlaySound("PainLow");
     }
 
@@ -180,12 +118,10 @@ public class JL_PCMovement : MonoBehaviour
     {
         transform.position = vV3_SpawnPoint;
         SC_AudioManager.PlaySound("PainLow");
-        Debug.Log("I Dodged!");
     }
 
     public void OnTriggerEnter(Collider vCollided)
     {
-        Debug.Log("Collision");
         if (vCollided.transform.name == "Cone")
         {
             Vector3 temp = vCollided.GetComponent<JL_Cone>().V3_DodgePoint;

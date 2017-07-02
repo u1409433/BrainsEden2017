@@ -16,8 +16,17 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}'
+<<<<<<< HEAD
+    m_lastTimePsrt1: 1347961031
+    m_lastTimePart2: -1999322938
+=======
+<<<<<<< HEAD
+    m_lastTimePsrt1: 1106192647
+=======
     m_lastTimePsrt1: 25645888
+>>>>>>> 5a30586efc43d5313b6e89d3d4bc65b5bc3435a7
     m_lastTimePart2: -1999322940
+>>>>>>> 20f1254d1bfc99dc6be655f67a7983a089079da7
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -193,22 +202,52 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A1BE1F16-5A58-43CA-B653-D8BD0401B781}'
+<<<<<<< HEAD
+    m_lastTimePsrt1: -1716330285
+    m_lastTimePart2: -1999322965
+=======
+<<<<<<< HEAD
+    m_lastTimePsrt1: 1958753262
+    m_lastTimePart2: -1999323003
+=======
     m_lastTimePsrt1: -2116446849
     m_lastTimePart2: -1999323155
+>>>>>>> 5a30586efc43d5313b6e89d3d4bc65b5bc3435a7
+>>>>>>> 20f1254d1bfc99dc6be655f67a7983a089079da7
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{45CE0B3C-F78B-4ED5-BE21-A0213F1B7BFD}'
+<<<<<<< HEAD
+    m_lastTimePsrt1: -1694598112
+    m_lastTimePart2: -1999322965
+=======
+<<<<<<< HEAD
+    m_lastTimePsrt1: 1971333262
+    m_lastTimePart2: -1999323003
+=======
     m_lastTimePsrt1: -2115876446
     m_lastTimePart2: -1999323155
+>>>>>>> 5a30586efc43d5313b6e89d3d4bc65b5bc3435a7
+>>>>>>> 20f1254d1bfc99dc6be655f67a7983a089079da7
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8171BD08-1B48-4883-BDA9-5A92826AB052}'
+<<<<<<< HEAD
+    m_lastTimePsrt1: 1348831031
+    m_lastTimePart2: -1999322938
+=======
+<<<<<<< HEAD
+    m_lastTimePsrt1: 733284571
+    m_lastTimePart2: -1999322945
+=======
     m_lastTimePsrt1: -903792617
     m_lastTimePart2: -1999322946
+>>>>>>> 5a30586efc43d5313b6e89d3d4bc65b5bc3435a7
+>>>>>>> 20f1254d1bfc99dc6be655f67a7983a089079da7
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -272,8 +311,17 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D7FF8C30-DA72-4C14-BB80-CDAF477F8EE6}'
+<<<<<<< HEAD
+    m_lastTimePsrt1: 1348821031
+    m_lastTimePart2: -1999322938
+=======
+<<<<<<< HEAD
+    m_lastTimePsrt1: -1230098801
+=======
     m_lastTimePsrt1: 2016132704
+>>>>>>> 5a30586efc43d5313b6e89d3d4bc65b5bc3435a7
     m_lastTimePart2: -1999322940
+>>>>>>> 20f1254d1bfc99dc6be655f67a7983a089079da7
     List:
     - Name: Main
       Path: Default Work Unit\Main
@@ -284,7 +332,18 @@ MonoBehaviour:
         ObjectType: 7
       ID: -1133058374
       Guid: dc99ddb5ae9642458612abb83aa9f5aa
+<<<<<<< HEAD
   ExpandedItems: []
+=======
+<<<<<<< HEAD
+  ExpandedItems:
+  - /BrainsEdenJPop_WwiseProject
+  - /BrainsEdenJPop_WwiseProject/Events
+  - /BrainsEdenJPop_WwiseProject/Events/Default Work Unit
+=======
+  ExpandedItems: []
+>>>>>>> 5a30586efc43d5313b6e89d3d4bc65b5bc3435a7
+>>>>>>> 20f1254d1bfc99dc6be655f67a7983a089079da7
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

@@ -17,17 +17,12 @@ MonoBehaviour:
     ParentPhysicalPath: 
     Guid: '{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}'
 <<<<<<< HEAD
+    m_lastTimePsrt1: -1065313323
+    m_lastTimePart2: -1999322962
+=======
     m_lastTimePsrt1: 1106192647
     m_lastTimePart2: -1999322940
-=======
-<<<<<<< HEAD
-    m_lastTimePsrt1: 466336695
-    m_lastTimePart2: -1999322947
-=======
-    m_lastTimePsrt1: 1480317898
-    m_lastTimePart2: -1999322941
->>>>>>> fb6371f2fed83f18851018cccfaaf7923039c853
->>>>>>> 40100ca5e5e7eaff5b6b99bb7af5b7f93b55e978
+>>>>>>> 7c60689a4ccbce3e1edd8c0d32150573538def6c
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -172,7 +167,6 @@ MonoBehaviour:
       maxAttenuation: 0
 =======
       maxAttenuation: 20
->>>>>>> fb6371f2fed83f18851018cccfaaf7923039c853
     - Name: Snickt
       Path: Default Work Unit\Snickt
       PathAndIcons:
@@ -202,11 +196,8 @@ MonoBehaviour:
         ObjectType: 3
       ID: 99965646
       Guid: 1507648710dc384cabf433c43b126f80
-<<<<<<< HEAD
-      maxAttenuation: 0
-=======
       maxAttenuation: 10
->>>>>>> fb6371f2fed83f18851018cccfaaf7923039c853
+>>>>>>> 7c60689a4ccbce3e1edd8c0d32150573538def6c
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -225,13 +216,8 @@ MonoBehaviour:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8171BD08-1B48-4883-BDA9-5A92826AB052}'
-<<<<<<< HEAD
-    m_lastTimePsrt1: -1694598112
-    m_lastTimePart2: -1999322965
-=======
     m_lastTimePsrt1: 733284571
     m_lastTimePart2: -1999322945
->>>>>>> fb6371f2fed83f18851018cccfaaf7923039c853
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -296,17 +282,12 @@ MonoBehaviour:
     ParentPhysicalPath: 
     Guid: '{D7FF8C30-DA72-4C14-BB80-CDAF477F8EE6}'
 <<<<<<< HEAD
+    m_lastTimePsrt1: -1064483240
+    m_lastTimePart2: -1999322962
+=======
     m_lastTimePsrt1: -1230098801
     m_lastTimePart2: -1999322940
-=======
-<<<<<<< HEAD
-    m_lastTimePsrt1: 468046695
-    m_lastTimePart2: -1999322947
-=======
-    m_lastTimePsrt1: 733264569
-    m_lastTimePart2: -1999322945
->>>>>>> fb6371f2fed83f18851018cccfaaf7923039c853
->>>>>>> 40100ca5e5e7eaff5b6b99bb7af5b7f93b55e978
+>>>>>>> 7c60689a4ccbce3e1edd8c0d32150573538def6c
     List:
     - Name: Main
       Path: Default Work Unit\Main
@@ -321,9 +302,6 @@ MonoBehaviour:
   - /BrainsEdenJPop_WwiseProject
   - /BrainsEdenJPop_WwiseProject/Events
   - /BrainsEdenJPop_WwiseProject/Events/Default Work Unit
-  - /BrainsEdenJPop_WwiseProject/Switches
-  - /BrainsEdenJPop_WwiseProject/Switches/Default Work Unit
-  - /BrainsEdenJPop_WwiseProject/Switches/Default Work Unit/Ambience
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

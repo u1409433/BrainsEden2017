@@ -10,16 +10,20 @@ public class JB_ChangeAmbience : MonoBehaviour
 
     private GameObject PC;
 
+    private GameObject GO_AudioManager;
+
     void Start()
     {
         PC = GameObject.Find("PC");
+
+        GO_AudioManager = GameObject.Find("AudioManager");
     }
 
     void OnTriggerEnter(Collider col)
     {
         if (col.gameObject == PC)
         {
-            AkSoundEngine.SetSwitch(SwitchGroupName, SwitchStateName, PC);
+            AkSoundEngine.SetSwitch(SwitchGroupName, SwitchStateName, GO_AudioManager);
         }
     }
 }

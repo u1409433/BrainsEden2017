@@ -26,12 +26,13 @@ public class JC_FSM : MonoBehaviour
     protected NavMeshAgent mNMA_NavMeshAgent;
     protected Vector3 mV3_NextDest;
     public float mFL_Speed;
+    public float mFL_FinalSpeed;
 
     [HideInInspector]
     public int mIN_AreaNo;
 
     // Movement Variables:
-    protected Vector3 mV3_TargetPos;
+    public Vector3 mV3_TargetPos;
     protected Vector3 mV3_StartPos;
 
     // Random Destination:
@@ -66,14 +67,23 @@ public class JC_FSM : MonoBehaviour
     public float mFL_AttackRange;
     public float mFL_AttackDistance;
 
-    // Audio Stuff
-    public float mFL_DistanceFromPC;
+    // Blocking Movement for Chase and Roam:
+    bool mBL_AreaOfInterestSet = false;
+    Vector2 mV2_AreaOfInterestX;
+    Vector2 mV2_AreaOfInterestZ;
+    JC_LevelManager mSCR_JCLevelManager;
 
     // Use this for initialization
     void Start()
     {
         mNMA_NavMeshAgent = GetComponent<NavMeshAgent>();
         mGO_PC = GameObject.FindGameObjectWithTag("Player");
+        mSCR_JCLevelManager = GameObject.Find("LevelManager").GetComponent<JC_LevelManager>();
+
+        if (mSCR_JCLevelManager == null)
+        {
+            print("No Level Manager");
+        }
 
         SetState(State.Chase);
         //SetState(State.Roam);
@@ -82,11 +92,16 @@ public class JC_FSM : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //print("Area No: " + mIN_AreaNo);
+
+        ApplyAreasOfInterest();
+
+        CheckInArea();
+        print(CheckInArea().ToString());
+
         ApplyFSM();
 
         AILogic();
-
-        print("Area No: " + mIN_AreaNo);
 
         if (mCurrentState == State.Chase)
         {
@@ -105,19 +120,80 @@ public class JC_FSM : MonoBehaviour
         }
     }
 
+    private void ApplyAreasOfInterest()
+    {
+        if (!mBL_AreaOfInterestSet)
+        {
+            if (mIN_AreaNo == 1)
+            {
+                mV2_AreaOfInterestX = mSCR_JCLevelManager.mV2_Area1_X;
+                mV2_AreaOfInterestZ = mSCR_JCLevelManager.mV2_Area1_Z;
+            }
+
+            else if (mIN_AreaNo == 2)
+            {
+                mV2_AreaOfInterestX = mSCR_JCLevelManager.mV2_Area2_X;
+                mV2_AreaOfInterestZ = mSCR_JCLevelManager.mV2_Area2_Z;
+            }
+
+            else if (mIN_AreaNo == 3)
+            {
+                mV2_AreaOfInterestX = mSCR_JCLevelManager.mV2_Area3_X;
+                mV2_AreaOfInterestZ = mSCR_JCLevelManager.mV2_Area3_Z;
+            }
+
+            mBL_AreaOfInterestSet = true;
+        }
+    }
+
     private void AILogic()
     {
         // Chase Distance.
         if (Vector3.Distance(gameObject.transform.position, mGO_PC.transform.position) <= mFL_ChaseDistance)
         {
             SetState(State.Chase);
+
+            if (GetState() == State.Chase)
+            {
+                //if (!(transform.position.x > mV2_AreaOfInterestX.y && transform.position.x < mV2_AreaOfInterestZ.x))
+                //{
+                //    if (!(transform.position.z > mV2_AreaOfInterestZ.y && transform.position.z > mV2_AreaOfInterestZ.x))
+                //    {
+                //        SetState(State.Roam); 
+                //    }
+                //} 
+            }
         }
+
         else
         {
             SetState(State.Roam);
         }
     }
 
+    protected bool CheckInArea()
+    {
+        bool tBL_IsInArea = true;
+
+        if (transform.position.x > mV2_AreaOfInterestX.y && transform.position.x < mV2_AreaOfInterestX.x)
+        {
+            if (transform.position.z > mV2_AreaOfInterestZ.y && transform.position.z < mV2_AreaOfInterestZ.x)
+            {
+                print("Is in Bounds");
+                tBL_IsInArea = true;
+            }
+
+            else
+            {
+                print("NPC Outside Bounds");
+                tBL_IsInArea = false;
+            }
+        }
+
+        return tBL_IsInArea;
+    }
+    
+#if !UNITY_EDITOR
     protected void Roam()
     {
         if (!mBL_RoamReachedDest)
@@ -192,6 +268,103 @@ public class JC_FSM : MonoBehaviour
             }
         }
     }
+#else
+
+    protected void Roam()
+    {
+        if (!mBL_RoamReachedDest)
+        {
+            bool mBL_CanGo = true;
+
+            if (!mBL_IsRoaming)
+            {
+                Ray tRY_Ray = new Ray((RandomDestination() + new Vector3(0, 20, 0)), Vector3.down);
+                RaycastHit tRY_Hit;
+
+                if (Physics.Raycast(tRY_Ray, out tRY_Hit, 15000))
+                {
+                    NavMeshHit tNM_Hit;
+                    int tIN_LayerWalkable = 1 << NavMesh.GetAreaFromName("Walkable");
+
+                    if (NavMesh.SamplePosition(tRY_Hit.point, out tNM_Hit, 1, tIN_LayerWalkable))// && tRY_Hit.transform.tag == "Terrain")
+                    {
+                        mV3_TargetPos = new Vector3(tRY_Hit.point.x, tRY_Hit.point.y + 1f, tRY_Hit.point.z);
+
+                        // Check if within the right Area:
+                        // Check if Right Height:
+                        if (transform.position.y > tNM_Hit.position.y)
+                        {
+                            print("Wrong Height: " + tNM_Hit.position.y + ", Player Height: " + transform.position.y);
+
+                            if (transform.position.y - tNM_Hit.position.y > 1)
+                            {
+                                print("Wrong Height: " + tNM_Hit.position.y + ", Player Height: " + transform.position.y);
+                                mBL_CanGo = false;
+                            }
+                        }
+
+                        else if (!(transform.position.y > tNM_Hit.position.y))
+                        {
+                            if (tNM_Hit.position.y - transform.position.y > 3)
+                            {
+                                print("Wrong Height: " + tNM_Hit.position.y + ", Player Height: " + transform.position.y);
+                                mBL_CanGo = false;
+                            }
+                        }
+                                                
+                        if (CheckInArea() == false)
+                        {
+                            print("Roam: Outside bounds");
+                            mBL_CanGo = false;
+                        }
+                        
+                        if (mBL_CanGo)
+                        {
+                            //print("Correct Height: " + tNM_Hit.position.y + ", Player Height: " + transform.position.y);
+                            mBL_IsRoaming = true;
+
+                            //if (true)
+                            //{
+                                mNMA_NavMeshAgent.speed = mFL_Speed;
+                            //}
+
+                            mNMA_NavMeshAgent.SetDestination(mV3_TargetPos);
+                        }
+                    }
+                }
+
+                else
+                {
+                    Debug.LogError("Raycast did not hit anything. Will retry next frame.");
+                }
+            }
+
+            else
+            {
+                if (Vector2.Distance(new Vector2(gameObject.transform.position.x, gameObject.transform.position.z), new Vector2(mV3_TargetPos.x, mV3_TargetPos.z)) < 1f)
+                {
+                    mBL_RoamReachedDest = true;
+                    mBL_IsRoaming = false;
+                }
+            }
+        }
+
+        else
+        {
+            if (!mBL_RoamTimerSet)
+            {
+                mFL_RoamTimer = Time.time + (float)mDB_RoamPause;
+                mBL_RoamTimerSet = true;
+            }
+
+            if (Time.time > mFL_RoamTimer)
+            {
+                mBL_RoamReachedDest = false;
+                mBL_RoamTimerSet = false;
+            }
+        }
+    }
+#endif
 
     protected void Chase()
     {
@@ -202,8 +375,6 @@ public class JC_FSM : MonoBehaviour
                 mV3_TargetPos = mGO_PC.transform.position;
                 mNMA_NavMeshAgent.isStopped = false;
                 mNMA_NavMeshAgent.SetDestination(mV3_TargetPos);
-
-                mFL_DistanceFromPC = Vector3.Distance(mGO_PC.transform.position, transform.position);
 
                 mBL_IsChasing = true;
 
