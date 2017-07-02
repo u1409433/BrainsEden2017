@@ -46,8 +46,6 @@ public class JC_LevelManager : MonoBehaviour
     void Update()
     {
         IN_ChasingGhosts = 0;
-
-        AssignNPCsToAreas();
     }
 
     private void AssignNPCsToAreas()
@@ -64,18 +62,18 @@ public class JC_LevelManager : MonoBehaviour
                 {
                     mSCR_FSM.mIN_AreaNo = 1;
 
-                    print("Is in Area 1"); 
+                    //print("Is in Area 1"); 
                 }
 
                 else
                 {
-                    print("NPC Outside Area 1");
+                    //print("NPC Outside Area 1");
                 }
             }
 
             else
             {
-                print("NPC Outside Area 1");
+                //print("NPC Outside Area 1");
             }
 
             if (vNPC.transform.position.x > mV2_Area2_X.y && vNPC.transform.position.x < mV2_Area2_X.x)
@@ -84,18 +82,18 @@ public class JC_LevelManager : MonoBehaviour
                 {
                     mSCR_FSM.mIN_AreaNo = 2;
 
-                    print("Is in Area 2"); 
+                    //print("Is in Area 2"); 
                 }
 
                 else
                 {
-                    print("NPC Outside Area 2");
+                    //print("NPC Outside Area 2");
                 }
             }
 
             else
             {
-                print("NPC Outside Area 2");
+                //print("NPC Outside Area 2");
             }
 
             if (vNPC.transform.position.x > mV2_Area3_X.y && vNPC.transform.position.x < mV2_Area3_X.x)
@@ -104,18 +102,18 @@ public class JC_LevelManager : MonoBehaviour
                 {
                     mSCR_FSM.mIN_AreaNo = 3;
 
-                    print("Is in Area 3");
+                    //print("Is in Area 3");
                 }
 
                 else
                 {
-                    print("NPC Outside Area 3");
+                    //print("NPC Outside Area 3");
                 }
             }
 
             else
             {
-                print("NPC Outside Area 3");
+                //print("NPC Outside Area 3");
             }
         }
     }

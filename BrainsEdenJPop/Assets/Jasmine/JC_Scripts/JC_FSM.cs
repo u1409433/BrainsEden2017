@@ -96,6 +96,9 @@ public class JC_FSM : MonoBehaviour
 
         ApplyAreasOfInterest();
 
+        CheckInArea();
+        print(CheckInArea().ToString());
+
         ApplyFSM();
 
         AILogic();
@@ -152,21 +155,44 @@ public class JC_FSM : MonoBehaviour
 
             if (GetState() == State.Chase)
             {
-                if (!(transform.position.x > mV2_AreaOfInterestX.y && transform.position.x < mV2_AreaOfInterestZ.x))
-                {
-                    if (!(transform.position.z > mV2_AreaOfInterestZ.y && transform.position.z > mV2_AreaOfInterestZ.x))
-                    {
-                        SetState(State.Roam); 
-                    }
-                } 
+                //if (!(transform.position.x > mV2_AreaOfInterestX.y && transform.position.x < mV2_AreaOfInterestZ.x))
+                //{
+                //    if (!(transform.position.z > mV2_AreaOfInterestZ.y && transform.position.z > mV2_AreaOfInterestZ.x))
+                //    {
+                //        SetState(State.Roam); 
+                //    }
+                //} 
             }
         }
+
         else
         {
             SetState(State.Roam);
         }
     }
 
+    protected bool CheckInArea()
+    {
+        bool tBL_IsInArea = true;
+
+        if (transform.position.x > mV2_AreaOfInterestX.y && transform.position.x < mV2_AreaOfInterestX.x)
+        {
+            if (transform.position.z > mV2_AreaOfInterestZ.y && transform.position.z < mV2_AreaOfInterestZ.x)
+            {
+                print("Is in Bounds");
+                tBL_IsInArea = true;
+            }
+
+            else
+            {
+                print("NPC Outside Bounds");
+                tBL_IsInArea = false;
+            }
+        }
+
+        return tBL_IsInArea;
+    }
+    
 #if !UNITY_EDITOR
     protected void Roam()
     {
@@ -265,15 +291,6 @@ public class JC_FSM : MonoBehaviour
                         mV3_TargetPos = new Vector3(tRY_Hit.point.x, tRY_Hit.point.y + 1f, tRY_Hit.point.z);
 
                         // Check if within the right Area:
-                        if ((mV3_TargetPos.x < mV2_AreaOfInterestX.y || mV3_TargetPos.x > mV2_AreaOfInterestX.x))
-                        {
-                            if ((mV3_TargetPos.z < mV2_AreaOfInterestZ.y || mV3_TargetPos.z > mV2_AreaOfInterestZ.x))
-                            {
-                                print("OutSide Bounderies");
-                                mBL_CanGo = false; 
-                            }
-                        }
-
                         // Check if Right Height:
                         if (transform.position.y > tNM_Hit.position.y)
                         {
@@ -286,7 +303,7 @@ public class JC_FSM : MonoBehaviour
                             }
                         }
 
-                        else
+                        else if (!(transform.position.y > tNM_Hit.position.y))
                         {
                             if (tNM_Hit.position.y - transform.position.y > 3)
                             {
@@ -294,7 +311,13 @@ public class JC_FSM : MonoBehaviour
                                 mBL_CanGo = false;
                             }
                         }
-
+                                                
+                        if (CheckInArea() == false)
+                        {
+                            print("Roam: Outside bounds");
+                            mBL_CanGo = false;
+                        }
+                        
                         if (mBL_CanGo)
                         {
                             //print("Correct Height: " + tNM_Hit.position.y + ", Player Height: " + transform.position.y);

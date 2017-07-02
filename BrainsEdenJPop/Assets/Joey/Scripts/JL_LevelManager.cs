@@ -33,4 +33,9 @@ public class JL_LevelManager : MonoBehaviour
     {
         SceneManager.LoadScene(2, LoadSceneMode.Single);
     }
+
+    public void LoseState()
+    {
+        SceneManager.LoadScene(3, LoadSceneMode.Single);
+    }
 }
