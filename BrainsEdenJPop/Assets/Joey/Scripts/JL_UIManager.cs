@@ -6,6 +6,10 @@ using UnityEngine;
 
 public class JL_UIManager : MonoBehaviour
 {
+    public Image ShrineRed;
+    public Image ShrineGreen;
+    public Image ShrineBlue;
+
     public string ST_Minutes;
     public string ST_Seconds;
 
@@ -39,5 +43,28 @@ public class JL_UIManager : MonoBehaviour
         GameObject tAudio = GameObject.Find("Audio");
         Destroy(tAudio);
         SceneManager.LoadScene(1, LoadSceneMode.Single);
+    }
+
+    public void PlaceRelic(int vShrine)
+    {
+        switch (vShrine)
+        {
+            case 1:
+                ShrineRed.color = Color.red;
+                break;
+            case 2:
+                ShrineGreen.color = Color.green;
+                break;
+            case 3:
+                ShrineBlue.color = Color.blue;
+                break;
+            default:
+                break;
+        }
+    }
+
+    public void ExitButton()
+    {
+        SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 }

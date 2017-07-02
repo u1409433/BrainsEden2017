@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Joey/Level 1 Joey.unity
+- path: Assets/James/Level one/Level 1 James.unity
   isLoaded: 1
   isActive: 1

@@ -40,13 +40,15 @@ public class JL_Interactable : MonoBehaviour
                             transform.parent.GetComponent<JL_Shrine>().SwitchRelic();
                         }
                     }
-
-                    gameObject.transform.SetParent(GO_PC.transform);
-                    Transform temp = GO_PC.transform.Find("Target");
-                    transform.localPosition = temp.localPosition;
-                    BL_Carried = true;
-                    SC_PCScript.BL_Carrying = true;
-                    GameObject.Find("AudioManager").GetComponent<JL_AudioManager>().PlaySound("PickupRelic");
+                    else
+                    {
+                        gameObject.transform.SetParent(GO_PC.transform);
+                        Transform temp = GO_PC.transform.Find("Target");
+                        transform.localPosition = temp.localPosition;
+                        BL_Carried = true;
+                        SC_PCScript.BL_Carrying = true;
+                        GameObject.Find("AudioManager").GetComponent<JL_AudioManager>().PlaySound("PickupRelic");
+                    }
                 }
                 break;
             case "Shrine":
@@ -58,6 +60,8 @@ public class JL_Interactable : MonoBehaviour
                     SC_PCScript.BL_Carrying = false;
                     GameObject.Find("AudioManager").GetComponent<JL_AudioManager>().PlaySound("PlaceRelic");
                     gameObject.GetComponent<JL_Shrine>().SwitchRelic();
+                    int temp = gameObject.GetComponent<JL_Shrine>().IN_ShrineNum;
+                    GameObject.Find("UI").GetComponent<JL_UIManager>().PlaceRelic(temp);
                 }
                 else Debug.Log("You are not carrying a relic");
                 break;

@@ -15,7 +15,7 @@ public class JC_FSM : MonoBehaviour
 
     // Getters, Setters variable for FSM:
     private State mStartState;
-    private State mCurrentState;
+    public State mCurrentState;
     private State mPreviuosState;
 
     // Find PC:
@@ -89,10 +89,13 @@ public class JC_FSM : MonoBehaviour
     protected float mFL_AttackDistance;
 
     // Blocking Movement for Chase and Roam:
-    bool mBL_AreaOfInterestSet = false;
     Vector2 mV2_AreaOfInterestX;
     Vector2 mV2_AreaOfInterestZ;
+
     JC_LevelManager mSCR_JCLevelManager;
+    JL_PCMovement mSCR_Movement;
+
+    bool mBL_AreaOfInterestSet = false;
     bool mBL_IsInArea = true;
     bool mBL_PCIsInArea = true;
 
@@ -104,6 +107,7 @@ public class JC_FSM : MonoBehaviour
     {
         mNMA_NavMeshAgent = GetComponent<NavMeshAgent>();
         mGO_PC = GameObject.FindGameObjectWithTag("Player");
+        mSCR_Movement = mGO_PC.GetComponent<JL_PCMovement>();
         mSCR_JCLevelManager = GameObject.Find("LevelManager").GetComponent<JC_LevelManager>();
 
         if (mSCR_JCLevelManager == null)
@@ -132,13 +136,6 @@ public class JC_FSM : MonoBehaviour
         //print("STATE: " + GetState());
         //print("NPC is in area" + mBL_IsInArea);
 
-        DebugShines();
-
-        print("SPEED: " + mNMA_NavMeshAgent.speed);
-    }
-
-    private void DebugShines()
-    {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             if (mIN_AreaNo == 1)
@@ -213,81 +210,45 @@ public class JC_FSM : MonoBehaviour
                 }
             }
         }
-    }
 
-    public void ChangeGhost1()
-    {
-        if (mIN_AreaNo == 1)
-        {
-            mV2_AreaOfInterestX = mSCR_JCLevelManager.mV2_Area1_X;
-            mV2_AreaOfInterestZ = mSCR_JCLevelManager.mV2_Area1_Z;
+        //if (Input.GetKeyDown(KeyCode.Alpha4))
+        //{
+        //    if (mIN_AreaNo == 4)
+        //    {
+        //        mV2_AreaOfInterestX = mSCR_JCLevelManager.mV2_Area4_X;
+        //        mV2_AreaOfInterestZ = mSCR_JCLevelManager.mV2_Area4_Z;
 
-            mFL_RoamSpeed = mFL_FinalSpeedGhost1;
-            mFL_ChaseSpeed = mFL_FinalChasingSpeedGhost1;
+        //        mV2_AreaOfInterestX = mSCR_JCLevelManager.mV2_Area4_X;
+        //        mV2_AreaOfInterestZ = mSCR_JCLevelManager.mV2_Area4_Z;
 
-            print("Area1 NewSpeed");
-        }
+        //        if (gameObject.transform.tag == "AreaFour")
+        //        {
+        //            if (gameObject.transform.name == "FinalGhostArea1")
+        //            {
+        //                mFL_RoamSpeed = mFL_FinalSpeedGhost1;
+        //                mFL_ChaseSpeed = mFL_FinalChasingSpeedGhost1;
 
-        if (mIN_AreaNo == 4)
-        {
-            if (gameObject.transform.name == "FinalGhostArea1")
-            {
-                mFL_RoamSpeed = mFL_FinalSpeedGhost1;
-                mFL_ChaseSpeed = mFL_FinalChasingSpeedGhost1;
+        //                print("Area4 NewSpeed Ghost1");
+        //            }
 
-                print("Area4 NewSpeed Ghost1");
-            }
-        }
-    }
+        //            if (gameObject.transform.name == "FinalGhostArea2")
+        //            {
+        //                mFL_RoamSpeed = mFL_FinalSpeedGhost2;
+        //                mFL_ChaseSpeed = mFL_FinalChasingSpeedGhost2;
+        //                print("Area4 NewSpeed Ghost2");
+        //            }
 
-    public void ChaseGhost2()
-    {
-        if (mIN_AreaNo == 2)
-        {
-            mV2_AreaOfInterestX = mSCR_JCLevelManager.mV2_Area2_X;
-            mV2_AreaOfInterestZ = mSCR_JCLevelManager.mV2_Area2_Z;
+        //            if (gameObject.transform.name == "FinalGhostArea3")
+        //            {
+        //                mFL_RoamSpeed = mFL_FinalSpeedGhost3;
+        //                mFL_ChaseSpeed = mFL_FinalChasingSpeedGhost3;
+        //                print("Area4 NewSpeed Ghost3");
+        //            }
+        //        }
+        //    }
+        //}
 
-            mFL_RoamSpeed = mFL_FinalSpeedGhost2;
-            mFL_ChaseSpeed = mFL_FinalChasingSpeedGhost2;
-
-            print("Area2 NewSpeed");
-        }
-
-        if (mIN_AreaNo == 4)
-        {
-            if (gameObject.transform.name == "FinalGhostArea2")
-            {
-                mFL_RoamSpeed = mFL_FinalSpeedGhost2;
-                mFL_ChaseSpeed = mFL_FinalChasingSpeedGhost2;
-
-                print("Area4 NewSpeed Ghost2");
-            }
-        }
-    }
-
-    public void ChaseGhost3()
-    {
-        if (mIN_AreaNo == 3)
-        {
-            mV2_AreaOfInterestX = mSCR_JCLevelManager.mV2_Area3_X;
-            mV2_AreaOfInterestZ = mSCR_JCLevelManager.mV2_Area3_Z;
-
-            mFL_RoamSpeed = mFL_FinalSpeedGhost3;
-            mFL_ChaseSpeed = mFL_FinalChasingSpeedGhost3;
-
-            print("Area3 NewSpeed");
-        }
-
-        if (mIN_AreaNo == 4)
-        {
-            if (gameObject.transform.name == "FinalGhostArea3")
-            {
-                mFL_RoamSpeed = mFL_FinalSpeedGhost3;
-                mFL_ChaseSpeed = mFL_FinalChasingSpeedGhost3;
-
-                print("Area4 NewSpeed Ghost3");
-            }
-        }
+        print("SPEED: " + mNMA_NavMeshAgent.speed);
     }
 
     protected void ApplyFSM()
@@ -634,11 +595,12 @@ public class JC_FSM : MonoBehaviour
         return mCurrentState;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.transform.tag == "Player")
         {
-            collision.transform.SendMessage("Die");
+            mSCR_Movement.Die();
+            //collision.transform.SendMessage("Die");
         }
     }
 }
