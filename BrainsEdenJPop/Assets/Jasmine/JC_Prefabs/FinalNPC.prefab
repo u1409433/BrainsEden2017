@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1956560447195660}
+  m_IsPrefabParent: 1
+--- !u!1 &1956560447195660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4274857525223500}
+  - component: {fileID: 33957812607741794}
+  - component: {fileID: 136963328285410040}
+  - component: {fileID: 23800892832215392}
+  - component: {fileID: 195124519828285834}
+  - component: {fileID: 114457492847302196}
+  m_Layer: 0
+  m_Name: FinalNPC
+  m_TagString: Ghost
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4274857525223500
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1956560447195660}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 65.8, y: 6.7999964, z: 36}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23800892832215392
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1956560447195660}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 756798ffd9dbd984ca7be22502464c76, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &33957812607741794
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1956560447195660}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114457492847302196
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1956560447195660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecd6435a90dfecb469dfe538c8ec9046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mPF_TestObjOK: {fileID: 1654960456696022, guid: 0be06cd72e30e3a43b1d2597ec5f9c23,
+    type: 2}
+  mPF_TestObjNotOK: {fileID: 1492536113197676, guid: 8c1b655f67725654c995fd94432e9c11,
+    type: 2}
+  mFL_SpeedArea1: 1
+  mFL_SpeedArea2: 2
+  mFL_SpeedArea3: 3
+  mFL_SpeedArea4: 4
+  mFL_FinalSpeedArea1: 4
+  mFL_FinalSpeedArea2: 3
+  mFL_FinalSpeedArea3: 2
+  mFL_FinalSpeedArea4: 1
+  mFL_ChasingSpeed1: 1
+  mFL_ChasingSpeed2: 2
+  mFL_ChasingSpeed3: 4
+  mFL_ChasingSpeed4: 4
+  mFL_FinalChasingSpeed1: 4
+  mFL_FinalChasingSpeed2: 3
+  mFL_FinalChasingSpeed3: 2
+  mFL_FinalChasingSpeed4: 1
+  mIN_AreaNo: 0
+  mV3_TargetPos: {x: 0, y: 0, z: 0}
+  mFL_MaxRandomMove: 1
+  mFL_MinRandomMove: 2
+  mDB_RoamPause: 1
+  mFL_ChasingStoppingDistance: 0
+  mFL_ChaseRange: 2
+  mFL_ChaseDistance: 10
+  mDB_ChasePause: 0.1
+--- !u!136 &136963328285410040
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1956560447195660}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.75
+  m_Height: 2.25
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!195 &195124519828285834
+NavMeshAgent:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1956560447195660}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4

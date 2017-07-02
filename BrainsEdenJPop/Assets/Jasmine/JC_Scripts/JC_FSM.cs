@@ -26,15 +26,34 @@ public class JC_FSM : MonoBehaviour
     // Navmesh:
     protected NavMeshAgent mNMA_NavMeshAgent;
     protected Vector3 mV3_NextDest;
-    private float mFL_Speed;
+    private float mFL_RoamSpeed;
+    private float mFL_ChaseSpeed;
+
     public float mFL_SpeedArea1;
     public float mFL_SpeedArea2;
     public float mFL_SpeedArea3;
+    public float mFL_SpeedArea4;
+
+    public float mFL_FinalSpeedArea1;
+    public float mFL_FinalSpeedArea2;
+    public float mFL_FinalSpeedArea3;
+    public float mFL_FinalSpeedArea4;
+
+    public float mFL_ChasingSpeed1;
+    public float mFL_ChasingSpeed2;
+    public float mFL_ChasingSpeed3;
+    public float mFL_ChasingSpeed4;
+
+    public float mFL_FinalChasingSpeed1;
+    public float mFL_FinalChasingSpeed2;
+    public float mFL_FinalChasingSpeed3;
+    public float mFL_FinalChasingSpeed4;
 
     [HideInInspector]
     public int mIN_AreaNo;
 
     // Movement Variables:
+    [HideInInspector]
     public Vector3 mV3_TargetPos;
     protected Vector3 mV3_StartPos;
 
@@ -65,10 +84,9 @@ public class JC_FSM : MonoBehaviour
     protected bool mBL_IsAttacking;
     protected bool mBL_AttackTimerSet = false;
     protected float mFL_AttackTimer;
-    public double mDB_AttackPause;
-
-    public float mFL_AttackRange;
-    public float mFL_AttackDistance;
+    protected double mDB_AttackPause;
+    protected float mFL_AttackRange;
+    protected float mFL_AttackDistance;
 
     // Blocking Movement for Chase and Roam:
     bool mBL_AreaOfInterestSet = false;
@@ -79,7 +97,7 @@ public class JC_FSM : MonoBehaviour
     bool mBL_PCIsInArea = true;
 
     // Lights:
-    public Light mLG_FaceLight;
+    //public Light mLG_FaceLight;
 
     // Use this for initialization
     void Start()
@@ -110,6 +128,50 @@ public class JC_FSM : MonoBehaviour
             GameObject.Find("AudioManager").GetComponent<JL_AudioManager>().ReceiveGhostInfo(Vector3.Distance(transform.position, mV3_TargetPos));
             GameObject.Find("LevelManager").GetComponent<JC_LevelManager>().IN_ChasingGhosts++;
         }
+
+        //print("STATE: " + GetState());
+        //print("NPC is in area" + mBL_IsInArea);
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            if (mIN_AreaNo == 1)
+            {
+                mV2_AreaOfInterestX = mSCR_JCLevelManager.mV2_Area1_X;
+                mV2_AreaOfInterestZ = mSCR_JCLevelManager.mV2_Area1_Z;
+
+                mFL_RoamSpeed = mFL_FinalSpeedArea1;
+                mFL_ChaseSpeed = mFL_FinalChasingSpeed1;
+            }
+
+            else if (mIN_AreaNo == 2)
+            {
+                mV2_AreaOfInterestX = mSCR_JCLevelManager.mV2_Area2_X;
+                mV2_AreaOfInterestZ = mSCR_JCLevelManager.mV2_Area2_Z;
+
+                mFL_RoamSpeed = mFL_FinalSpeedArea2;
+                mFL_ChaseSpeed = mFL_FinalChasingSpeed2;
+            }
+
+            else if (mIN_AreaNo == 3)
+            {
+                mV2_AreaOfInterestX = mSCR_JCLevelManager.mV2_Area3_X;
+                mV2_AreaOfInterestZ = mSCR_JCLevelManager.mV2_Area3_Z;
+
+                mFL_RoamSpeed = mFL_FinalSpeedArea3;
+                mFL_ChaseSpeed = mFL_FinalChasingSpeed3;
+            }
+
+            else if (mIN_AreaNo == 4)
+            {
+                mV2_AreaOfInterestX = mSCR_JCLevelManager.mV2_Area4_X;
+                mV2_AreaOfInterestZ = mSCR_JCLevelManager.mV2_Area4_Z;
+
+                mFL_RoamSpeed = mFL_FinalSpeedArea4;
+                mFL_ChaseSpeed = mFL_FinalChasingSpeed4;
+            }
+        }
+
+        print("SPEED: " + mNMA_NavMeshAgent.speed);
     }
 
     protected void ApplyFSM()
@@ -119,11 +181,11 @@ public class JC_FSM : MonoBehaviour
             case State.Idle: /*Do nothing*/; break;
 
             case State.Roam: Roam();
-                            mLG_FaceLight.enabled = false; break;
+                            /*mLG_FaceLight.enabled = false;*/ break;
 
             case State.Chase: Chase();
-                            mLG_FaceLight.enabled = true;
-                            AkSoundEngine.PostEvent("FaceLight", gameObject);
+                            //mLG_FaceLight.enabled = true;
+                            /*AkSoundEngine.PostEvent("FaceLight", gameObject)*/;
                             break;
 
             case State.GoBack:; break;
@@ -139,7 +201,8 @@ public class JC_FSM : MonoBehaviour
                 mV2_AreaOfInterestX = mSCR_JCLevelManager.mV2_Area1_X;
                 mV2_AreaOfInterestZ = mSCR_JCLevelManager.mV2_Area1_Z;
 
-                mFL_Speed = mFL_SpeedArea1;
+                mFL_RoamSpeed = mFL_SpeedArea1;
+                mFL_ChaseSpeed = mFL_ChasingSpeed1;
             }
 
             else if (mIN_AreaNo == 2)
@@ -147,7 +210,8 @@ public class JC_FSM : MonoBehaviour
                 mV2_AreaOfInterestX = mSCR_JCLevelManager.mV2_Area2_X;
                 mV2_AreaOfInterestZ = mSCR_JCLevelManager.mV2_Area2_Z;
 
-                mFL_Speed = mFL_SpeedArea2;
+                mFL_RoamSpeed = mFL_SpeedArea2;
+                mFL_ChaseSpeed = mFL_ChasingSpeed2;
             }
 
             else if (mIN_AreaNo == 3)
@@ -155,7 +219,17 @@ public class JC_FSM : MonoBehaviour
                 mV2_AreaOfInterestX = mSCR_JCLevelManager.mV2_Area3_X;
                 mV2_AreaOfInterestZ = mSCR_JCLevelManager.mV2_Area3_Z;
 
-                mFL_Speed = mFL_SpeedArea3;
+                mFL_RoamSpeed = mFL_SpeedArea3;
+                mFL_ChaseSpeed = mFL_ChasingSpeed3;
+            }
+
+            else if (mIN_AreaNo == 4)
+            {
+                mV2_AreaOfInterestX = mSCR_JCLevelManager.mV2_Area4_X;
+                mV2_AreaOfInterestZ = mSCR_JCLevelManager.mV2_Area4_Z;
+
+                mFL_RoamSpeed = mFL_SpeedArea4;
+                mFL_ChaseSpeed = mFL_ChasingSpeed4;
             }
 
             mBL_AreaOfInterestSet = true;
@@ -172,6 +246,7 @@ public class JC_FSM : MonoBehaviour
             if (GetState() == State.Chase)
             {
                 CheckPlayerInArea();
+                //print("Is PC in area: " + mBL_PCIsInArea);
 
                 if (!mBL_PCIsInArea)
                 {
@@ -290,7 +365,7 @@ public class JC_FSM : MonoBehaviour
                         {
                             //print("Correct Height: " + tNM_Hit.position.y + ", Player Height: " + transform.position.y);
                             mBL_IsRoaming = true;
-                            mNMA_NavMeshAgent.speed = mFL_Speed;
+                            mNMA_NavMeshAgent.speed = mFL_RoamSpeed;
                             mNMA_NavMeshAgent.SetDestination(mV3_TargetPos);
                         }
                     }
@@ -332,7 +407,7 @@ public class JC_FSM : MonoBehaviour
             {
                 mV3_TargetPos = mGO_PC.transform.position;
                 mNMA_NavMeshAgent.isStopped = false;
-                mNMA_NavMeshAgent.speed = mFL_Speed;
+                mNMA_NavMeshAgent.speed = mFL_ChaseSpeed;
                 mNMA_NavMeshAgent.SetDestination(mV3_TargetPos);
 
                 mBL_IsChasing = true;
