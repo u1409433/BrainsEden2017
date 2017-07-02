@@ -98,6 +98,7 @@
     <Compile Include="Assets\Joey\Scripts\JL_TestScript.cs" />
     <Compile Include="Assets\Joey\Scripts\JL_UIManager.cs" />
     <Compile Include="Assets\Joey\Scripts\RotateTest.cs" />
+    <Compile Include="Assets\Johannes\Scripts\CallSnickt.cs" />
     <Compile Include="Assets\Johannes\Scripts\JB_ChangeAmbience.cs" />
     <Compile Include="Assets\Johannes\Scripts\PlayAllChildParticles.cs" />
     <Compile Include="Assets\Johannes\Scripts\ShrineAura.cs" />

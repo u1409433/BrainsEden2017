@@ -8,7 +8,10 @@ TagManager:
   - Fire
   - Interactable
   - Ghost
+<<<<<<< HEAD
   - AreaFour
+=======
+>>>>>>> a0acc0a57945ee0cc26ead6d147b335064412cad
   layers:
   - Default
   - TransparentFX

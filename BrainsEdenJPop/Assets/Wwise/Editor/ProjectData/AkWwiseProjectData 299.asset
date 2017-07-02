@@ -16,8 +16,13 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 1324644124
     m_lastTimePart2: -1999322838
+=======
+    m_lastTimePsrt1: -429007902
+    m_lastTimePart2: -1999322801
+>>>>>>> a0acc0a57945ee0cc26ead6d147b335064412cad
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -39,6 +44,19 @@ MonoBehaviour:
       ID: 128372033
       Guid: aef763ca9a86e44b9c5af99cfe4a4589
       maxAttenuation: 0
+<<<<<<< HEAD
+=======
+    - Name: Attenuation_GORE_Blade_Chop__mono_
+      Path: Default Work Unit\Attenuation_GORE_Blade_Chop__mono_
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Attenuation_GORE_Blade_Chop__mono_
+        ObjectType: 3
+      ID: -487324973
+      Guid: 841f182da455fe458ac991e240d261ab
+      maxAttenuation: 0
+>>>>>>> a0acc0a57945ee0cc26ead6d147b335064412cad
     - Name: FootstepsFast
       Path: Default Work Unit\FootstepsFast
       PathAndIcons:
@@ -203,22 +221,37 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A1BE1F16-5A58-43CA-B653-D8BD0401B781}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 1326694329
     m_lastTimePart2: -1999322838
+=======
+    m_lastTimePsrt1: -1246498825
+    m_lastTimePart2: -1999322819
+>>>>>>> a0acc0a57945ee0cc26ead6d147b335064412cad
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{45CE0B3C-F78B-4ED5-BE21-A0213F1B7BFD}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 1445806239
     m_lastTimePart2: -1999322838
+=======
+    m_lastTimePsrt1: -1201286717
+    m_lastTimePart2: -1999322819
+>>>>>>> a0acc0a57945ee0cc26ead6d147b335064412cad
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8171BD08-1B48-4883-BDA9-5A92826AB052}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 1445806239
     m_lastTimePart2: -1999322838
+=======
+    m_lastTimePsrt1: -1201276691
+    m_lastTimePart2: -1999322819
+>>>>>>> a0acc0a57945ee0cc26ead6d147b335064412cad
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -282,8 +315,13 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D7FF8C30-DA72-4C14-BB80-CDAF477F8EE6}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 1445786237
     m_lastTimePart2: -1999322838
+=======
+    m_lastTimePsrt1: -1201296718
+    m_lastTimePart2: -1999322819
+>>>>>>> a0acc0a57945ee0cc26ead6d147b335064412cad
     List:
     - Name: Main
       Path: Default Work Unit\Main
@@ -294,7 +332,14 @@ MonoBehaviour:
         ObjectType: 7
       ID: -1133058374
       Guid: dc99ddb5ae9642458612abb83aa9f5aa
+<<<<<<< HEAD
   ExpandedItems: []
+=======
+  ExpandedItems:
+  - /BrainsEdenJPop_WwiseProject
+  - /BrainsEdenJPop_WwiseProject/Events
+  - /BrainsEdenJPop_WwiseProject/Events/Default Work Unit
+>>>>>>> a0acc0a57945ee0cc26ead6d147b335064412cad
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
