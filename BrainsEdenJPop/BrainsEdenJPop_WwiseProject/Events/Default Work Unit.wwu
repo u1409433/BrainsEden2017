@@ -208,6 +208,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Attenuation_GORE_Blade_Chop__mono_" ID="{2D181F84-55A4-45FE-8AC9-91E240D261AB}">
+					<ChildrenList>
+						<Action Name="Play" ID="{7BDE08D5-EADA-4336-ABA1-D101577F0896}" ShortID="191271180" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{566410BF-F3C5-4ABA-9CF1-C87FF5A12106}" Global="false">
+									<ObjectRef Name="GORE Blade Chop (mono)" ID="{CA78766B-2C09-40B9-A899-A38CA650E1B1}" WorkUnitID="{89FFF092-3CB6-4C53-8D2D-B5F44F0A9A86}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

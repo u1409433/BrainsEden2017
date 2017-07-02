@@ -1395,7 +1395,54 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<ObjectRef Name="Snickt" ID="{CEA31E82-4EFA-4AF6-87E1-1C3FC97A18FC}" WorkUnitID="{F3BF1F71-90B7-422A-BFBF-8C25ADC27F0B}"/>
+							<Custom CreatedFrom="{CEA31E82-4EFA-4AF6-87E1-1C3FC97A18FC}">
+								<Attenuation Name="Snickt_Attenuation (Custom)" ID="{4CB37FF3-8727-4EA1-A705-03D15F7FA8AE}" ShortID="1016834477">
+									<PropertyList>
+										<Property Name="RadiusMax" Type="Real64" Value="50"/>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{0EF392E6-5492-4799-9978-FA5713FB88C1}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>50</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
 						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
@@ -1412,13 +1459,18 @@
 										<Value>61</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-8</Value>
+										<Value>-2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Snickt_Attenuation" ID="{CEA31E82-4EFA-4AF6-87E1-1C3FC97A18FC}" WorkUnitID="{8B91D6AD-FBF8-4E3A-A33B-666B5EAF493F}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
 								</Reference>
@@ -1428,6 +1480,10 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="GORE Blade Chop (mono)" ID="{3DDA37CC-C012-4E6D-B5D9-7D16B951D3B7}" ShortID="381109112">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.66385497651441E-02"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.149746947886297"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>GORE Blade Chop (mono).wav</AudioFile>
 								</AudioFileSource>
@@ -1437,6 +1493,9 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{F865F900-9D0B-4F39-B33F-C27465946F10}"/>
+					</PositioningInfo>
 				</RandomSequenceContainer>
 				<Sound Name="Unsnickt" ID="{EB562C50-CF50-43E8-86FA-C0B44FFE0D5C}" ShortID="525428535" Type="SoundFX">
 					<PropertyList>
