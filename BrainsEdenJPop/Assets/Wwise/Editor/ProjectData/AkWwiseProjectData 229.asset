@@ -13,6 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -296,12 +298,16 @@ MonoBehaviour:
       ID: -1133058374
       Guid: dc99ddb5ae9642458612abb83aa9f5aa
 =======
+>>>>>>> 0f81f5611adbd6714a51497195e94ccb60d7020b
   EventWwu: []
   AuxBusWwu: []
   StateWwu: []
   SwitchWwu: []
   BankWwu: []
+<<<<<<< HEAD
+=======
 >>>>>>> db1b21174162f641a3e23282fcf79c27abd04b39
+>>>>>>> 0f81f5611adbd6714a51497195e94ccb60d7020b
   ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
