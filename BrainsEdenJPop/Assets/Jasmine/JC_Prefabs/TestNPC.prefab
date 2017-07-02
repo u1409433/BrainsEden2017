@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114125441686527392}
   m_Layer: 0
   m_Name: TestNPC
-  m_TagString: Untagged
+  m_TagString: Ghost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1192014858712780}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 78.4, y: 6.7999964, z: 42.1}
+  m_LocalPosition: {x: 70, y: 6.7999964, z: 82.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -98,19 +98,21 @@ MonoBehaviour:
     type: 2}
   mPF_TestObjNotOK: {fileID: 1492536113197676, guid: 8c1b655f67725654c995fd94432e9c11,
     type: 2}
-  mFL_Speed: 3
+  mFL_SpeedArea1: 3
+  mFL_SpeedArea2: 1
+  mFL_SpeedArea3: 0.1
   mIN_AreaNo: 0
+  mV3_TargetPos: {x: 0, y: 0, z: 0}
   mFL_MaxRandomMove: 1
   mFL_MinRandomMove: 2
-  mDB_RoamPause: 0.5
+  mDB_RoamPause: 1
   mFL_ChasingStoppingDistance: 0
   mFL_ChaseRange: 2
-  mFL_ChaseDistance: 6
-  mDB_ChasePause: 0.5
+  mFL_ChaseDistance: 10
+  mDB_ChasePause: 0.1
   mDB_AttackPause: 1
   mFL_AttackRange: 1.75
   mFL_AttackDistance: 2.5
-  mFL_DistanceFromPC: 0
 --- !u!136 &136626255183705102
 CapsuleCollider:
   m_ObjectHideFlags: 1

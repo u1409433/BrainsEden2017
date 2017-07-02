@@ -104,8 +104,8 @@ public class JC_FSM : MonoBehaviour
 
         if (mCurrentState == State.Chase)
         {
-            //GameObject.Find("AudioManager").GetComponent<JL_AudioManager>().ReceiveGhostInfo(Vector3.Distance(transform.position, mV3_TargetPos));
-            //GameObject.Find("LevelManager").GetComponent<JC_LevelManager>().IN_ChasingGhosts++;
+            GameObject.Find("AudioManager").GetComponent<JL_AudioManager>().ReceiveGhostInfo(Vector3.Distance(transform.position, mV3_TargetPos));
+            GameObject.Find("LevelManager").GetComponent<JC_LevelManager>().IN_ChasingGhosts++;
         }
     }
 
@@ -182,20 +182,20 @@ public class JC_FSM : MonoBehaviour
         {
             if (mGO_PC.transform.position.z >= mV2_AreaOfInterestZ.y && mGO_PC.transform.position.z < mV2_AreaOfInterestZ.x)
             {
-                print("PC Is in Bounds");
+                //print("PC Is in Bounds");
                 mBL_PCIsInArea = true;
             }
 
             else
             {
-                print("PC Outside Bounds");
+                //print("PC Outside Bounds");
                 mBL_PCIsInArea = false;
             }
         }
 
         else
         {
-            print("PC Outside Bounds");
+            //print("PC Outside Bounds");
             mBL_PCIsInArea = false;
         }
     }
@@ -499,7 +499,7 @@ public class JC_FSM : MonoBehaviour
 
                 mBL_IsChasing = true;
 
-                print("Chase Destination Set: " + mBL_IsChasing.ToString());
+                //print("Chase Destination Set: " + mBL_IsChasing.ToString());
             }
 
             else if (Vector3.Distance(mV3_TargetPos, gameObject.transform.position) <= mFL_ChaseRange)
@@ -508,7 +508,7 @@ public class JC_FSM : MonoBehaviour
                 mNMA_NavMeshAgent.isStopped = true;
                 mBL_IsChasing = false;
                 mBL_ChaseReachedDest = true;
-                print("NPC Stopping");
+                //print("NPC Stopping");
             }
         }
 
