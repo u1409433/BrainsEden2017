@@ -614,15 +614,12 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<Custom>
-								<Attenuation Name="Attenuation (Custom)" ID="{D96A140F-C45E-4C43-8E71-F144F45AE597}" ShortID="935389240">
-									<PropertyList>
-										<Property Name="RadiusMax" Type="Real64" Value="20"/>
-									</PropertyList>
+							<Custom CreatedFrom="{CEA31E82-4EFA-4AF6-87E1-1C3FC97A18FC}">
+								<Attenuation Name="Snickt (Custom)" ID="{5E8F0D2F-786B-489D-BCCB-1CA0CE8F1A6A}" ShortID="784993643">
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{AFAA9E5A-B97E-48B2-91BF-AB5CF12B99FA}">
+												<Curve Name="VolumeDry" ID="{38E5020B-7271-45D4-8A3B-156C4FF8D695}">
 													<PropertyList>
 														<Property Name="Flags" Type="int32" Value="3"/>
 													</PropertyList>
@@ -633,7 +630,7 @@
 															<Flags>5</Flags>
 														</Point>
 														<Point>
-															<XPos>20</XPos>
+															<XPos>100</XPos>
 															<YPos>-200</YPos>
 															<Flags>37</Flags>
 														</Point>
@@ -1397,6 +1394,9 @@
 						<Property Name="PositioningType" Type="int16" Value="1"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Snickt" ID="{CEA31E82-4EFA-4AF6-87E1-1C3FC97A18FC}" WorkUnitID="{F3BF1F71-90B7-422A-BFBF-8C25ADC27F0B}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
 						</Reference>
@@ -1454,15 +1454,12 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<Custom>
-								<Attenuation Name="Attenuation (Custom)" ID="{97A91428-40BF-4147-8670-5F8BB66DA851}" ShortID="575627492">
-									<PropertyList>
-										<Property Name="RadiusMax" Type="Real64" Value="10"/>
-									</PropertyList>
+							<Custom CreatedFrom="{CEA31E82-4EFA-4AF6-87E1-1C3FC97A18FC}">
+								<Attenuation Name="Snickt (Custom)" ID="{10B8A684-72BE-46E6-A14D-4B3B0E4FE336}" ShortID="304046694">
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{54DB8ED6-B0E5-41FD-82E9-C88623992A86}">
+												<Curve Name="VolumeDry" ID="{E20F8FD5-909B-473B-8EF6-31B5562A4058}">
 													<PropertyList>
 														<Property Name="Flags" Type="int32" Value="3"/>
 													</PropertyList>
@@ -1473,7 +1470,7 @@
 															<Flags>5</Flags>
 														</Point>
 														<Point>
-															<XPos>10</XPos>
+															<XPos>100</XPos>
 															<YPos>-200</YPos>
 															<Flags>37</Flags>
 														</Point>
@@ -2058,35 +2055,6 @@
 								<ActiveSource Name="SCRAPE Hollow Fade In and Out (mono)" ID="{15AB3A09-7CC3-4201-A73D-9C5E1EAAE0F3}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="RelicPlacedMusicSting" ID="{9BB54E86-5F0E-45A5-B799-0329C5FB464B}" ShortID="713756193" Type="SoundFX">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-3</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A1BE1F16-5A58-43CA-B653-D8BD0401B781}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="RelicPlacedMusicSting" ID="{2F18B2FD-85C2-4944-86BC-627FEE64982F}" ShortID="679197854">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="1.43812120383868"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>RelicPlacedMusicSting.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="RelicPlacedMusicSting" ID="{2F18B2FD-85C2-4944-86BC-627FEE64982F}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 					</ChildrenList>
 				</BlendContainer>
 				<BlendContainer Name="PlaceRelicSuccess" ID="{56452F8A-83E4-4693-9E62-97137CB22BAE}" ShortID="650665932">
@@ -2101,9 +2069,14 @@
 					<ChildrenList>
 						<Sound Name="RelicPlacedMusicSting" ID="{C0706CB2-309F-43BC-8D2A-998EFD75BA33}" ShortID="369171140" Type="SoundFX">
 							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>0.2</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-3</Value>
+										<Value>-7</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
