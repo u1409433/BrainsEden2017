@@ -44,8 +44,11 @@ public class JC_LevelManager : MonoBehaviour
         mV2_Area3_X = new Vector2(51, 17);
         mV2_Area3_Z = new Vector2(58, -3);
 
-        mV2_Area4_X = new Vector2(70, 60);
-        mV2_Area4_Z = new Vector2(37, 15);
+        //mV2_Area4_X = new Vector2(70, 60);
+        //mV2_Area4_Z = new Vector2(37, 15);
+
+        mV2_Area4_X = new Vector2(113, 91);
+        mV2_Area4_Z = new Vector2(88, 53);
 
         AssignNPCsToAreas();
     }
@@ -130,7 +133,9 @@ public class JC_LevelManager : MonoBehaviour
                 {
                     mSCR_FSM.mIN_AreaNo = 4;
 
-                    print("Is in Area 4");
+                    //print("Is in Area 4");
+
+                    vNPC.transform.tag = "AreaFour";
                 }
 
                 else

@@ -9,5 +9,11 @@ EditorBuildSettings:
     path: Assets/Joey/Intro.unity
     guid: bbef540aefa54124a97b8df0a5290a33
   - enabled: 1
-    path: Assets/James/Level one/Maya Mia!.unity
-    guid: 3e2d40da176b3ba4dbcd494f19bda949
+    path: Assets/Joey/Level 1 Joey.unity
+    guid: eeff9b5379ce751428828b98237d3623
+  - enabled: 1
+    path: Assets/Joey/WinState.unity
+    guid: 74c0373c9c3857f4ea21298f1ebf7838
+  - enabled: 1
+    path: Assets/Joey/LoseState.unity
+    guid: 0d8c6e8881590674da0ba5e436db6185

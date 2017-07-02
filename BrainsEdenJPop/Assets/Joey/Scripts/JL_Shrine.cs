@@ -10,6 +10,9 @@ public class JL_Shrine : MonoBehaviour
 
     public GameObject Ghost1;
     public GameObject Ghost2;
+    public GameObject Ghost3;
+
+    public int IN_ShrineNum;
 
     // Use this for initialization
     void Start()
@@ -20,25 +23,50 @@ public class JL_Shrine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (BL_HasRelic) GO_SwitchObject.SetActive(false);
-        else GO_SwitchObject.SetActive(true);
+        //if (BL_HasRelic) GO_SwitchObject.SetActive(false);
+        //else GO_SwitchObject.SetActive(true);
+
+        //DebugJL();
+    }
+
+    private void DebugJL()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            Ghost1.SendMessage("ChangeGhost1");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            Ghost2.SendMessage("ChangeGhost2");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            Ghost3.SendMessage("ChangeGhost3");
+        }
     }
 
     public void SwitchRelic()
     {
-        //Change the relic bool from true to false if its true or from false to true if its false
-        //BL_HasRelic = (BL_HasRelic) ? false : true;
-        BL_HasRelic = !BL_HasRelic;
-        transform.GetComponent<ShrineAura>().RelicSwitch();
+        BL_HasRelic = (BL_HasRelic) ? false : true;
+
+        switch (IN_ShrineNum)
+        {
+            case 1:
+                Ghost1.SendMessage("ChangeGhost1");
+                break;
+            case 2:
+                Ghost1.SendMessage("ChangeGhost2");
+                break;
+            case 3:
+                Ghost1.SendMessage("ChangeGhost3");
+                break;
+        }
 
         if (BL_HasRelic)
         {
-            GameObject.Find("AudioManager").GetComponent<JL_AudioManager>().PlaySound("PlaceRelicSuccess");
+            GameObject.Find("AudioManager").GetComponent<JL_AudioManager>().PlaySound("ShrineAura");
         }
-
-
-        //send a message to both of the ghosts that tells them either to get angery or to not get angery depending on if you have placed the relic or not IDK maybe they are just having a bad day leave them2 a lone stop judgING.
-        Ghost1.SendMessage("Change");
-        Ghost2.SendMessage("Change");
     }
 }

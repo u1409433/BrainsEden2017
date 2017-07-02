@@ -162,6 +162,10 @@ public class JL_PCMovement : MonoBehaviour
                 }
             }
         }
+        else if (vCollided.transform.name == "WinState")
+        {
+            SC_LevelManager.WinState();
+        }
     }
 
     public void Respawn()
