@@ -44,6 +44,9 @@ public class JC_LevelManager : MonoBehaviour
         mV2_Area3_X = new Vector2(51, 17);
         mV2_Area3_Z = new Vector2(58, -3);
 
+        mV2_Area4_X = new Vector2(70, 60);
+        mV2_Area4_Z = new Vector2(37, 15);
+
         AssignNPCsToAreas();
     }
 
@@ -108,6 +111,26 @@ public class JC_LevelManager : MonoBehaviour
                     mSCR_FSM.mIN_AreaNo = 3;
 
                     //print("Is in Area 3");
+                }
+
+                else
+                {
+                    //print("NPC Outside Area 3");
+                }
+            }
+
+            else
+            {
+                //print("NPC Outside Area 3");
+            }
+
+            if (vNPC.transform.position.x > mV2_Area4_X.y && vNPC.transform.position.x < mV2_Area4_X.x)
+            {
+                if (vNPC.transform.position.z > mV2_Area4_Z.y && vNPC.transform.position.z < mV2_Area4_Z.x)
+                {
+                    mSCR_FSM.mIN_AreaNo = 4;
+
+                    print("Is in Area 4");
                 }
 
                 else

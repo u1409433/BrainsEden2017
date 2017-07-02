@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1192014858712780}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 70, y: 6.7999964, z: 82.3}
+  m_LocalPosition: {x: 64.5, y: 6.7999964, z: 36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -101,6 +101,19 @@ MonoBehaviour:
   mFL_SpeedArea1: 3
   mFL_SpeedArea2: 1
   mFL_SpeedArea3: 0.1
+  mFL_SpeedArea4: 6
+  mFL_FinalSpeedArea1: 0
+  mFL_FinalSpeedArea2: 0
+  mFL_FinalSpeedArea3: 0
+  mFL_FinalSpeedArea4: 0
+  mFL_ChasingSpeed1: 1
+  mFL_ChasingSpeed2: 2
+  mFL_ChasingSpeed3: 4
+  mFL_ChasingSpeed4: 1
+  mFL_FinalChasingSpeed1: 0
+  mFL_FinalChasingSpeed2: 0
+  mFL_FinalChasingSpeed3: 0
+  mFL_FinalChasingSpeed4: 0
   mIN_AreaNo: 0
   mV3_TargetPos: {x: 0, y: 0, z: 0}
   mFL_MaxRandomMove: 1
@@ -110,9 +123,6 @@ MonoBehaviour:
   mFL_ChaseRange: 2
   mFL_ChaseDistance: 10
   mDB_ChasePause: 0.1
-  mDB_AttackPause: 1
-  mFL_AttackRange: 1.75
-  mFL_AttackDistance: 2.5
 --- !u!136 &136626255183705102
 CapsuleCollider:
   m_ObjectHideFlags: 1
