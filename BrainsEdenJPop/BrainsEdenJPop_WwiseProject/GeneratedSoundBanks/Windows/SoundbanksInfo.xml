@@ -115,7 +115,7 @@
 				</File>
 				<File Id="538897242" Language="SFX">
 					<ShortName>GROAN Male Hurt Long (mono).wav</ShortName>
-					<Path>SFX\GROAN Male Hurt Long (mono)_3523FCD4.wem</Path>
+					<Path>SFX\GROAN Male Hurt Long (mono)_A5700303.wem</Path>
 				</File>
 				<File Id="544000178" Language="SFX">
 					<ShortName>GRUNT Male Hurt 02 (mono).wav</ShortName>
@@ -153,17 +153,13 @@
 					<ShortName>FOOTSTEP Walk Trainers Compact Snow Fast RR8 (mono).wav</ShortName>
 					<Path>SFX\FOOTSTEP Walk Trainers Compact Snow Fast RR8 (mono)_50DB02DB.wem</Path>
 				</File>
-				<File Id="679197854" Language="SFX">
-					<ShortName>RelicPlacedMusicSting.wav</ShortName>
-					<Path>SFX\RelicPlacedMusicSting_BDB95404.wem</Path>
-				</File>
 				<File Id="842989869" Language="SFX">
 					<ShortName>magicAir.wav</ShortName>
-					<Path>SFX\magicAir_1607F7E2.wem</Path>
+					<Path>SFX\magicAir_49A53158.wem</Path>
 				</File>
 				<File Id="913778462" Language="SFX">
 					<ShortName>RelicPlacedMusicSting.wav</ShortName>
-					<Path>SFX\RelicPlacedMusicSting_118D38FD.wem</Path>
+					<Path>SFX\RelicPlacedMusicSting_CE2E3B14.wem</Path>
 				</File>
 				<File Id="920158699" Language="SFX">
 					<ShortName>darkness.wav</ShortName>
