@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/James/Level one/SAFE MAYA MIA.unity
+- path: Assets/Johannes/googly.unity
   isLoaded: 1
   isActive: 1

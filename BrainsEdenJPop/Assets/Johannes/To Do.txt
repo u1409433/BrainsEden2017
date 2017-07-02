@@ -5,3 +5,6 @@ Place relic (get adults to implement)
 
 Check that positioning is working on snickt, unsnickt and shrine aura
 
+Spike particles
+
+Blood particles
