@@ -99,6 +99,7 @@
     <Compile Include="Assets\Joey\Scripts\JL_UIManager.cs" />
     <Compile Include="Assets\Joey\Scripts\RotateTest.cs" />
     <Compile Include="Assets\Johannes\Scripts\JB_ChangeAmbience.cs" />
+    <Compile Include="Assets\Johannes\Scripts\ShrineAura.cs" />
     <Compile Include="Assets\Johannes\Triggering Audio.cs" />
     <Compile Include="Assets\Josh\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
     <Compile Include="Assets\Josh\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
@@ -256,6 +257,7 @@
     <None Include="Assets\Jasmine\PlaceHolder.txt" />
     <None Include="Assets\Joey\PlaceHolder.txt" />
     <None Include="Assets\Johannes\PlaceHolder.txt" />
+    <None Include="Assets\Johannes\To Do.txt" />
     <None Include="Assets\Josh\AssetList.txt" />
     <None Include="Assets\Josh\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Josh\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />

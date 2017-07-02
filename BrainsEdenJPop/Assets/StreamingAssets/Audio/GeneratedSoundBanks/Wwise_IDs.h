@@ -25,6 +25,7 @@ namespace AK
         static const AkUniqueID PAINLOW = 3695631561U;
         static const AkUniqueID PICKUPRELIC = 865029174U;
         static const AkUniqueID PLACERELIC = 2025199039U;
+        static const AkUniqueID PLACERELICSUCCESS = 2578006488U;
         static const AkUniqueID ROCKDOOR = 1863577366U;
         static const AkUniqueID SHRINEAURA = 2740639977U;
         static const AkUniqueID SNICKT = 1781803135U;

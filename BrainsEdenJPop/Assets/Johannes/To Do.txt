@@ -1,0 +1,7 @@
+Shrine aura (get adults to implement)
+
+Place relic (get adults to implement)
+	+ PlaceRelicSuccess
+
+Check that positioning is working on snickt, unsnickt and shrine aura
+
