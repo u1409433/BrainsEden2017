@@ -26,13 +26,19 @@ public class JL_Shrine : MonoBehaviour
 
     public void SwitchRelic()
     {
-        BL_HasRelic = (BL_HasRelic) ? false : true;
-        Ghost1.SendMessage("Change");
-        Ghost2.SendMessage("Change");
+        //Change the relic bool from true to false if its true or from false to true if its false
+        //BL_HasRelic = (BL_HasRelic) ? false : true;
+        BL_HasRelic = !BL_HasRelic;
+        transform.GetComponent<ShrineAura>().RelicSwitch();
 
         if (BL_HasRelic)
         {
-            GameObject.Find("AudioManager").GetComponent<JL_AudioManager>().PlaySound("ShrineAura");
+            GameObject.Find("AudioManager").GetComponent<JL_AudioManager>().PlaySound("PlaceRelicSuccess");
         }
+
+
+        //send a message to both of the ghosts that tells them either to get angery or to not get angery depending on if you have placed the relic or not IDK maybe they are just having a bad day leave them2 a lone stop judgING.
+        Ghost1.SendMessage("Change");
+        Ghost2.SendMessage("Change");
     }
 }

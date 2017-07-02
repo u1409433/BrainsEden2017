@@ -15,7 +15,7 @@ public class ShrineAura : MonoBehaviour
 
     void Update()
     {
-        if (timer <= Time.time)
+        if (timer <= Time.time && RelicPlaced)
         {
             Aura.Play();
             AkSoundEngine.PostEvent(EventName, gameObject);
@@ -23,5 +23,9 @@ public class ShrineAura : MonoBehaviour
         }
     }
 
-
+    public void RelicSwitch()
+    {
+        //RelicPlaced = (RelicPlaced) ? false : true;
+        RelicPlaced = !RelicPlaced;
+    }
 }
