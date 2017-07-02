@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Josh/Level 1 Josh.unity
+=======
+- path: Assets/James/Level one/Level 1 James.unity
+>>>>>>> d18359d132f2ddeb78c0082fdb98585f3b5aa9ba
   isLoaded: 1
   isActive: 1

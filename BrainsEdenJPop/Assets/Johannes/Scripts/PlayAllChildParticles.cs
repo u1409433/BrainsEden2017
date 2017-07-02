@@ -7,9 +7,7 @@ public class PlayAllChildParticles : MonoBehaviour
 
 	void Play()
     {
-        foreach (var item in gameObject.getchildr)
-        {
+        return;
 
-        }
     }
 }
