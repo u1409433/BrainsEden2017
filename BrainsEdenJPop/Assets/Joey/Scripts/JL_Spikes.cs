@@ -12,6 +12,8 @@ public class JL_Spikes : MonoBehaviour
 
     public float startY;
 
+    public ParticleSystem SmokePoof;
+
     // Use this for initialization
     void Start()
     {
@@ -28,6 +30,8 @@ public class JL_Spikes : MonoBehaviour
             if (BL_Up)
             {
                 gameObject.transform.position = new Vector3(transform.position.x, startY + 1, transform.position.z);
+                SmokePoof.Play();
+                AkSoundEngine.PostEvent("Snickt", gameObject);
             }
             else gameObject.transform.position = new Vector3(transform.position.x, startY, transform.position.z);
         }
