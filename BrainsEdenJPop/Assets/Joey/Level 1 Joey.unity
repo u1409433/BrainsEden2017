@@ -8121,7 +8121,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 164336636}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 40.521973, y: 5.813878, z: 65.3234}
+  m_LocalPosition: {x: 65.24, y: 5.76, z: 44.41}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 327286489}
@@ -33711,7 +33711,7 @@ MonoBehaviour:
   FL_Speed: 5
   Cam_Main: {fileID: 585319124}
   BL_Carrying: 0
-  BL_BobRight: 1
+  BL_Dying: 0
 --- !u!23 &815876481
 MeshRenderer:
   m_ObjectHideFlags: 0
