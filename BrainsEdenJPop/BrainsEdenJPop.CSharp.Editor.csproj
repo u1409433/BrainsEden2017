@@ -184,6 +184,7 @@
     <None Include="Assets\Jasmine\PlaceHolder.txt" />
     <None Include="Assets\Joey\PlaceHolder.txt" />
     <None Include="Assets\Johannes\PlaceHolder.txt" />
+    <None Include="Assets\Johannes\To Do.txt" />
     <None Include="Assets\Josh\AssetList.txt" />
     <None Include="Assets\Josh\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Josh\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
