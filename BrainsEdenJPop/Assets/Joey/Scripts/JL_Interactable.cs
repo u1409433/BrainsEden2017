@@ -60,6 +60,7 @@ public class JL_Interactable : MonoBehaviour
                     SC_PCScript.BL_Carrying = false;
                     GameObject.Find("AudioManager").GetComponent<JL_AudioManager>().PlaySound("PlaceRelic");
                     gameObject.GetComponent<JL_Shrine>().SwitchRelic();
+                    gameObject.GetComponent<ShrineAura>().RelicPlaced = true;
                     int temp = gameObject.GetComponent<JL_Shrine>().IN_ShrineNum;
                     GameObject.Find("UI").GetComponent<JL_UIManager>().PlaceRelic(temp);
                 }

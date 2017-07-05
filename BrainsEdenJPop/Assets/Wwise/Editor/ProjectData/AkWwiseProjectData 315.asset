@@ -16,8 +16,13 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 1234265515
     m_lastTimePart2: -1999322184
+=======
+    m_lastTimePsrt1: -798585261
+    m_lastTimePart2: -1999322201
+>>>>>>> 84e034b5a3bd9ea675581226c7942cbcab770dc0
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -213,22 +218,37 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A1BE1F16-5A58-43CA-B653-D8BD0401B781}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 1235597336
     m_lastTimePart2: -1999322184
+=======
+    m_lastTimePsrt1: -797188115
+    m_lastTimePart2: -1999322201
+>>>>>>> 84e034b5a3bd9ea675581226c7942cbcab770dc0
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{45CE0B3C-F78B-4ED5-BE21-A0213F1B7BFD}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 1277860119
     m_lastTimePart2: -1999322184
+=======
+    m_lastTimePsrt1: -775334535
+    m_lastTimePart2: -1999322201
+>>>>>>> 84e034b5a3bd9ea675581226c7942cbcab770dc0
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8171BD08-1B48-4883-BDA9-5A92826AB052}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 1277860119
     m_lastTimePart2: -1999322184
+=======
+    m_lastTimePsrt1: -775329527
+    m_lastTimePart2: -1999322201
+>>>>>>> 84e034b5a3bd9ea675581226c7942cbcab770dc0
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -292,8 +312,13 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D7FF8C30-DA72-4C14-BB80-CDAF477F8EE6}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 1277850255
     m_lastTimePart2: -1999322184
+=======
+    m_lastTimePsrt1: -775344550
+    m_lastTimePart2: -1999322201
+>>>>>>> 84e034b5a3bd9ea675581226c7942cbcab770dc0
     List:
     - Name: Main
       Path: Default Work Unit\Main

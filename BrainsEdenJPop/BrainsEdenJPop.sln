@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainsEdenJPop.CSharp.Plugins", "BrainsEdenJPop.CSharp.Plugins.csproj", "{1CD3DC35-32A6-42CF-3D38-26EDCF3F24B2}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainsEdenJPop.Plugins", "BrainsEdenJPop.Plugins.csproj", "{D4640B22-6020-2C57-0CBE-45BFCA89B6F6}"
+>>>>>>> 84e034b5a3bd9ea675581226c7942cbcab770dc0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainsEdenJPop.CSharp", "BrainsEdenJPop.CSharp.csproj", "{91C4C0B0-6187-64ED-E1E2-F7562C425B4D}"
 EndProject

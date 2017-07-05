@@ -5,6 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ghost
+<<<<<<< HEAD
+=======
+  - Interactable
+  - Fire
+  - Terrain
+  - AreaFour
+  - Spike
+>>>>>>> 84e034b5a3bd9ea675581226c7942cbcab770dc0
   layers:
   - Default
   - TransparentFX

@@ -14,9 +14,13 @@ public class JL_Spikes : MonoBehaviour
 
     public ParticleSystem SmokePoof;
 
+    private JL_AudioManager SC_AudioManager;
+
     // Use this for initialization
     void Start()
     {
+        SC_AudioManager = GameObject.Find("AudioManager").GetComponent<JL_AudioManager>();
+
         startY = gameObject.transform.position.y;
     }
 
@@ -30,8 +34,8 @@ public class JL_Spikes : MonoBehaviour
             if (BL_Up)
             {
                 gameObject.transform.position = new Vector3(transform.position.x, startY + 1, transform.position.z);
-                //SmokePoof.Play();
-                //AkSoundEngine.PostEvent("Snickt", gameObject);
+                //check distance to PC
+                SC_AudioManager.Snickt(gameObject);
             }
             else gameObject.transform.position = new Vector3(transform.position.x, startY, transform.position.z);
         }
