@@ -41,6 +41,12 @@ public class JL_AudioManager : MonoBehaviour
                 FL_NextStep = Time.time + FL_Cooldown;
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            Debug.Log("SNICKT");
+            AkSoundEngine.PostEvent("Snickt", gameObject);
+        }
     }
 
     void LateUpdate()
@@ -138,5 +144,21 @@ public class JL_AudioManager : MonoBehaviour
     private void ClearSnickt()
     {
         IN_SoundCount = 0;
+    }
+
+    public bool CanSnickt(GameObject vSpike)
+    {
+        bool temp = false;
+        if (IN_SoundCount < 3)
+        {
+            if (Vector3.Distance(GO_PC.transform.position, vSpike.transform.position) < 10f)
+            {
+                temp = true;
+                IN_SoundCount++;
+                Invoke("ClearSnickt", 1);
+                Debug.Log("Snickt");
+            }
+        }
+        return temp;
     }
 }

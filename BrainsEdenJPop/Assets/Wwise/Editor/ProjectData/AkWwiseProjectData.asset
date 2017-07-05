@@ -178,7 +178,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1554327319
       Guid: fe5ef40d963cf24194797c149071f204
-      maxAttenuation: 100
+      maxAttenuation: 25
     - Name: Snickt
       Path: Default Work Unit\Snickt
       PathAndIcons:
@@ -188,7 +188,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1781803135
       Guid: 0586836b52c34242b97853f15441b945
-      maxAttenuation: 0
+      maxAttenuation: 20
     - Name: StabDeath
       Path: Default Work Unit\StabDeath
       PathAndIcons:
@@ -208,7 +208,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 99965646
       Guid: 1507648710dc384cabf433c43b126f80
-      maxAttenuation: 0
+      maxAttenuation: 100
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -308,6 +308,8 @@ MonoBehaviour:
   - /BrainsEdenJPop_WwiseProject
   - /BrainsEdenJPop_WwiseProject/Events
   - /BrainsEdenJPop_WwiseProject/Events/Default Work Unit
+  - /BrainsEdenJPop_WwiseProject/SoundBanks
+  - /BrainsEdenJPop_WwiseProject/SoundBanks/Default Work Unit
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

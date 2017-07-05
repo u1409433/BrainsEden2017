@@ -34,8 +34,7 @@ public class JL_Spikes : MonoBehaviour
             if (BL_Up)
             {
                 gameObject.transform.position = new Vector3(transform.position.x, startY + 1, transform.position.z);
-                //check distance to PC
-                SC_AudioManager.Snickt(gameObject);
+                //SC_AudioManager.Snickt(gameObject);
             }
             else gameObject.transform.position = new Vector3(transform.position.x, startY, transform.position.z);
         }
