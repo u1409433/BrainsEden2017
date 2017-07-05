@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="120">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>F:\Unity\Game Jams\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>F:\Unity\Game Jams\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>F:\Unity\Game Jams\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Yo\Documents\GitHub\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>F:\Unity\Game Jams\BrainsEden2017\BrainsEdenJPop\BrainsEdenJPop_WwiseProject\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -35,7 +35,7 @@
 				<Event Id="2025199039" Name="PlaceRelic" ObjectPath="\Events\Default Work Unit\PlaceRelic"/>
 				<Event Id="2578006488" Name="PlaceRelicSuccess" ObjectPath="\Events\Default Work Unit\PlaceRelicSuccess"/>
 				<Event Id="1863577366" Name="RockDoor" ObjectPath="\Events\Default Work Unit\RockDoor"/>
-				<Event Id="2740639977" Name="ShrineAura" ObjectPath="\Events\Default Work Unit\ShrineAura" MaxAttenuation="100.000000"/>
+				<Event Id="2740639977" Name="ShrineAura" ObjectPath="\Events\Default Work Unit\ShrineAura" MaxAttenuation="25.000000"/>
 				<Event Id="1781803135" Name="Snickt" ObjectPath="\Events\Default Work Unit\Snickt" MaxAttenuation="20.000000"/>
 				<Event Id="3712093981" Name="StabDeath" ObjectPath="\Events\Default Work Unit\StabDeath"/>
 				<Event Id="99965646" Name="Unsnickt" ObjectPath="\Events\Default Work Unit\Unsnickt" MaxAttenuation="100.000000"/>
@@ -85,13 +85,21 @@
 					<ShortName>GRUNT Male Hurt 03 (mono).wav</ShortName>
 					<Path>SFX\GRUNT Male Hurt 03 (mono)_50DB02DB.wem</Path>
 				</File>
+				<File Id="361209318" Language="SFX">
+					<ShortName>FOOTSTEP Walk Trainers Compact Snow Fast RR5 (mono).wav</ShortName>
+					<Path>SFX\FOOTSTEP Walk Trainers Compact Snow Fast RR5 (mono)_D0932D7E.wem</Path>
+				</File>
+				<File Id="363346314" Language="SFX">
+					<ShortName>FOOTSTEP Walk Trainers Compact Snow Fast RR1 (mono).wav</ShortName>
+					<Path>SFX\FOOTSTEP Walk Trainers Compact Snow Fast RR1 (mono)_7666A03E.wem</Path>
+				</File>
 				<File Id="367362755" Language="SFX">
 					<ShortName>MACHINE Press Machine (loop mono).wav</ShortName>
 					<Path>SFX\MACHINE Press Machine (loop mono)_EEC06140.wem</Path>
 				</File>
 				<File Id="381109112" Language="SFX">
 					<ShortName>GORE Blade Chop (mono).wav</ShortName>
-					<Path>SFX\GORE Blade Chop (mono)_74A742ED.wem</Path>
+					<Path>SFX\GORE Blade Chop (mono)_0AE8E298.wem</Path>
 				</File>
 				<File Id="387886567" Language="SFX">
 					<ShortName>GROAN Male Hurt Long Pain (mono).wav</ShortName>
@@ -104,6 +112,10 @@
 				<File Id="423205903" Language="SFX">
 					<ShortName>FOOTSTEP Walk Trainers Compact Snow Fast RR3 (mono).wav</ShortName>
 					<Path>SFX\FOOTSTEP Walk Trainers Compact Snow Fast RR3 (mono)_50DB02DB.wem</Path>
+				</File>
+				<File Id="431207374" Language="SFX">
+					<ShortName>FOOTSTEP Walk Trainers Compact Snow Fast RR7 (mono).wav</ShortName>
+					<Path>SFX\FOOTSTEP Walk Trainers Compact Snow Fast RR7 (mono)_807CB08C.wem</Path>
 				</File>
 				<File Id="467197522" Language="SFX">
 					<ShortName>Our story begins sting.wav</ShortName>
@@ -153,9 +165,21 @@
 					<ShortName>FOOTSTEP Walk Trainers Compact Snow Fast RR8 (mono).wav</ShortName>
 					<Path>SFX\FOOTSTEP Walk Trainers Compact Snow Fast RR8 (mono)_50DB02DB.wem</Path>
 				</File>
+				<File Id="807480166" Language="SFX">
+					<ShortName>FOOTSTEP Walk Trainers Compact Snow Fast RR4 (mono).wav</ShortName>
+					<Path>SFX\FOOTSTEP Walk Trainers Compact Snow Fast RR4 (mono)_8C9BDBF8.wem</Path>
+				</File>
+				<File Id="835816084" Language="SFX">
+					<ShortName>FOOTSTEP Walk Trainers Compact Snow Fast RR8 (mono).wav</ShortName>
+					<Path>SFX\FOOTSTEP Walk Trainers Compact Snow Fast RR8 (mono)_7338DBCE.wem</Path>
+				</File>
 				<File Id="842989869" Language="SFX">
 					<ShortName>magicAir.wav</ShortName>
 					<Path>SFX\magicAir_49A53158.wem</Path>
+				</File>
+				<File Id="863234979" Language="SFX">
+					<ShortName>FOOTSTEP Walk Trainers Compact Snow Fast RR2 (mono).wav</ShortName>
+					<Path>SFX\FOOTSTEP Walk Trainers Compact Snow Fast RR2 (mono)_A5C6ED74.wem</Path>
 				</File>
 				<File Id="913778462" Language="SFX">
 					<ShortName>RelicPlacedMusicSting.wav</ShortName>
@@ -168,6 +192,14 @@
 				<File Id="953444512" Language="SFX">
 					<ShortName>distorted white noise bitcrushed.wav</ShortName>
 					<Path>SFX\distorted white noise bitcrushed_0CDD8189.wem</Path>
+				</File>
+				<File Id="985456834" Language="SFX">
+					<ShortName>FOOTSTEP Walk Trainers Compact Snow Fast RR6 (mono).wav</ShortName>
+					<Path>SFX\FOOTSTEP Walk Trainers Compact Snow Fast RR6 (mono)_940539E0.wem</Path>
+				</File>
+				<File Id="1038252416" Language="SFX">
+					<ShortName>FOOTSTEP Walk Trainers Compact Snow Fast RR3 (mono).wav</ShortName>
+					<Path>SFX\FOOTSTEP Walk Trainers Compact Snow Fast RR3 (mono)_273D9988.wem</Path>
 				</File>
 				<File Id="1038999948" Language="SFX">
 					<ShortName>high pitched gost scream.wav</ShortName>
