@@ -16,10 +16,12 @@ public class JC_FSM : MonoBehaviour
     // Getters, Setters variable for FSM:
     private State mStartState;
     public State mCurrentState;
-    private State mPreviuosState;
+    private State mPreviousState;
 
     // Find PC:
     protected GameObject mGO_PC;
+    protected JL_PCMovement mMO_PC;  // the PC script
+    protected float mFL_DistanceToPC;
     public GameObject mPF_TestObjOK;
     public GameObject mPF_TestObjNotOK;
 
@@ -102,11 +104,15 @@ public class JC_FSM : MonoBehaviour
     // Lights:
     //public Light mLG_FaceLight;
 
+    // Sound stuff
+    bool mBL_PlayingSound;
+
     // Use this for initialization
     void Start()
     {
         mNMA_NavMeshAgent = GetComponent<NavMeshAgent>();
         mGO_PC = GameObject.FindGameObjectWithTag("Player");
+        mMO_PC = mGO_PC.GetComponent<JL_PCMovement>();
         mSCR_Movement = mGO_PC.GetComponent<JL_PCMovement>();
         mSCR_JCLevelManager = GameObject.Find("LevelManager").GetComponent<JC_LevelManager>();
 
@@ -129,8 +135,12 @@ public class JC_FSM : MonoBehaviour
 
         if (mCurrentState == State.Chase)
         {
-            GameObject.Find("AudioManager").GetComponent<JL_AudioManager>().ReceiveGhostInfo(Vector3.Distance(transform.position, mV3_TargetPos));
+            //GameObject.Find("AudioManager").GetComponent<JL_AudioManager>().ReceiveGhostInfo(Vector3.Distance(transform.position, mV3_TargetPos));
             GameObject.Find("LevelManager").GetComponent<JC_LevelManager>().IN_ChasingGhosts++;
+        }
+        if (!(mCurrentState == State.Chase) || mMO_PC.BL_Dying)    //if no longer chasing or PC is dying end sound
+        {
+            
         }
 
         ////print("STATE: " + GetState());
@@ -334,7 +344,9 @@ public class JC_FSM : MonoBehaviour
     private void AILogic()
     {
         // Chase Distance.
-        if (Vector3.Distance(gameObject.transform.position, mGO_PC.transform.position) <= mFL_ChaseDistance)
+        mFL_DistanceToPC = Vector3.Distance(gameObject.transform.position, mGO_PC.transform.position);
+        print(mFL_DistanceToPC);
+        if (mFL_DistanceToPC <= mFL_ChaseDistance)
         {
             SetState(State.Chase);
 
@@ -353,6 +365,26 @@ public class JC_FSM : MonoBehaviour
         else
         {
             SetState(State.Roam);
+        }
+
+        if (mCurrentState == State.Chase)
+        {
+            if (!mBL_PlayingSound)
+            {
+                AkSoundEngine.PostEvent("GhostSound", gameObject);
+                mBL_PlayingSound = true;
+            }
+            if (mFL_DistanceToPC <= mFL_ChaseRange)
+                AkSoundEngine.SetRTPCValue("GhostDistance", mFL_DistanceToPC);
+        }
+        else if (mPreviousState == State.Chase)
+        {
+            if (mBL_PlayingSound)
+            {
+                AkSoundEngine.PostEvent("GhostSoundStop", gameObject);
+                mBL_PlayingSound = false;
+            }
+            mFL_DistanceToPC = mFL_ChaseRange;
         }
     }
 
@@ -586,7 +618,7 @@ public class JC_FSM : MonoBehaviour
     // Getters & Setters for FSM:
     public void SetState(State vState)
     {
-        mPreviuosState = mCurrentState;
+        mPreviousState = mCurrentState;
         mCurrentState = vState;
     }
 

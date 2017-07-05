@@ -4662,7 +4662,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1551914297199164, guid: 9d29e7dfe1ca18f44b58e2e5b0ff4156, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 136715143621478826, guid: 9d29e7dfe1ca18f44b58e2e5b0ff4156,
         type: 2}
@@ -6311,7 +6311,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1338858888180418, guid: 9a64764f2bb79cf4983283fbfe114cc0, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 136201871219819748, guid: 9a64764f2bb79cf4983283fbfe114cc0,
         type: 2}
@@ -18124,6 +18124,72 @@ GameObject:
   m_PrefabParentObject: {fileID: 1551914297199164, guid: 9d29e7dfe1ca18f44b58e2e5b0ff4156,
     type: 2}
   m_PrefabInternal: {fileID: 190581438}
+--- !u!114 &1617477423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1617477416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5c97b12e50514549ba56a449792806f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: 
+  useOtherObject: 0
+  valueGuid: 0ad9210e0ced0d40b2319a794976afad
+  eventID: -1555793301
+  soundEmitterObject: {fileID: 0}
+  enableActionOnEvent: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  transitionDuration: 0
+  m_callbackData: {fileID: 0}
+  playingId: 0
+  multiPositionTypeLabel: 0
+  multiPositionArray: []
+--- !u!114 &1617477424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1617477416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5c97b12e50514549ba56a449792806f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: 
+  useOtherObject: 0
+  valueGuid: 66abec0df0b683468d22c3627b8b86d2
+  eventID: 920368843
+  soundEmitterObject: {fileID: 0}
+  enableActionOnEvent: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  transitionDuration: 0
+  m_callbackData: {fileID: 0}
+  playingId: 0
+  multiPositionTypeLabel: 0
+  multiPositionArray: []
+--- !u!114 &1617477425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1617477416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf53c77ad12c7446b79bd5125316ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_positionOffsetData:
+    positionOffset: {x: 0, y: 0, z: 0}
+    KeepMe: 0
+  isEnvironmentAware: 0
+  listenerMask: 1
+  isStaticObject: 0
+  m_posOffsetData: {fileID: 0}
 --- !u!1 &1625467096 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1917334336943430, guid: a2c6915f89216c94cbf02ed02c6e047c,
@@ -22237,7 +22303,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1134992873376058, guid: f27e947df73619445adabafee1e0a098, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 136333138247668538, guid: f27e947df73619445adabafee1e0a098,
         type: 2}

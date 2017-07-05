@@ -614,12 +614,15 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<Custom CreatedFrom="{CEA31E82-4EFA-4AF6-87E1-1C3FC97A18FC}">
-								<Attenuation Name="Snickt (Custom)" ID="{5E8F0D2F-786B-489D-BCCB-1CA0CE8F1A6A}" ShortID="784993643">
+							<Custom CreatedFrom="{5CD7FDC8-9AF4-40CA-BC51-D4A3DBA8D9F4}">
+								<Attenuation Name="Shrine Aura (Custom)" ID="{78B0E664-7380-4FB7-85A5-4A69A2738249}" ShortID="153091353">
+									<PropertyList>
+										<Property Name="RadiusMax" Type="Real64" Value="25"/>
+									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{38E5020B-7271-45D4-8A3B-156C4FF8D695}">
+												<Curve Name="VolumeDry" ID="{1BEA3480-4307-4718-8AE5-054D7195DE83}">
 													<PropertyList>
 														<Property Name="Flags" Type="int32" Value="3"/>
 													</PropertyList>
@@ -630,7 +633,7 @@
 															<Flags>5</Flags>
 														</Point>
 														<Point>
-															<XPos>100</XPos>
+															<XPos>25</XPos>
 															<YPos>-200</YPos>
 															<Flags>37</Flags>
 														</Point>
@@ -779,6 +782,13 @@
 					<ChildrenList>
 						<Sound Name="distorted white noise tail" ID="{C65A19D5-025A-4071-B502-F91B2D964395}" ShortID="84826328" Type="SoundFX">
 							<PropertyList>
+								<Property Name="BypassEffect" Type="bool">
+									<RTPCList>
+										<RTPC Name="" ID="{8AFAE70C-B735-402F-B031-6D4D5D01D9F4}" ShortID="1015355436">
+											<ReferenceList/>
+										</RTPC>
+									</RTPCList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>5</Value>
@@ -801,7 +811,7 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>5</XPos>
+														<XPos>10</XPos>
 														<YPos>-200</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -835,6 +845,13 @@
 						</Sound>
 						<Sound Name="GhostSoundTail" ID="{F416833C-A9FF-4C2A-A1B9-7B13056D4D61}" ShortID="966018446" Type="SoundFX">
 							<PropertyList>
+								<Property Name="BypassEffect" Type="bool">
+									<RTPCList>
+										<RTPC Name="" ID="{46CEF7FF-6ED1-4E23-8B06-4F973C402734}" ShortID="561370669">
+											<ReferenceList/>
+										</RTPC>
+									</RTPCList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>8</Value>
@@ -858,7 +875,7 @@
 														<SegmentShape>Exp2</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>5</XPos>
+														<XPos>10</XPos>
 														<YPos>-200</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -1078,7 +1095,7 @@
 																<SegmentShape>Exp2</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>5</XPos>
+																<XPos>10</XPos>
 																<YPos>-13.93101</YPos>
 																<Flags>37</Flags>
 															</Point>
@@ -1099,7 +1116,9 @@
 									<ChildrenList>
 										<AudioFileSource Name="high pitched gost scream" ID="{F4D0AD11-8C12-4A91-A839-4DE5128158AF}" ShortID="639164793">
 											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.116276927437642"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.36625389739229"/>
 												<Property Name="TrimEnd" Type="Real64" Value="5.10295205221585"/>
 											</PropertyList>
 											<Language>SFX</Language>
@@ -1133,7 +1152,7 @@
 																<SegmentShape>Exp2</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>5</XPos>
+																<XPos>10</XPos>
 																<YPos>-13.931</YPos>
 																<Flags>37</Flags>
 															</Point>
@@ -1200,13 +1219,13 @@
 														<SegmentShape>Log3</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>0.34555</XPos>
+														<XPos>0.6911</XPos>
 														<YPos>2</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>Exp3</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>5</XPos>
+														<XPos>10</XPos>
 														<YPos>0</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -1235,7 +1254,7 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>5</XPos>
+														<XPos>10</XPos>
 														<YPos>66</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -1308,7 +1327,7 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>5</XPos>
+														<XPos>10</XPos>
 														<YPos>100</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -1340,13 +1359,13 @@
 														<SegmentShape>Log1</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>0.214659685863874</XPos>
+														<XPos>0.429319371727748</XPos>
 														<YPos>-0.569624778578205</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>Exp1</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>5</XPos>
+														<XPos>10</XPos>
 														<YPos>-200</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -1714,8 +1733,14 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR1 (mono)" ID="{A5DE2BAF-B9D6-4E78-9E3F-BD9EA03BBDD0}" ShortID="617345413">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.492407044663103"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR1 (mono).wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="363346314"/>
+									</ConvertedFileIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
@@ -1733,8 +1758,14 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR2 (mono)" ID="{B3FC7708-DC37-4845-9ECE-58F9119BE2FF}" ShortID="287012141">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.529188709710074"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR2 (mono).wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="863234979"/>
+									</ConvertedFileIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
@@ -1752,8 +1783,14 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR3 (mono)" ID="{54679B9C-E566-4666-8D17-C30AE027C6DA}" ShortID="423205903">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.567847222222223"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR3 (mono).wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="1038252416"/>
+									</ConvertedFileIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
@@ -1771,8 +1808,14 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR4 (mono)" ID="{AC08828E-8A56-4F6C-9FDB-8AE548CB3D4D}" ShortID="182679539">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.534707872732428"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR4 (mono).wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="807480166"/>
+									</ConvertedFileIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
@@ -1790,8 +1833,14 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR5 (mono)" ID="{524F20D3-10BC-4D59-8B69-424977442D63}" ShortID="659429355">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.467771754535148"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR5 (mono).wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="361209318"/>
+									</ConvertedFileIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
@@ -1809,8 +1858,14 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR6 (mono)" ID="{098F026E-8FFA-4F4D-9561-2FBD641F2E16}" ShortID="639345978">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.463415887188209"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR6 (mono).wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="985456834"/>
+									</ConvertedFileIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
@@ -1828,8 +1883,14 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR7 (mono)" ID="{2EAEF79C-9612-47A3-AB1B-2D2C1F46E5D3}" ShortID="228575974">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.556477719063816"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR7 (mono).wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="431207374"/>
+									</ConvertedFileIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
@@ -1847,8 +1908,14 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="FOOTSTEP Walk Trainers Compact Snow Fast RR8 (mono)" ID="{5DCA9D79-8320-4961-99F6-486183147CD6}" ShortID="672364413">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.470754373177843"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>FOOTSTEP Walk Trainers Compact Snow Fast RR8 (mono).wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="835816084"/>
+									</ConvertedFileIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
@@ -2081,6 +2148,13 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<BlendContainer Name="PlaceRelic" ID="{0DA2DBE8-EC4C-4B0E-A4F6-5E3879538088}" ShortID="809722114">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>19</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2ECA288C-93C6-4EB8-8723-728F9F0D5209}"/>

@@ -56,7 +56,7 @@ public class JL_AudioManager : MonoBehaviour
         {
             if (BL_GhostPlaying)
             {
-                AkSoundEngine.PostEvent("GhostSoundStop", gameObject);
+                //AkSoundEngine.PostEvent("GhostSoundStop", gameObject);
             }
             BL_GhostPlaying = false;
         }
@@ -65,11 +65,12 @@ public class JL_AudioManager : MonoBehaviour
         {
             if (!BL_GhostPlaying)
             {
-                AkSoundEngine.PostEvent("GhostSound", gameObject);
+                //AkSoundEngine.PostEvent("GhostSound", gameObject);
             }
             BL_GhostPlaying = true;
 
-            AkSoundEngine.SetRTPCValue("GhostDistance", FL_GhostDistance);
+            //if (FL_GhostDistance <= 5) AkSoundEngine.SetRTPCValue("GhostDistance", FL_GhostDistance);
+            //FL_GhostDistance = 1000;    //reset the value each update to be set again in the late update (should allow reassessing of closest ghost)
         }
     }
 
@@ -102,10 +103,12 @@ public class JL_AudioManager : MonoBehaviour
         if (!BL_GhostPlaying)
         {
             BL_GhostPlaying = true;
-            AkSoundEngine.PostEvent("GhostSound", gameObject);
+            //AkSoundEngine.PostEvent("GhostSound", gameObject);
         }
-
-        FL_GhostDistance = vDistance;
+        if (vDistance < FL_GhostDistance)   //the shortest distance to the player to be used
+        {
+            FL_GhostDistance = vDistance;
+        }
     }
 
     public void SwitchFootsteps(string State)
