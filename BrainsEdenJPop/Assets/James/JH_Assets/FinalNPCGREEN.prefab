@@ -398,26 +398,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecd6435a90dfecb469dfe538c8ec9046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mCurrentState: 0
   mPF_TestObjOK: {fileID: 1654960456696022, guid: 0be06cd72e30e3a43b1d2597ec5f9c23,
     type: 2}
   mPF_TestObjNotOK: {fileID: 1492536113197676, guid: 8c1b655f67725654c995fd94432e9c11,
     type: 2}
-  mFL_SpeedArea1: 1
-  mFL_SpeedArea2: 2
-  mFL_SpeedArea3: 3
-  mFL_SpeedArea4: 4
-  mFL_FinalSpeedArea1: 4
-  mFL_FinalSpeedArea2: 3
-  mFL_FinalSpeedArea3: 2
-  mFL_FinalSpeedArea4: 1
-  mFL_ChasingSpeed1: 1
-  mFL_ChasingSpeed2: 2
-  mFL_ChasingSpeed3: 4
-  mFL_ChasingSpeed4: 4
-  mFL_FinalChasingSpeed1: 4
-  mFL_FinalChasingSpeed2: 3
-  mFL_FinalChasingSpeed3: 2
-  mFL_FinalChasingSpeed4: 1
+  mFL_SpeedGhost1: 0
+  mFL_SpeedGhost2: 0
+  mFL_SpeedGhost3: 0
+  mFL_FinalSpeedGhost1: 0
+  mFL_FinalSpeedGhost2: 0
+  mFL_FinalSpeedGhost3: 0
+  mFL_ChasingSpeedGhost1: 0
+  mFL_ChasingSpeedGhost2: 0
+  mFL_ChasingSpeedGhost3: 0
+  mFL_FinalChasingSpeedGhost1: 0
+  mFL_FinalChasingSpeedGhost2: 0
+  mFL_FinalChasingSpeedGhost3: 0
   mIN_AreaNo: 0
   mV3_TargetPos: {x: 0, y: 0, z: 0}
   mFL_MaxRandomMove: 1

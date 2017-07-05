@@ -16,13 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3FD75F9A-6D72-4192-A6A8-3D89B61F1706}'
-<<<<<<< HEAD
-    m_lastTimePsrt1: -1065313323
-    m_lastTimePart2: -1999322962
-=======
-    m_lastTimePsrt1: 1106192647
-    m_lastTimePart2: -1999322940
->>>>>>> 7c60689a4ccbce3e1edd8c0d32150573538def6c
+    m_lastTimePsrt1: -798585261
+    m_lastTimePart2: -1999322201
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -43,6 +38,16 @@ MonoBehaviour:
         ObjectType: 3
       ID: 128372033
       Guid: aef763ca9a86e44b9c5af99cfe4a4589
+      maxAttenuation: 0
+    - Name: Attenuation_GORE_Blade_Chop__mono_
+      Path: Default Work Unit\Attenuation_GORE_Blade_Chop__mono_
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Attenuation_GORE_Blade_Chop__mono_
+        ObjectType: 3
+      ID: -487324973
+      Guid: 841f182da455fe458ac991e240d261ab
       maxAttenuation: 0
     - Name: FootstepsFast
       Path: Default Work Unit\FootstepsFast
@@ -144,6 +149,16 @@ MonoBehaviour:
       ID: 2025199039
       Guid: 612e8e91d3d6fe47b4e36f9691fef0c7
       maxAttenuation: 0
+    - Name: PlaceRelicSuccess
+      Path: Default Work Unit\PlaceRelicSuccess
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PlaceRelicSuccess
+        ObjectType: 3
+      ID: -1716960808
+      Guid: 797c1761c41f9842bec94a4469081ae1
+      maxAttenuation: 0
     - Name: RockDoor
       Path: Default Work Unit\RockDoor
       PathAndIcons:
@@ -163,10 +178,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1554327319
       Guid: fe5ef40d963cf24194797c149071f204
-<<<<<<< HEAD
-      maxAttenuation: 0
-=======
-      maxAttenuation: 20
+      maxAttenuation: 100
     - Name: Snickt
       Path: Default Work Unit\Snickt
       PathAndIcons:
@@ -196,28 +208,27 @@ MonoBehaviour:
         ObjectType: 3
       ID: 99965646
       Guid: 1507648710dc384cabf433c43b126f80
-      maxAttenuation: 10
->>>>>>> 7c60689a4ccbce3e1edd8c0d32150573538def6c
+      maxAttenuation: 0
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A1BE1F16-5A58-43CA-B653-D8BD0401B781}'
-    m_lastTimePsrt1: -1716330285
-    m_lastTimePart2: -1999322965
+    m_lastTimePsrt1: -797188115
+    m_lastTimePart2: -1999322201
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{45CE0B3C-F78B-4ED5-BE21-A0213F1B7BFD}'
-    m_lastTimePsrt1: -1694598112
-    m_lastTimePart2: -1999322965
+    m_lastTimePsrt1: -775334535
+    m_lastTimePart2: -1999322201
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8171BD08-1B48-4883-BDA9-5A92826AB052}'
-    m_lastTimePsrt1: 733284571
-    m_lastTimePart2: -1999322945
+    m_lastTimePsrt1: -775329527
+    m_lastTimePart2: -1999322201
     List:
     - Name: Ambience
       Path: Default Work Unit\Ambience
@@ -281,13 +292,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D7FF8C30-DA72-4C14-BB80-CDAF477F8EE6}'
-<<<<<<< HEAD
-    m_lastTimePsrt1: -1064483240
-    m_lastTimePart2: -1999322962
-=======
-    m_lastTimePsrt1: -1230098801
-    m_lastTimePart2: -1999322940
->>>>>>> 7c60689a4ccbce3e1edd8c0d32150573538def6c
+    m_lastTimePsrt1: -775344550
+    m_lastTimePart2: -1999322201
     List:
     - Name: Main
       Path: Default Work Unit\Main

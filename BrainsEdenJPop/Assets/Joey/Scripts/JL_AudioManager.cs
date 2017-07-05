@@ -12,11 +12,21 @@ public class JL_AudioManager : MonoBehaviour
     public float FL_NextStep;
 
     public bool BL_Stepping;
-    
+
+    private List<GameObject> LS_GO_Spikes;
+    private int IN_SoundCount;
+
+    private GameObject GO_PC;
 
     // Use this for initialization
     void Start()
     {
+        GO_PC = GameObject.Find("PC");
+
+        //foreach (GameObject Spike in GameObject.FindGameObjectsWithTag("Spike"))
+        //{
+        //    LS_GO_Spikes.Add(Spike);
+        //}
     }
 
     // Update is called once per frame
@@ -110,8 +120,23 @@ public class JL_AudioManager : MonoBehaviour
         }
     }
 
-    public void SwitchAmbience(string Area)
+    public void Snickt(GameObject vSpike)
     {
-
+        //Play a snickt sound, but limit it to 3 per activation.
+        if (IN_SoundCount < 3)
+        {
+            if (Vector3.Distance(GO_PC.transform.position, vSpike.transform.position) < 10f)
+            {
+                AkSoundEngine.PostEvent("Snickt", gameObject);
+                IN_SoundCount++;
+                Debug.Log("Spike at: " + vSpike.transform.position.ToString() + "Making a sound");
+                Destroy(vSpike);
+                //Invoke("ClearSnickt", 1);
+            }
+        }
+    }
+    private void ClearSnickt()
+    {
+        IN_SoundCount = 0;
     }
 }

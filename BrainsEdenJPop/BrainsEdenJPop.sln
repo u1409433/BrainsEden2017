@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainsEdenJPop.Plugins", "BrainsEdenJPop.Plugins.csproj", "{D4640B22-6020-2C57-0CBE-45BFCA89B6F6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainsEdenJPop", "BrainsEdenJPop.csproj", "{DCF28CF0-D920-10EF-8931-836F59D4524E}"

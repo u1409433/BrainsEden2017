@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.AI;
 using UnityEngine;
@@ -88,7 +88,6 @@ public class JL_PCMovement : MonoBehaviour
                 {
                     if (RayHit.transform.name == "Relic" && BL_Carrying)
                     {
-                        Debug.Log("You're already holding a relic!");
                     }
                     else
                     {
@@ -128,7 +127,6 @@ public class JL_PCMovement : MonoBehaviour
 
     public void Die()
     {
-        Debug.Log("Die");
         //Start the lerp to my death position
         V3_CurrentRot = transform.rotation.eulerAngles;
         BL_Dying = true;

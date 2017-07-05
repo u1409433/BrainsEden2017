@@ -112,7 +112,7 @@ public class JC_FSM : MonoBehaviour
 
         if (mSCR_JCLevelManager == null)
         {
-            print("No Level Manager");
+            //print("No Level Manager");
         }
 
         SetState(State.Roam);
@@ -121,7 +121,7 @@ public class JC_FSM : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //print("Area No: " + mIN_AreaNo);
+        ////print("Area No: " + mIN_AreaNo);
 
         ApplyAreasOfInterest();
         ApplyFSM();
@@ -133,8 +133,8 @@ public class JC_FSM : MonoBehaviour
             GameObject.Find("LevelManager").GetComponent<JC_LevelManager>().IN_ChasingGhosts++;
         }
 
-        //print("STATE: " + GetState());
-        //print("NPC is in area" + mBL_IsInArea);
+        ////print("STATE: " + GetState());
+        ////print("NPC is in area" + mBL_IsInArea);
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
@@ -146,7 +146,7 @@ public class JC_FSM : MonoBehaviour
                 mFL_RoamSpeed = mFL_FinalSpeedGhost1;
                 mFL_ChaseSpeed = mFL_FinalChasingSpeedGhost1;
 
-                print("Area1 NewSpeed");
+                //print("Area1 NewSpeed");
             }
 
             if (mIN_AreaNo == 4)
@@ -156,7 +156,7 @@ public class JC_FSM : MonoBehaviour
                     mFL_RoamSpeed = mFL_FinalSpeedGhost1;
                     mFL_ChaseSpeed = mFL_FinalChasingSpeedGhost1;
 
-                    print("Area4 NewSpeed Ghost1");
+                    //print("Area4 NewSpeed Ghost1");
                 }
             }
         }
@@ -171,7 +171,7 @@ public class JC_FSM : MonoBehaviour
                 mFL_RoamSpeed = mFL_FinalSpeedGhost2;
                 mFL_ChaseSpeed = mFL_FinalChasingSpeedGhost2;
 
-                print("Area2 NewSpeed");
+                //print("Area2 NewSpeed");
             }
 
             if (mIN_AreaNo == 4)
@@ -181,7 +181,7 @@ public class JC_FSM : MonoBehaviour
                     mFL_RoamSpeed = mFL_FinalSpeedGhost2;
                     mFL_ChaseSpeed = mFL_FinalChasingSpeedGhost2;
 
-                    print("Area4 NewSpeed Ghost2");
+                    //print("Area4 NewSpeed Ghost2");
                 }
             }
         }
@@ -196,7 +196,7 @@ public class JC_FSM : MonoBehaviour
                 mFL_RoamSpeed = mFL_FinalSpeedGhost3;
                 mFL_ChaseSpeed = mFL_FinalChasingSpeedGhost3;
 
-                print("Area3 NewSpeed");
+                //print("Area3 NewSpeed");
             }
 
             if (mIN_AreaNo == 4)
@@ -206,7 +206,7 @@ public class JC_FSM : MonoBehaviour
                     mFL_RoamSpeed = mFL_FinalSpeedGhost3;
                     mFL_ChaseSpeed = mFL_FinalChasingSpeedGhost3;
 
-                    print("Area4 NewSpeed Ghost3");
+                    //print("Area4 NewSpeed Ghost3");
                 }
             }
         }
@@ -228,27 +228,27 @@ public class JC_FSM : MonoBehaviour
         //                mFL_RoamSpeed = mFL_FinalSpeedGhost1;
         //                mFL_ChaseSpeed = mFL_FinalChasingSpeedGhost1;
 
-        //                print("Area4 NewSpeed Ghost1");
+        //                //print("Area4 NewSpeed Ghost1");
         //            }
 
         //            if (gameObject.transform.name == "FinalGhostArea2")
         //            {
         //                mFL_RoamSpeed = mFL_FinalSpeedGhost2;
         //                mFL_ChaseSpeed = mFL_FinalChasingSpeedGhost2;
-        //                print("Area4 NewSpeed Ghost2");
+        //                //print("Area4 NewSpeed Ghost2");
         //            }
 
         //            if (gameObject.transform.name == "FinalGhostArea3")
         //            {
         //                mFL_RoamSpeed = mFL_FinalSpeedGhost3;
         //                mFL_ChaseSpeed = mFL_FinalChasingSpeedGhost3;
-        //                print("Area4 NewSpeed Ghost3");
+        //                //print("Area4 NewSpeed Ghost3");
         //            }
         //        }
         //    }
         //}
 
-        print("SPEED: " + mNMA_NavMeshAgent.speed);
+        //print("SPEED: " + mNMA_NavMeshAgent.speed);
     }
 
     protected void ApplyFSM()
@@ -341,7 +341,7 @@ public class JC_FSM : MonoBehaviour
             if (GetState() == State.Chase)
             {
                 CheckPlayerInArea();
-                //print("Is PC in area: " + mBL_PCIsInArea);
+                ////print("Is PC in area: " + mBL_PCIsInArea);
 
                 if (!mBL_PCIsInArea)
                 {
@@ -362,20 +362,20 @@ public class JC_FSM : MonoBehaviour
         {
             if (mGO_PC.transform.position.z >= mV2_AreaOfInterestZ.y && mGO_PC.transform.position.z < mV2_AreaOfInterestZ.x)
             {
-                //print("PC Is in Bounds");
+                ////print("PC Is in Bounds");
                 mBL_PCIsInArea = true;
             }
 
             else
             {
-                //print("PC Outside Bounds");
+                ////print("PC Outside Bounds");
                 mBL_PCIsInArea = false;
             }
         }
 
         else
         {
-            //print("PC Outside Bounds");
+            ////print("PC Outside Bounds");
             mBL_PCIsInArea = false;
         }
     }
@@ -386,20 +386,20 @@ public class JC_FSM : MonoBehaviour
         {
             if (mV3_TargetPos.z >= mV2_AreaOfInterestZ.y && mV3_TargetPos.z < mV2_AreaOfInterestZ.x)
             {
-                //print("Is in Bounds");
+                ////print("Is in Bounds");
                 mBL_IsInArea = true;
             }
 
             else
             {
-                //print("NPC Outside Bounds");
+                ////print("NPC Outside Bounds");
                 mBL_IsInArea = false;
             }
         }
 
         else
         {
-            //print("NPC Outside Bounds");
+            ////print("NPC Outside Bounds");
             mBL_IsInArea = false;
         }
     }
@@ -437,7 +437,7 @@ public class JC_FSM : MonoBehaviour
                         {
                             if (transform.position.y - tNM_Hit.position.y > 1)
                             {
-                                //print("Wrong Height: " + tNM_Hit.position.y + ", Player Height: " + transform.position.y);
+                                ////print("Wrong Height: " + tNM_Hit.position.y + ", Player Height: " + transform.position.y);
                                 mBL_CanGo = false;
                             }
                         }
@@ -446,7 +446,7 @@ public class JC_FSM : MonoBehaviour
                         {
                             if (tNM_Hit.position.y - transform.position.y > 3)
                             {
-                                //print("Wrong Height: " + tNM_Hit.position.y + ", Player Height: " + transform.position.y);
+                                ////print("Wrong Height: " + tNM_Hit.position.y + ", Player Height: " + transform.position.y);
                                 mBL_CanGo = false;
                             }
                         }
@@ -458,7 +458,7 @@ public class JC_FSM : MonoBehaviour
 
                         if (mBL_CanGo)
                         {
-                            //print("Correct Height: " + tNM_Hit.position.y + ", Player Height: " + transform.position.y);
+                            ////print("Correct Height: " + tNM_Hit.position.y + ", Player Height: " + transform.position.y);
                             mBL_IsRoaming = true;
                             mNMA_NavMeshAgent.speed = mFL_RoamSpeed;
                             mNMA_NavMeshAgent.SetDestination(mV3_TargetPos);
@@ -507,7 +507,7 @@ public class JC_FSM : MonoBehaviour
 
                 mBL_IsChasing = true;
 
-                //print("Chase Destination Set: " + mBL_IsChasing.ToString());
+                ////print("Chase Destination Set: " + mBL_IsChasing.ToString());
             }
 
             else if (Vector3.Distance(mV3_TargetPos, gameObject.transform.position) <= mFL_ChaseRange)
@@ -516,7 +516,7 @@ public class JC_FSM : MonoBehaviour
                 mNMA_NavMeshAgent.isStopped = true;
                 mBL_IsChasing = false;
                 mBL_ChaseReachedDest = true;
-                //print("NPC Stopping");
+                ////print("NPC Stopping");
             }
         }
 
@@ -544,14 +544,14 @@ public class JC_FSM : MonoBehaviour
             if (Vector3.Distance(gameObject.transform.position, mGO_PC.transform.position) > 0.5)
             {
                 //Attack:
-                //print("Attack within range");
+                ////print("Attack within range");
                 mBL_IsAttacking = false;
             }
 
             else
             {
                 // Just play Animation:
-                //print("Attack within range");
+                ////print("Attack within range");
                 mBL_IsAttacking = false;
             }
         }
@@ -601,6 +601,81 @@ public class JC_FSM : MonoBehaviour
         {
             mSCR_Movement.Die();
             //collision.transform.SendMessage("Die");
+        }
+    }
+
+    public void ChangeGhost1()
+    {
+        if (mIN_AreaNo == 1)
+        {
+            mV2_AreaOfInterestX = mSCR_JCLevelManager.mV2_Area1_X;
+            mV2_AreaOfInterestZ = mSCR_JCLevelManager.mV2_Area1_Z;
+
+            mFL_RoamSpeed = mFL_FinalSpeedGhost1;
+            mFL_ChaseSpeed = mFL_FinalChasingSpeedGhost1;
+
+            //print("Area1 NewSpeed");
+        }
+
+        if (mIN_AreaNo == 4)
+        {
+            if (gameObject.transform.name == "FinalGhostArea1")
+            {
+                mFL_RoamSpeed = mFL_FinalSpeedGhost1;
+                mFL_ChaseSpeed = mFL_FinalChasingSpeedGhost1;
+
+                //print("Area4 NewSpeed Ghost1");
+            }
+        }
+    }
+
+    public void ChangeGhost2()
+    {
+        if (mIN_AreaNo == 2)
+        {
+            mV2_AreaOfInterestX = mSCR_JCLevelManager.mV2_Area2_X;
+            mV2_AreaOfInterestZ = mSCR_JCLevelManager.mV2_Area2_Z;
+
+            mFL_RoamSpeed = mFL_FinalSpeedGhost2;
+            mFL_ChaseSpeed = mFL_FinalChasingSpeedGhost2;
+
+            //print("Area2 NewSpeed");
+        }
+
+        if (mIN_AreaNo == 4)
+        {
+            if (gameObject.transform.name == "FinalGhostArea2")
+            {
+                mFL_RoamSpeed = mFL_FinalSpeedGhost2;
+                mFL_ChaseSpeed = mFL_FinalChasingSpeedGhost2;
+
+                //print("Area4 NewSpeed Ghost2");
+            }
+        }
+    }
+
+    public void ChangeGhost3()
+    {
+        if (mIN_AreaNo == 3)
+        {
+            mV2_AreaOfInterestX = mSCR_JCLevelManager.mV2_Area3_X;
+            mV2_AreaOfInterestZ = mSCR_JCLevelManager.mV2_Area3_Z;
+
+            mFL_RoamSpeed = mFL_FinalSpeedGhost3;
+            mFL_ChaseSpeed = mFL_FinalChasingSpeedGhost3;
+
+            //print("Area3 NewSpeed");
+        }
+
+        if (mIN_AreaNo == 4)
+        {
+            if (gameObject.transform.name == "FinalGhostArea3")
+            {
+                mFL_RoamSpeed = mFL_FinalSpeedGhost3;
+                mFL_ChaseSpeed = mFL_FinalChasingSpeedGhost3;
+
+                //print("Area4 NewSpeed Ghost3");
+            }
         }
     }
 }
